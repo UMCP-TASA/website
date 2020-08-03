@@ -4,6 +4,8 @@ import {
     Card,
     CardContent,
     CardActions,
+    Chip,
+    Grid,
     Theme,
     createStyles,
     withStyles,
@@ -65,15 +67,18 @@ function Bio(props: Props) {
                 </CardContent>
             </div>
             <CardActions className={classes.action}>
-                {majors.map((major) => (
-                    <Text
-                        variant="caption"
-                        className={classes.major}
-                        key={name + major}
-                    >
-                        {major}
-                    </Text>
-                ))}
+                <Grid
+                    container
+                    justify="center"
+                    alignItems="flex-start"
+                    spacing={1}
+                >
+                    {majors.map((major) => (
+                        <Grid item key={name + major}>
+                            <Chip label={major} color="primary" />
+                        </Grid>
+                    ))}
+                </Grid>
             </CardActions>
         </Card>
     )

@@ -50,6 +50,9 @@ function BoardPage(props: Props) {
             </ParallaxBackground>
             <PageContent>
                 <Section maxWidth="lg">
+                    <Text variant="subtitle1" color="textSecondary" align="center" paragraph>
+                        Tip: Learn more about the board by hovering or tapping over their picture!
+                    </Text>
                     <BioGrid bios={presidents} />
                     <BioGrid bios={rest} />
                 </Section>

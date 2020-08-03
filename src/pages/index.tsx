@@ -11,7 +11,8 @@ import {
 
 // Components
 import SEO from "components/seo"
-import EventsGrid from "components/Events/EventsGrid"
+import EventPreview from "components/Events/EventPreview"
+import GridWithItems from "components/General/GridWithItems"
 import Welcome from "components/General/Welcome"
 import PageContent from "components/PageLayout/PageContent"
 import ParallaxBackground from "components/PageLayout/ParallaxBackground"
@@ -26,6 +27,8 @@ import BioPreview from "components/Bios/BioPreview"
 // Hooks
 import useEvents from "hooks/useEvents"
 import useBios from "hooks/useBios"
+
+
 
 const styles = (theme: Theme) =>
     createStyles({
@@ -106,7 +109,13 @@ function IndexPage(props: Props) {
                         </a>{" "}
                         for all the latest announcements!
                     </Text>
-                    <EventsGrid events={events} />
+
+                    <GridWithItems>
+                        {events.map(event => <EventPreview event={event} key={event.node.id}/>)}
+                    </GridWithItems>
+
+
+                    {/* <EventsGrid events={events} /> */}
                     <ButtonLink
                         to="events"
                         variant="contained"

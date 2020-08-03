@@ -6,6 +6,7 @@ import {
     createStyles,
     withStyles,
     WithStyles,
+    useMediaQuery,
 } from "@material-ui/core"
 
 // Hooks
@@ -13,66 +14,39 @@ import { BioArrayType } from "hooks/useBios"
 
 // Components
 import Bio from "./Bio"
+import FlippableBio from "./FlippableBio"
+import GridWithItems, {
+    GridWithItemsProps,
+} from "components/General/GridWithItems"
 import Text from "components/Typography/Text"
 
 const styles = (theme: Theme) => createStyles({})
 
-// Note EventHookOptions provides
-//  tags?: string[],
-//  filterFunction?: EventFilterFunction,
-//  amount: number,
-type Props = WithStyles<typeof styles> & {
-    bios: BioArrayType
-    xs?: GridProps["xs"]
-    sm?: GridProps["sm"]
-    md?: GridProps["md"]
-    lg?: GridProps["lg"]
-    xl?: GridProps["xl"]
-}
+type Props = WithStyles<typeof styles> &
+    GridWithItemsProps & {
+        bios: BioArrayType
+    }
 
 function BioGrid(props: Props) {
-    const {
-        classes,
-        bios,
-        xs = 12,
-        sm = 4,
-        md = false,
-        lg = false,
-        xl = false,
-    } = props
-
-    const noBiosText =
-        bios.length <= 0 ? (
-            <Text variant="h5" align="center">
-                No bios to show
-            </Text>
-        ) : (
-            <></>
-        )
+    const { classes, bios, ...rest } = props
+    const matches = useMediaQuery((theme: Theme) => theme.breakpoints.up("sm"))
 
     return (
-        <Grid
-            container
-            spacing={3}
-            alignItems="stretch"
-            alignContent="stretch"
-            justify="center"
-        >
-            {noBiosText}
-            {bios.map((bio) => (
-                <Grid
-                    item
-                    xs={xs}
-                    sm={sm}
-                    md={md}
-                    lg={lg}
-                    xl={xl}
-                    key={bio.node.id}
-                >
-                    <Bio bioData={bio} />
-                </Grid>
-            ))}
-        </Grid>
+        <GridWithItems {...rest} sm={6} lg={4}>
+            {bios.length <= 0
+                ? [
+                      <Text variant="h5" align="center" key={1}>
+                          No bios to show
+                      </Text>,
+                  ]
+                : bios.map((bio) =>
+                      matches ? (
+                          <FlippableBio bioData={bio} key={bio.node.id} />
+                      ) : (
+                          <Bio bioData={bio} key={bio.node.id} />
+                      )
+                  )}
+        </GridWithItems>
     )
 }
 

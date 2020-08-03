@@ -18,12 +18,7 @@ const styles = (theme: Theme) =>
             paddingBottom: theme.spacing(4),
         },
         title: {
-            //color: "#3C4858",
             marginBottom: theme.spacing(2),
-            //margin: "1.75rem 0 0.875rem",
-            //textDecoration: "none",
-            //fontWeight: 700,
-            // fontFamily: `Roboto Slab, Times New Roman, serif`,
         },
     })
 
@@ -58,6 +53,7 @@ function Section(props: Props) {
                         color={color}
                         align="center"
                         className={classes.title}
+                        heading
                     >
                         {title}
                     </Text>

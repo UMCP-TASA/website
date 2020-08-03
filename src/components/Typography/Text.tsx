@@ -18,6 +18,10 @@ const styles = (theme: Theme) =>
         success: {
             color: theme.palette.success.main,
         },
+        heading: {
+            fontFamily: ["Roboto Slab", "Times New Roman", "serif"].join(","),
+            // fontWeight: 700,
+        },
     })
 
 export interface TextColorOptions {
@@ -27,27 +31,45 @@ export interface TextColorOptions {
 
 type Props = WithStyles<typeof styles> &
     Omit<TypographyProps, "color"> &
-    TextColorOptions
+    TextColorOptions & {
+        heading?: boolean
+    }
 
 /**
  * Custom text component that wraps Material-UI typography
  * @param props
  */
 function Text(props: Props) {
-    const { classes, className = "", color = "initial", ...rest } = props
-    const textClassName = clsx({
+    const {
+        classes,
+        className = "",
+        color = "initial",
+        heading = false,
+        ...rest
+    } = props
+
+    let textClassName = clsx({
         [className]: true,
-        [classes.white]: color === "white",
-        [classes.success]: color === "success",
+        [classes.heading]: heading,
     })
 
+    let passedColor = color
+
+    switch (color) {
+        case "white":
+            textClassName = clsx(textClassName, classes.white)
+            passedColor = "initial"
+            break
+        case "success":
+            textClassName = clsx(textClassName, classes.white)
+            passedColor = "initial"
+            break
+        default:
+            passedColor = color
+    }
+
     return (
-        <Typography
-            className={textClassName}
-            // @ts-ignore The case of invalid color names is handled but not recognized by Typescript
-            color={textClassName === className ? color : "initial"}
-            {...rest}
-        />
+        <Typography className={textClassName} color={passedColor} {...rest} />
     )
 }
 

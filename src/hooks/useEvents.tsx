@@ -38,13 +38,14 @@ export default function useEvents(options: EventHookOptions) {
                         fields {
                             slug
                         }
-                        frontmatter {
+                        frontmatter { 
                             title
                             tags
                             date
                             category
                             imgsrc
                             pinned
+                            link
                         }
                         html
                         id
@@ -59,11 +60,7 @@ export default function useEvents(options: EventHookOptions) {
                     node {
                         id
                         relativePath
-                        childImageSharp {
-                            fluid {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
+                        ...RaisedImage
                     }
                 }
             }
