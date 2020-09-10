@@ -1,8 +1,7 @@
 import React from "react"
 import { PageProps, graphql } from "gatsby"
 import {
-    Container,
-    Grid,
+    Hidden,
     Theme,
     createStyles,
     withStyles,
@@ -45,14 +44,23 @@ function BoardPage(props: Props) {
                     Meet the Board
                 </Text>
                 <Text variant="h6" color="white" align="center">
-                Check out the people who make it all happen!
+                    Check out the people who make it all happen!
                 </Text>
             </ParallaxBackground>
             <PageContent>
                 <Section maxWidth="lg">
-                    <Text variant="subtitle1" color="textSecondary" align="center" paragraph>
-                        Tip: Learn more about the board by hovering or tapping over their picture!
-                    </Text>
+                    <Hidden xsDown>
+                        <Text
+                            variant="subtitle1"
+                            color="textSecondary"
+                            align="center"
+                            paragraph
+                        >
+                            Tip: Learn more about the board by hovering or
+                            tapping over their picture!
+                        </Text>
+                    </Hidden>
+
                     <BioGrid bios={presidents} />
                     <BioGrid bios={rest} />
                 </Section>

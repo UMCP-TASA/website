@@ -3012,15 +3012,25 @@ type SiteTitleQueryVariables = Exact<{ [key: string]: never; }>;
 
 type SiteTitleQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
 
-type SEOQueryVariables = Exact<{ [key: string]: never; }>;
+type FooterQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type SEOQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'description'>> }> };
+type FooterQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'copyright' | 'facebook' | 'instagram'>> }> };
 
 type BackgroundImageFragment = { readonly childImageSharp: Maybe<{ readonly fluid: Maybe<(
       GatsbyImageSharpFluid_withWebpFragment
       & GatsbyImageSharpFluidLimitPresentationSizeFragment
     )> }> };
+
+type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type NotFoundPageQuery = { readonly pageBackground: Maybe<BackgroundImageFragment> };
+
+type ArchivePageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type ArchivePageQuery = { readonly background: Maybe<BackgroundImageFragment> };
 
 type BioQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -3032,21 +3042,6 @@ type BioQuery = { readonly allMarkdownRemark: { readonly edges: ReadonlyArray<{ 
         Pick<File, 'id' | 'relativePath'>
         & { readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }
       ) }> }, readonly order: Maybe<{ readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'options'>> }> };
-
-type FooterQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type FooterQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'copyright' | 'facebook' | 'instagram'>> }> };
-
-type LogoQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type LogoQuery = { readonly black: Maybe<{ readonly childImageSharp: Maybe<{ readonly fixed: Maybe<GatsbyImageSharpFixed_withWebpFragment> }> }>, readonly white: Maybe<{ readonly childImageSharp: Maybe<{ readonly fixed: Maybe<GatsbyImageSharpFixed_withWebpFragment> }> }> };
-
-type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type NotFoundPageQuery = { readonly pageBackground: Maybe<BackgroundImageFragment> };
 
 type DateFormatQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -3064,10 +3059,15 @@ type EventsQuery = { readonly allMarkdownRemark: { readonly edges: ReadonlyArray
         & RaisedImageFragment
       ) }> } };
 
-type ArchivePageQueryVariables = Exact<{ [key: string]: never; }>;
+type AboutPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type ArchivePageQuery = { readonly background: Maybe<BackgroundImageFragment> };
+type AboutPageQuery = { readonly background: Maybe<BackgroundImageFragment>, readonly pic1: Maybe<RaisedImageFragment>, readonly pic2: Maybe<RaisedImageFragment>, readonly pic3: Maybe<RaisedImageFragment>, readonly pic4: Maybe<RaisedImageFragment>, readonly pic5: Maybe<RaisedImageFragment> };
+
+type BoardPageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type BoardPageQuery = { readonly boardBackground: Maybe<BackgroundImageFragment> };
 
 type EventPageQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -3079,16 +3079,10 @@ type HomePageQueryVariables = Exact<{ [key: string]: never; }>;
 
 type HomePageQuery = { readonly mainBackground: Maybe<BackgroundImageFragment>, readonly presidentBackground: Maybe<BackgroundImageFragment>, readonly newsletterBackground: Maybe<BackgroundImageFragment> };
 
-type IndividualEventPageQueryVariables = Exact<{
-  slug: Maybe<Scalars['String']>;
-  imgsrc: Maybe<Scalars['String']>;
-}>;
+type ContactUsPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type IndividualEventPageQuery = { readonly markdownRemark: Maybe<(
-    Pick<MarkdownRemark, 'html' | 'id'>
-    & { readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'tags' | 'date' | 'link'>> }
-  )>, readonly file: Maybe<BackgroundImageFragment> };
+type ContactUsPageQuery = { readonly contactBackground: Maybe<BackgroundImageFragment>, readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'facebook' | 'instagram'>> }> };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
@@ -3140,19 +3134,25 @@ type GatsbyImageSharpSizes_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio
 
 type GatsbyImageSharpSizes_withWebp_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
 
-type ContactUsPageQueryVariables = Exact<{ [key: string]: never; }>;
+type IndividualEventPageQueryVariables = Exact<{
+  slug: Maybe<Scalars['String']>;
+  imgsrc: Maybe<Scalars['String']>;
+}>;
 
 
-type ContactUsPageQuery = { readonly contactBackground: Maybe<BackgroundImageFragment>, readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'facebook' | 'instagram'>> }> };
+type IndividualEventPageQuery = { readonly markdownRemark: Maybe<(
+    Pick<MarkdownRemark, 'html' | 'id'>
+    & { readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'tags' | 'date' | 'link'>> }
+  )>, readonly file: Maybe<BackgroundImageFragment> };
 
-type AboutPageQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type AboutPageQuery = { readonly background: Maybe<BackgroundImageFragment>, readonly pic1: Maybe<RaisedImageFragment>, readonly pic2: Maybe<RaisedImageFragment>, readonly pic3: Maybe<RaisedImageFragment>, readonly pic4: Maybe<RaisedImageFragment>, readonly pic5: Maybe<RaisedImageFragment> };
-
-type BoardPageQueryVariables = Exact<{ [key: string]: never; }>;
+type LogoQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type BoardPageQuery = { readonly boardBackground: Maybe<BackgroundImageFragment> };
+type LogoQuery = { readonly black: Maybe<{ readonly childImageSharp: Maybe<{ readonly fixed: Maybe<GatsbyImageSharpFixed_withWebpFragment> }> }>, readonly white: Maybe<{ readonly childImageSharp: Maybe<{ readonly fixed: Maybe<GatsbyImageSharpFixed_withWebpFragment> }> }> };
+
+type SEOQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type SEOQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'description'>> }> };
 
 }
