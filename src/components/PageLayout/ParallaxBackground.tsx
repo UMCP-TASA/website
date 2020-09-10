@@ -14,12 +14,16 @@ import {
     createStyles,
 } from "@material-ui/core"
 import BackgroundImage from "gatsby-background-image"
+import { useSpring, animated, config } from "react-spring"
 
 import useParallax from "hooks/useParallax"
+import usePrefersReducedMotion from "hooks/usePrefersReducedMotion"
 
 type StyleProps = {
     imageHeight?: string
 }
+
+const AnimatedGrid = animated(Grid)
 
 const styles = (theme: Theme) =>
     createStyles({
@@ -56,11 +60,18 @@ type Props = WithStyles<typeof styles> &
         image: GatsbyTypes.BackgroundImageFragment
         children?: React.ReactNode
         justify?: GridProps["justify"]
+        animated?: boolean,
     }
 
 function ParallaxBackground(props: Props) {
-    const { classes, image, justify = "center", children } = props
+    const { classes, image, justify = "center", animated = true, children } = props
     const { transform } = useParallax()
+    const springStyle = useSpring({
+        from: { opacity: 0, transform: "translate(-30px)" },
+        to: { opacity: 1, transform: "translate(0px)" },
+        config: { clamp: true, ...config.molasses },
+        immediate: !animated || usePrefersReducedMotion(),
+    })
     return (
         <BackgroundImage
             className={classes.root}
@@ -75,9 +86,9 @@ function ParallaxBackground(props: Props) {
                 alignItems="center"
                 justify={justify}
             >
-                <Grid item xs={12}>
+                <AnimatedGrid item xs={12} style={springStyle}>
                     {children}
-                </Grid>
+                </AnimatedGrid>
             </Grid>
         </BackgroundImage>
     )

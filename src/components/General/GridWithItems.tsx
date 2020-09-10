@@ -1,7 +1,5 @@
 import React from "react"
 import {
-    Container,
-    ContainerProps,
     Grid,
     GridProps,
     Theme,
@@ -9,6 +7,7 @@ import {
     withStyles,
     WithStyles,
 } from "@material-ui/core"
+import AnimateOnVisible from "components/General/AnimateOnVisible"
 
 const styles = (theme: Theme) =>
     createStyles({
@@ -19,7 +18,8 @@ const styles = (theme: Theme) =>
     })
 
 export interface GridWithItemsProps extends GridProps {
-    maxWidth?: ContainerProps["maxWidth"]
+    animated?: boolean,
+    itemMargins?: boolean,
 }
 
 type Props = WithStyles<typeof styles> &
@@ -35,7 +35,6 @@ function GridWithItems(props: Props) {
     const {
         classes,
         children,
-        maxWidth = "xl",
         xs = 12,
         sm = 4,
         md = false,
@@ -45,35 +44,41 @@ function GridWithItems(props: Props) {
         alignItems = "stretch",
         alignContent = "stretch",
         justify = "center",
+        animated = true,
+        itemMargins = true,
         ...rest
     } = props
 
     return (
-        <Container maxWidth={maxWidth}>
-            <Grid
-                container
-                spacing={spacing}
-                alignItems={alignItems}
-                alignContent={alignContent}
-                justify={justify}
-                {...rest}
-            >
-                {children.map((child, index) => (
-                    <Grid
-                        item
-                        className={classes.item}
-                        xs={xs}
-                        sm={sm}
-                        md={md}
-                        lg={lg}
-                        xl={xl}
-                        key={index}
+        <Grid
+            container
+            spacing={spacing}
+            alignItems={alignItems}
+            alignContent={alignContent}
+            justify={justify}
+            {...rest}
+        >
+            {children.map((child, index) => (
+                <Grid
+                    item
+                    className={itemMargins ? classes.item : ""}
+                    xs={xs}
+                    sm={sm}
+                    md={md}
+                    lg={lg}
+                    xl={xl}
+                    key={`animated-grid-${index}`}
+                >
+                    <AnimateOnVisible
+                        animated={animated}
+                        partialVisibility
+                        once
                     >
                         {child}
-                    </Grid>
-                ))}
-            </Grid>
-        </Container>
+                    </AnimateOnVisible>
+                </Grid>
+            ))}
+        </Grid>
     )
 }
 

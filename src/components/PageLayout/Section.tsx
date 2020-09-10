@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import {
     Container,
     ContainerProps,
@@ -8,8 +8,12 @@ import {
     withStyles,
     WithStyles,
 } from "@material-ui/core"
+import { animated } from "react-spring"
 
 import Text, { TextColorOptions } from "components/Typography/Text"
+import AnimateOnVisible from "components/General/AnimateOnVisible"
+
+const AnimatedText = animated(Text)
 
 const styles = (theme: Theme) =>
     createStyles({
@@ -48,15 +52,20 @@ function Section(props: Props) {
                 spacing={3}
             >
                 {title ? (
-                    <Text
-                        variant="h3"
-                        color={color}
-                        align="center"
-                        className={classes.title}
-                        heading
-                    >
-                        {title}
-                    </Text>
+                    <AnimateOnVisible once>
+                        {(styleProps) => (
+                            <AnimatedText
+                                variant="h3"
+                                color={color}
+                                align="center"
+                                className={classes.title}
+                                heading
+                                style={styleProps}
+                            >
+                                {title}
+                            </AnimatedText>
+                        )}
+                    </AnimateOnVisible>
                 ) : (
                     <></>
                 )}

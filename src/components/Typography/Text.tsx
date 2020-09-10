@@ -39,7 +39,7 @@ type Props = WithStyles<typeof styles> &
  * Custom text component that wraps Material-UI typography
  * @param props
  */
-function Text(props: Props) {
+function Text(props: Props, ref: React.Ref<HTMLElement>) {
     const {
         classes,
         className = "",
@@ -69,8 +69,13 @@ function Text(props: Props) {
     }
 
     return (
-        <Typography className={textClassName} color={passedColor} {...rest} />
+        <Typography
+            className={textClassName}
+            color={passedColor}
+            ref={ref}
+            {...rest}
+        />
     )
 }
 
-export default withStyles(styles)(Text)
+export default withStyles(styles)(React.forwardRef(Text))

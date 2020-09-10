@@ -699,10 +699,10 @@ enum FileFieldsEnum {
   childMarkdownRemark___frontmatter___pinned = 'childMarkdownRemark.frontmatter.pinned',
   childMarkdownRemark___frontmatter___tags = 'childMarkdownRemark.frontmatter.tags',
   childMarkdownRemark___frontmatter___link = 'childMarkdownRemark.frontmatter.link',
-  childMarkdownRemark___frontmatter___options = 'childMarkdownRemark.frontmatter.options',
   childMarkdownRemark___frontmatter___name = 'childMarkdownRemark.frontmatter.name',
   childMarkdownRemark___frontmatter___position = 'childMarkdownRemark.frontmatter.position',
   childMarkdownRemark___frontmatter___majors = 'childMarkdownRemark.frontmatter.majors',
+  childMarkdownRemark___frontmatter___options = 'childMarkdownRemark.frontmatter.options',
   childMarkdownRemark___excerpt = 'childMarkdownRemark.excerpt',
   childMarkdownRemark___rawMarkdownBody = 'childMarkdownRemark.rawMarkdownBody',
   childMarkdownRemark___fileAbsolutePath = 'childMarkdownRemark.fileAbsolutePath',
@@ -1486,10 +1486,10 @@ enum MarkdownRemarkFieldsEnum {
   frontmatter___pinned = 'frontmatter.pinned',
   frontmatter___tags = 'frontmatter.tags',
   frontmatter___link = 'frontmatter.link',
-  frontmatter___options = 'frontmatter.options',
   frontmatter___name = 'frontmatter.name',
   frontmatter___position = 'frontmatter.position',
   frontmatter___majors = 'frontmatter.majors',
+  frontmatter___options = 'frontmatter.options',
   excerpt = 'excerpt',
   rawMarkdownBody = 'rawMarkdownBody',
   fileAbsolutePath = 'fileAbsolutePath',
@@ -1624,10 +1624,10 @@ type MarkdownRemarkFrontmatter = {
   readonly pinned: Maybe<Scalars['Boolean']>;
   readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly link: Maybe<Scalars['String']>;
-  readonly options: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly name: Maybe<Scalars['String']>;
   readonly position: Maybe<Scalars['String']>;
   readonly majors: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
+  readonly options: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
 };
 
 
@@ -1646,10 +1646,10 @@ type MarkdownRemarkFrontmatterFilterInput = {
   readonly pinned: Maybe<BooleanQueryOperatorInput>;
   readonly tags: Maybe<StringQueryOperatorInput>;
   readonly link: Maybe<StringQueryOperatorInput>;
-  readonly options: Maybe<StringQueryOperatorInput>;
   readonly name: Maybe<StringQueryOperatorInput>;
   readonly position: Maybe<StringQueryOperatorInput>;
   readonly majors: Maybe<StringQueryOperatorInput>;
+  readonly options: Maybe<StringQueryOperatorInput>;
 };
 
 type MarkdownRemarkGroupConnection = {
@@ -3033,6 +3033,11 @@ type IndividualEventPageQuery = { readonly markdownRemark: Maybe<(
     & { readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'tags' | 'date' | 'link'>> }
   )>, readonly file: Maybe<BackgroundImageFragment> };
 
+type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type PagesQueryQuery = { readonly allSitePage: { readonly nodes: ReadonlyArray<Pick<SitePage, 'path'>> } };
+
 type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3070,9 +3075,53 @@ type HomePageQueryVariables = Exact<{ [key: string]: never; }>;
 
 type HomePageQuery = { readonly mainBackground: Maybe<BackgroundImageFragment>, readonly presidentBackground: Maybe<BackgroundImageFragment>, readonly newsletterBackground: Maybe<BackgroundImageFragment> };
 
-type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
+type FooterQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type PagesQueryQuery = { readonly allSitePage: { readonly nodes: ReadonlyArray<Pick<SitePage, 'path'>> } };
+type FooterQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'copyright' | 'facebook' | 'instagram'>> }> };
+
+type SiteTitleQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type SiteTitleQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
+
+type GatsbyImageSharpFixed_withWebpFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'>;
+
+type LogoQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type LogoQuery = { readonly black: Maybe<{ readonly childImageSharp: Maybe<{ readonly fixed: Maybe<GatsbyImageSharpFixed_withWebpFragment> }> }>, readonly white: Maybe<{ readonly childImageSharp: Maybe<{ readonly fixed: Maybe<GatsbyImageSharpFixed_withWebpFragment> }> }> };
+
+type SEOQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type SEOQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'description'>> }> };
+
+type BioQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type BioQuery = { readonly allMarkdownRemark: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<MarkdownRemark, 'id' | 'html' | 'excerpt'>
+        & { readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'majors' | 'name' | 'position' | 'imgsrc' | 'category'>> }
+      ) }> }, readonly allFile: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<File, 'id' | 'relativePath'>
+        & { readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }
+      ) }> }, readonly order: Maybe<{ readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'options'>> }> };
+
+type EventsQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type EventsQuery = { readonly allMarkdownRemark: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<MarkdownRemark, 'html' | 'excerpt' | 'id'>
+        & { readonly fields: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, readonly frontmatter: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'tags' | 'date' | 'category' | 'imgsrc' | 'pinned' | 'link'>> }
+      ) }> }, readonly allFile: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<File, 'id' | 'relativePath'>
+        & RaisedImageFragment
+      ) }> } };
+
+type DateFormatQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type DateFormatQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'dateFormat'>> }> };
 
 }

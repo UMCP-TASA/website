@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { PageProps, graphql } from "gatsby"
 import {
     Container,
@@ -8,7 +8,6 @@ import {
     withStyles,
     WithStyles,
 } from "@material-ui/core"
-
 import {
     Language,
     GroupAdd,
@@ -17,6 +16,8 @@ import {
     VerifiedUser,
     Edit,
 } from "@material-ui/icons"
+import VisibilitySensor from "react-visibility-sensor"
+import { useTrail, animated } from "react-spring"
 
 import SEO from "components/seo"
 import PageContent from "components/PageLayout/PageContent"
@@ -25,6 +26,7 @@ import Section from "components/PageLayout/Section"
 import Text from "components/Typography/Text"
 import ContentWithIcon from "components/General/ContentWithIcon"
 import RaisedImage from "components/General/RaisedImage"
+import usePrefersReducedMotion from "hooks/usePrefersReducedMotion"
 
 const styles = (theme: Theme) =>
     createStyles({
@@ -32,6 +34,8 @@ const styles = (theme: Theme) =>
             marginTop: theme.spacing(3),
         },
     })
+
+const AnimatedGrid = animated(Grid)
 
 type Goal = {
     icon: React.ReactNode
@@ -87,6 +91,18 @@ function AboutPage(props: Props) {
                 "Developing a strong relationship with other organizations at the University of Maryland, with the University Administration, and with other organizations nationwide, in order to communicate and fulfill our needs and goals",
         },
     ]
+
+    const [isMissionVisible, setMissionVisible] = useState(false)
+    const missionTrails = useTrail(goals.length, {
+        to: {
+            opacity: isMissionVisible ? 1 : 0,
+            transform: isMissionVisible
+                ? "translateY(0px)"
+                : "translateY(-10px)",
+        },
+        immediate: usePrefersReducedMotion(),
+    })
+
     return (
         <>
             <SEO title="About Us" />
@@ -111,56 +127,80 @@ function AboutPage(props: Props) {
                         At TASA, we aim to provide these functions:
                     </Text>
 
-                    <Grid
-                        container
-                        spacing={6}
-                        justify="center"
-                        className={classes.missionStatement}
+                    <VisibilitySensor
+                        onChange={(isVisible) => setMissionVisible(isVisible)}
+                        active={!isMissionVisible}
+                        partialVisibility
                     >
-                        {goals.map((goal, index) => (
-                            <Grid item xs={12} md={4} key={goal.title}>
-                                <ContentWithIcon
-                                    icon={goal.icon}
-                                    title={`${index + 1}. ${goal.title}`}
-                                    description={goal.description}
-                                />
-                            </Grid>
-                        ))}
-                    </Grid>
+                        <Grid
+                            container
+                            spacing={6}
+                            justify="center"
+                            className={classes.missionStatement}
+                        >
+                            {missionTrails.map((props, index) => (
+                                <AnimatedGrid item xs={12} md={4} key={goals[index].title} style={props}>
+                                    <ContentWithIcon
+                                        icon={goals[index].icon}
+                                        title={`${index + 1}. ${goals[index].title}`}
+                                        description={goals[index].description}
+                                    />
+                                </AnimatedGrid>
+                            ))}
+                            {/* {goals.map((goal, index) => (
+                                <Grid item xs={12} md={4} key={goal.title}>
+                                    <ContentWithIcon
+                                        icon={goal.icon}
+                                        title={`${index + 1}. ${goal.title}`}
+                                        description={goal.description}
+                                    />
+                                </Grid>
+                            ))} */}
+                        </Grid>
+                    </VisibilitySensor>
                 </Section>
 
                 <Section title="Big/Little System" maxWidth="lg">
                     <Container maxWidth="md">
-                    <Text align="center" paragraph>
-                        We are an organization committed to making everyone feel
-                        welcome so we have very our own big/little system. Every
-                        new member of TASA will recieve a veteran TASA member as
-                        a big who will serve as a mentor throughout their
-                        college career and help them become acquainted with
-                        TASA. The big/little system is an integral part of TASA
-                        that helps us form the TASA family that we pride
-                        ourselves in. At the beginning of every school year, we
-                        host a few big/little GBMs so that new members can meet
-                        current members and choose their big.
-                    </Text>
+                        <Text align="center" paragraph>
+                            We are an organization committed to making everyone
+                            feel welcome so we have very our own big/little
+                            system. Every new member of TASA will recieve a
+                            veteran TASA member as a big who will serve as a
+                            mentor throughout their college career and help them
+                            become acquainted with TASA. The big/little system
+                            is an integral part of TASA that helps us form the
+                            TASA family that we pride ourselves in. At the
+                            beginning of every school year, we host a few
+                            big/little GBMs so that new members can meet current
+                            members and choose their big.
+                        </Text>
                     </Container>
-                    
 
                     <Grid container spacing={5}>
                         <Grid item xs={12} sm={4}>
-                            <RaisedImage image={pic1} alt="Angela big little"/>
+                            <RaisedImage image={pic1} alt="Angela big little" />
                         </Grid>
                         <Grid item xs={false} sm={4}>
-                            <RaisedImage image={pic2} alt="Nathan big little"/>
+                            <RaisedImage image={pic2} alt="Nathan big little" />
                         </Grid>
                         <Grid item xs={false} sm={4}>
-                            <RaisedImage image={pic3} alt="Rebecca big little"/>
+                            <RaisedImage
+                                image={pic3}
+                                alt="Rebecca big little"
+                            />
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <RaisedImage image={pic4} alt="Stephan big little"/>
+                            <RaisedImage
+                                image={pic4}
+                                alt="Stephan big little"
+                            />
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <RaisedImage image={pic5} alt="Justin family tree"/>
+                            <RaisedImage
+                                image={pic5}
+                                alt="Justin family tree"
+                            />
                         </Grid>
                     </Grid>
                 </Section>
@@ -193,19 +233,19 @@ export const query = graphql`
         background: file(relativePath: { eq: "tasa2019.jpg" }) {
             ...BackgroundImage
         }
-        pic1: file(relativePath: { eq: "angela_biglittle.jpg"}) {
+        pic1: file(relativePath: { eq: "angela_biglittle.jpg" }) {
             ...RaisedImage
         }
-        pic2: file(relativePath: { eq: "nathan_biglittle.jpg"}) {
+        pic2: file(relativePath: { eq: "nathan_biglittle.jpg" }) {
             ...RaisedImage
         }
-        pic3: file(relativePath: { eq: "rebecca_biglittle.jpg"}) {
+        pic3: file(relativePath: { eq: "rebecca_biglittle.jpg" }) {
             ...RaisedImage
         }
-        pic4: file(relativePath: { eq: "stephan_biglittle.jpg"}) {
+        pic4: file(relativePath: { eq: "stephan_biglittle.jpg" }) {
             ...RaisedImage
         }
-        pic5: file(relativePath: { eq: "justin_familytree.jpg"}) {
+        pic5: file(relativePath: { eq: "justin_familytree.jpg" }) {
             ...RaisedImage
         }
     }

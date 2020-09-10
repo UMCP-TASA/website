@@ -8,13 +8,12 @@ import {
     WithStyles,
     Container,
 } from "@material-ui/core"
-import { useSpring, animated } from "react-spring"
+import { useSpring, animated, config } from "react-spring"
 
 // Components
 import SEO from "components/seo"
-import EventPreview from "components/Events/EventPreview"
+import Event from "components/Events/Event"
 import GridWithItems from "components/General/GridWithItems"
-import Welcome from "components/General/Welcome"
 import PageContent from "components/PageLayout/PageContent"
 import ParallaxBackground from "components/PageLayout/ParallaxBackground"
 import Text from "components/Typography/Text"
@@ -24,6 +23,7 @@ import Section from "components/PageLayout/Section"
 import ButtonLink from "components/Button/ButtonLink"
 import ImageSection from "components/PageLayout/ImageSection"
 import BioPreview from "components/Bios/BioPreview"
+import AnimateOnVisible from "components/General/AnimateOnVisible"
 
 // Hooks
 import useEvents from "hooks/useEvents"
@@ -59,38 +59,25 @@ function IndexPage(props: Props) {
     if (!newsletterBackground)
         throw new Error("Newsletter background does not exist.")
 
-    const springStyle = useSpring({
-        from: { opacity: 0 },
-        to: { opacity: 1 },
-        config: { duration: 2000 },
-    })
-
     return (
         <>
             <SEO title="Home" />
             <ParallaxBackground image={mainBackground} imageHeight="100vh">
-                {/* <Welcome /> */}
-                <animated.div style={springStyle}>
-                    <Container maxWidth="lg" className={classes.titleRoot}>
-                        <Text variant="h3" color="white">
-                            University of Maryland College Park
-                        </Text>
-                        <Text variant="h3" color="white">
-                            Taiwanese American Student Association
-                        </Text>
-                        <Text variant="subtitle1" color="white">
-                            Dedicated to promoting Taiwan's rich culture and
-                            heritage
-                        </Text>
-                        <ButtonLink
-                            to="events"
-                            variant="contained"
-                            color="primary"
-                        >
-                            Upcoming Events
-                        </ButtonLink>
-                    </Container>
-                </animated.div>
+                <Container maxWidth="lg" className={classes.titleRoot}>
+                    <Text variant="h3" color="white">
+                        University of Maryland College Park
+                    </Text>
+                    <Text variant="h3" color="white">
+                        Taiwanese American Student Association
+                    </Text>
+                    <Text variant="subtitle1" color="white">
+                        Dedicated to promoting Taiwan's rich culture and
+                        heritage
+                    </Text>
+                    <ButtonLink to="events" variant="contained" color="primary">
+                        Upcoming Events
+                    </ButtonLink>
+                </Container>
             </ParallaxBackground>
 
             <PageContent>
@@ -123,7 +110,7 @@ function IndexPage(props: Props) {
 
                     <GridWithItems>
                         {events.map((event) => (
-                            <EventPreview event={event} key={event.node.id} />
+                            <Event event={event} key={event.node.id} preview/>
                         ))}
                     </GridWithItems>
 
@@ -156,7 +143,9 @@ function IndexPage(props: Props) {
                         >
                             {presidentBios.map((bio) => (
                                 <Grid item xs={12} lg={6} key={bio.node.id}>
-                                    <BioPreview bioData={bio} />
+                                    <AnimateOnVisible once partialVisibility>
+                                        <BioPreview bioData={bio} />
+                                    </AnimateOnVisible>
                                 </Grid>
                             ))}
                         </Grid>
