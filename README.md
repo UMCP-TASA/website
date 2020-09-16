@@ -1,5 +1,5 @@
-# UMCP TASE
-This is a template for the backend portion of a student organization website. It utilizes Netlify CMS to simplfy adding new events and editing bios. Plus, it comes with helpful link shortening! I left the actual UI and design of the site pretty minimal so that you can edit it however you please!
+# UMCP TASA Website
+The official University of Maryland, College Park Taiwanese American Student Association website. It utilizes Netlify CMS to simplfy adding new events and editing bios. Plus, it comes with helpful link shortening!
 
 # Table of Contents
 
@@ -123,31 +123,11 @@ For everywhere else, we have to use static queries which can't take parameters. 
 
 We can use the result from useEvents to display the data in various ways such as in a grid. If we wanted to get upcoming or previous events, we can add a filter to the useEvents hook which can return us events that occur before or after a certain date.
 
-The [`EventPreview.tsx`](/src/components/Events/EventPreview.tsx) component displays a card with information about the event. If you click on the card, it brings us to the dedicated page for that event.
+The [`Event.tsx`](/src/components/Events/Event.tsx) component displays a card with information about the event. If you click on the card, it brings us to the dedicated page for that event.
 
 # Editing Bios
 
-Similar to adding events, go to the Netlify CMS admin panel. Click on the bios section on the side, and you should be able to add new bios and edit existing ones. Each bio has a section for site display order which determines what order the bios are shown on the bios page. It's a bit of a hacky way to do it right now since adding a position would require going through every bio and pushing up the positions after it up by one. An alternative is defining our own order in an array somewhere then sorting after we pull the data down from graphql. But then you can't change the order through Netlify CMS.
-
-|Position|Index|
-|:---:|:---:|
-|Co-President| 1 |
-|Secretary| 2 |
-|Internal VP| 3 | 
-|External VP| 4 |
-|Treasurer| 5 |
-|Public Relations| 6 |
-|AASU Rep | 7 |
-|Historian | 8 |
-|Webmaster | 9 |
-|Co-Fundraising Chair| 10 |
-|Sports Chair| 11 |
-|Culture Chair| 12 |
-|Videographer| 13 |
-|ITASA Rep| 14 |
-|Senior Advisor| 15 |
-|Alumni Advisor| 16 |
-
+Similar to adding events, go to the Netlify CMS admin panel. Click on the bios section on the side, and you should be able to add new bios and edit existing ones. You can choose their position with a drop-down menu. In order to add new positions, go to the "Editable Options" collection on the left side of the page and select the "Bio Positions Order" file. Inside that file is an array of all the possible positions! You can add new positions there. The order the positions are listed also determine their order on the site.
 
 ## How does it work?
 
