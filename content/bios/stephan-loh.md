@@ -11,5 +11,5 @@ Love Honey Nut Cheerios\
 I'll be your 朋友 
 
 Colored ambiance\
-Bike and budding plant lover\
-Haikus are so fun
+Biking and climbing lover\
+Haikus are the best
