@@ -1,7 +1,7 @@
 ---
 name: Alythia Vo
 category: bio
-imgsrc: assets/alythia-vo-copres.jpg
+imgsrc: assets/Alythia Board.png
 position: Co-President
 majors:
   - Neurobiology & Physiology
