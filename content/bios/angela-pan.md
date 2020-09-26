@@ -1,7 +1,7 @@
 ---
 name: Angela Pan
 category: bio
-imgsrc: assets/angela-pan-senior-advisor.jpg
+imgsrc: assets/Angela Board.jpg
 position: Senior Advisor
 majors:
   - Computer Science
