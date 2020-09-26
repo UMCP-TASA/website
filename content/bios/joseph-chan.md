@@ -1,7 +1,7 @@
 ---
 name: Joseph Chan
 category: bio
-imgsrc: assets/aapi-week.jpg
+imgsrc: assets/Joseph-Board.jpg
 position: Webmaster
 majors:
   - Computer Science
