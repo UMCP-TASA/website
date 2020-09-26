@@ -1,7 +1,7 @@
 ---
 name: Jeff Tran
 category: bio
-imgsrc: assets/Jeff Board.png
+imgsrc: assets/Jeff Board.jpg
 position: Sports Chair
 majors:
   - Computer Science
