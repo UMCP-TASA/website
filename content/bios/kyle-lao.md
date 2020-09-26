@@ -1,7 +1,7 @@
 ---
 name: Kyle Lao
 category: bio
-imgsrc: assets/Kyle Board.png
+imgsrc: assets/Kyle Board.jpg
 position: Internal VP
 majors:
   - Math
