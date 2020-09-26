@@ -1,7 +1,7 @@
 ---
 name: Rebecca Li
 category: bio
-imgsrc: assets/rebecca-li-aasu.jpg
+imgsrc: assets/Rebecca Board.png
 position: AASU Rep
 majors:
   - Neurobiology & Physiology
