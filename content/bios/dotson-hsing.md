@@ -1,7 +1,7 @@
 ---
 name: Dotson Hsing
 category: bio
-imgsrc: assets/dotson-hsing-senior-advisor.png
+imgsrc: assets/Dotson Board.png
 position: Senior Advisor
 majors:
   - Computer Science

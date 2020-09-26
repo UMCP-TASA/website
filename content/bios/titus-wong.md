@@ -1,7 +1,7 @@
 ---
 name: Titus Wong
 category: bio
-imgsrc: assets/titus-wong-historian.jpg
+imgsrc: assets/Titus Board.png
 position: Co-Historian
 majors:
   - Finance

@@ -1,7 +1,7 @@
 ---
 name: Zaz Shiao
 category: bio
-imgsrc: assets/zaz-shiao-fundraising.png
+imgsrc: assets/Zaz Board.png
 position: Co-Fundraising Chair
 majors:
   - Information Science

@@ -1,7 +1,7 @@
 ---
 name: Karen Liu
 category: bio
-imgsrc: assets/karen-liu-evp.jpeg
+imgsrc: assets/Karen Board.png
 position: External VP
 majors:
   - Statistics

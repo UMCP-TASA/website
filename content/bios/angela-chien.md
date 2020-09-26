@@ -1,7 +1,7 @@
 ---
 name: Angela Chien
 category: bio
-imgsrc: assets/angela-chien-senior-advisor.jpg
+imgsrc: assets/Angela C Board.png
 position: Senior Advisor
 majors:
   - Finance

@@ -1,7 +1,7 @@
 ---
 name: Daniel Zhang
 category: bio
-imgsrc: assets/daniel-zhang-fundraising.jpeg
+imgsrc: Daniel Board.png
 position: Co-Fundraising Chair
 majors:
   - Computer Science

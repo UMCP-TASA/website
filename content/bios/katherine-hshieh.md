@@ -1,7 +1,7 @@
 ---
 name: Katherine Hshieh
 category: bio
-imgsrc: assets/katherine-hshieh-itasa-rep.jpg
+imgsrc: assets/Katherine H Board.png
 position: ITASA Rep
 majors:
   - General Biology
