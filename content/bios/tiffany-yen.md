@@ -1,7 +1,7 @@
 ---
 name: Tiffany Yen
 category: bio
-imgsrc: assets/tiffany-yen-pr.jpg
+imgsrc: assets/Tiffany Board.png
 position: Public Relations
 majors:
   - Marketing
