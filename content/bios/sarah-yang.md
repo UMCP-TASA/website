@@ -1,7 +1,7 @@
 ---
 name: Sarah Yang
 category: bio
-imgsrc: assets/Sarah Board.jpg
+imgsrc: assets/Sarah-Board.jpg
 position: Secretary
 majors:
   - Philosophy
