@@ -1,7 +1,7 @@
 ---
 name: Joella Huynh
 category: bio
-imgsrc: assets/Joella Board.png
+imgsrc: assets/Joella Board.jpg
 position: Senior Advisor
 majors:
   - Marketing
