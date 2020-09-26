@@ -1,7 +1,7 @@
 ---
 name: Gloria Ngo
 category: bio
-imgsrc: assets/gloria-ngo-graphic-designer.jpg
+imgsrc: assets/Gloria Board.png
 position: Graphic Designer
 majors:
   - Accounting
