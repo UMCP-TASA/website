@@ -1,7 +1,7 @@
 ---
 name: Katherine Luo
 category: bio
-imgsrc: assets/Katherine L Board.png
+imgsrc: assets/Katherine L Board.jpg
 position: Co-Historian
 majors:
   - General Biology
