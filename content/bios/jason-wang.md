@@ -1,7 +1,7 @@
 ---
 name: Jason Wang
 category: bio
-imgsrc: assets/joseph-webmaster.jpg
+imgsrc: assets/Jason-Board.jpg
 position: Videographer
 majors:
   - Computer Engineering
