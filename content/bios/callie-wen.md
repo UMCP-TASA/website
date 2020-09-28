@@ -1,7 +1,7 @@
 ---
 name: Callie Wen
 category: bio
-imgsrc: assets/Callie-Board.jpg
+imgsrc: assets/joseph-webmaster.jpg
 position: Treasurer
 majors:
   - Operations Mgmt
