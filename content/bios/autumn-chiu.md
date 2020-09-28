@@ -1,7 +1,7 @@
 ---
 name: Autumn Chiu
 category: bio
-imgsrc: assets/joseph-webmaster.jpg
+imgsrc: assets/Autumn-Board.jpg
 position: Co-President
 majors:
   - Computer Science
