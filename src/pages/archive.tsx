@@ -40,13 +40,13 @@ function ArchivePage(props: Props) {
             <PageContent>
                 <ArchiveSection
                     title="2018-2019"
-                    boardLink="https://umcptasa.github.io/website/pages/board1819.html"
-                    eventsLink="https://umcptasa.github.io/website/pages/events1819.html"
+                    boardLink="https://umcptasa.github.io/old-html-website/pages/board1819.html"
+                    eventsLink="https://umcptasa.github.io/old-html-website/pages/events1819.html"
                 />
                 <ArchiveSection
                     title="2019-2020"
-                    boardLink="https://umcptasa.github.io/website/pages/board.html"
-                    eventsLink="https://umcptasa.github.io/website/pages/events.html"
+                    boardLink="https://umcptasa.github.io/old-html-website/pages/board.html"
+                    eventsLink="https://umcptasa.github.io/old-html-website/pages/events.html"
                 />
             </PageContent>
         </>

@@ -77,7 +77,7 @@ function EventPage(props: Props) {
                         archives!
                     </Text>
                     <ButtonLink
-                        to="archive"
+                        to="/archive"
                         className={classes.margin}
                         variant="contained"
                         color="primary"
