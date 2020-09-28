@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Theme, createStyles, withStyles, WithStyles } from "@material-ui/core"
-import Img, { GatsbyImageProps } from "gatsby-image"
+import Img, { GatsbyImageOptionalProps } from "gatsby-image"
 import clsx from "clsx"
 
 const styles = (theme: Theme) =>
@@ -13,13 +13,14 @@ const styles = (theme: Theme) =>
     })
 
 type Props = WithStyles<typeof styles> &
-    GatsbyImageProps & {
+    GatsbyImageOptionalProps & {
         image: GatsbyTypes.Maybe<GatsbyTypes.RaisedImageFragment>
     }
 
 function RaisedImage(props: Props) {
     const { classes, className, image, ...rest } = props
-    if (!image) throw new Error(`${name} does not exist`)
+    if (!image?.childImageSharp?.fluid)
+        throw new Error(`${name} does not exist`)
 
     return (
         <Img
