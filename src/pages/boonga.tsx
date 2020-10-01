@@ -24,10 +24,10 @@ const styles = (theme: Theme) =>
 
 type Props = WithStyles<typeof styles> &
     PageProps & {
-        data: GatsbyTypes.BoardPageQuery
+        data: GatsbyTypes.BoongaPageQuery
     }
 
-function BoardPage(props: Props) {
+function BoongaPage(props: Props) {
     const { data, classes } = props
     const { boardBackground } = data
     if (!boardBackground) throw new Error("Board background does not exist.")
@@ -38,7 +38,7 @@ function BoardPage(props: Props) {
 
     return (
         <>
-            <SEO title="Board" />
+            <SEO title="BOONGA" />
             <ParallaxBackground image={boardBackground}>
                 <Text variant="h3" color="white" align="center" paragraph>
                     Meet the Board
@@ -70,11 +70,11 @@ function BoardPage(props: Props) {
 }
 
 export const query = graphql`
-    query BoardPage {
+    query BoongaPage {
         boardBackground: file(relativePath: { eq: "board.jpg" }) {
             ...BackgroundImage
         }
     }
 `
 
-export default withStyles(styles)(BoardPage)
+export default withStyles(styles)(BoongaPage)
