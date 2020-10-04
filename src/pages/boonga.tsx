@@ -41,10 +41,10 @@ function BoongaPage(props: Props) {
             <SEO title="BOONGA" />
             <ParallaxBackground image={boardBackground}>
                 <Text variant="h3" color="white" align="center" paragraph>
-                    Meet the Board
+                    BOOONGA BOOOOON BOONGAWANGA
                 </Text>
                 <Text variant="h6" color="white" align="center">
-                    Check out the people who make it all happen!
+                    lord savior BOONGA
                 </Text>
             </ParallaxBackground>
             <PageContent>
@@ -56,8 +56,7 @@ function BoongaPage(props: Props) {
                             align="center"
                             paragraph
                         >
-                            Tip: Learn more about the board by hovering or
-                            tapping over their picture!
+                            Tip: WORSHIP BOONGA
                         </Text>
                     </Hidden>
 
