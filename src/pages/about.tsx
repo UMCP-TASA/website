@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { PageProps, graphql } from "gatsby"
 import {
+    Button,
     Container,
     Grid,
     Theme,
@@ -139,10 +140,18 @@ function AboutPage(props: Props) {
                             className={classes.missionStatement}
                         >
                             {missionTrails.map((props, index) => (
-                                <AnimatedGrid item xs={12} md={4} key={goals[index].title} style={props}>
+                                <AnimatedGrid
+                                    item
+                                    xs={12}
+                                    md={4}
+                                    key={goals[index].title}
+                                    style={props}
+                                >
                                     <ContentWithIcon
                                         icon={goals[index].icon}
-                                        title={`${index + 1}. ${goals[index].title}`}
+                                        title={`${index + 1}. ${
+                                            goals[index].title
+                                        }`}
                                         description={goals[index].description}
                                     />
                                 </AnimatedGrid>
@@ -203,6 +212,23 @@ function AboutPage(props: Props) {
                             />
                         </Grid>
                     </Grid>
+                </Section>
+
+                <Section title="Family Tree">
+                    <Text align="center" paragraph>
+                        Dive into the past and explore your lineage. Check out
+                        this interactive tree to see years of TASA Big/Little
+                        tradition
+                    </Text>
+
+                    <Button
+                        href="https://familytree.umcptasa.com"
+                        target="_blank"
+                        color="primary"
+                        variant="contained"
+                    >
+                        Family Tree
+                    </Button>
                 </Section>
 
                 <Section title="Junior Officer System">
