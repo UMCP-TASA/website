@@ -1,6 +1,6 @@
 ---
 title: Halloween GBM
-date: 2020-12-27T19:25:50.295Z
+date: 2020-10-26T23:00:00.000Z
 imgsrc: assets/halloween-gbm.jpg
 category: event
 pinned: false
