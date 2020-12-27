@@ -8,8 +8,6 @@ tags:
   - cultural
 link: https://www.facebook.com/events/1054431755037345/
 ---
-<!--StartFragment-->
-
 Hello and welcome to TASA's ![🍗](https://static.xx.fbcdn.net/images/emoji.php/v9/tad/1/16/1f357.png) Taiwanese Popcorn Chicken ![🍗](https://static.xx.fbcdn.net/images/emoji.php/v9/tad/1/16/1f357.png) Fundraiser!
 
 Are you sick of quarantine?\
@@ -33,10 +31,6 @@ Family meal (3.5 servings) - 30$
 
 ![💰](https://static.xx.fbcdn.net/images/emoji.php/v9/t5a/1/16/1f4b0.png)To pay, Venmo @UMCPTASA. If you have not paid for your order by December 4th, we will not be accepting your order).
 
-
-
 (Note: for the HoCo kids, the fundraiser will be pushed back a bit and a future date (over winter break) and will be announced due to a lack of deliverers in the HoCo area)
 
 (Secondary note: all the people making the food will be getting COVID Tested prior to the date where we make the food so you will not have to worry too much about COVID).
-
-<!--EndFragment-->
