@@ -5,7 +5,7 @@ imgsrc: assets/taiwanese-chicken-fundraiser.jpg
 category: event
 pinned: false
 tags:
-  - gbm
+  - cultural
 link: https://www.facebook.com/events/1054431755037345/
 ---
 <!--StartFragment-->
