@@ -3,7 +3,7 @@ title: Tour of Taiwan
 date: 2019-11-15T23:00:59.853Z
 imgsrc: assets/tour-of-taiwan-banner.jpg
 category: event
-pinned: true
+pinned: false
 tags:
   - cultural
 link: https://www.facebook.com/events/541271669998383/
