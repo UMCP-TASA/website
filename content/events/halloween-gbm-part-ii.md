@@ -8,11 +8,7 @@ tags:
   - gbm
 link: https://www.facebook.com/events/916832082176583/
 ---
-<!--StartFragment-->
-
 ![🎃](https://static.xx.fbcdn.net/images/emoji.php/v9/t86/1/16/1f383.png) 𝓗𝓪𝓹𝓹𝔂 𝓫𝓮𝓵𝓪𝓽𝓮𝓭 𝓗𝓪𝓵𝓵𝓸𝔀𝓮𝓮𝓷! ![🎃](https://static.xx.fbcdn.net/images/emoji.php/v9/t86/1/16/1f383.png)\
 Hope everyone had a great Halloweekend! Come out to our post-Halloween GBM for a chill night with some fun and games and socialize with your fellow TASA members ![👻](https://static.xx.fbcdn.net/images/emoji.php/v9/td7/1/16/1f47b.png)
 
 See everyone there!
-
-<!--EndFragment-->
