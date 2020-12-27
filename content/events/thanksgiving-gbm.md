@@ -1,6 +1,6 @@
 ---
 title: Thanksgiving GBM
-date: 2020-12-27T19:18:30.371Z
+date: 2020-11-17T00:00:00.000Z
 imgsrc: assets/thanksgiving-gbm.jpg
 category: event
 pinned: false
