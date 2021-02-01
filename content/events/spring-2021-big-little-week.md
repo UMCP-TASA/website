@@ -4,7 +4,8 @@ date: 2021-02-02T00:00:17.660Z
 imgsrc: assets/umcp-tasa-spring-2021-big-little-week.jpg
 category: event
 pinned: false
-tags: select
+tags:
+  - social
 link: https://www.facebook.com/events/111457327486907
 ---
 Welcome back to school everyone! Hope y'all had a restful winter break Due to the unusual circumstances this year, we have prepared something new and extra special. Introducing TASA's first ever Spring Big Little Week, another opportunity to have some fun, make new friends, and find your family along the way!
