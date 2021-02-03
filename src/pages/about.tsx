@@ -176,7 +176,7 @@ function AboutPage(props: Props) {
                         <Text align="center" paragraph>
                             We are an organization committed to making everyone
                             feel welcome so we have very our own big/little
-                            system. Every new member of TASA will recieve a
+                            system. Every new member of TASA will receive a
                             veteran TASA member as a big who will serve as a
                             mentor throughout their college career and help them
                             become acquainted with TASA. The big/little system
