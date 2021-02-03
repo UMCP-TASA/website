@@ -1,13 +1,15 @@
+import { EventsQuery, BioQuery } from "graphql-types"
+
 type Edges =
-    | GatsbyTypes.EventsQuery["allMarkdownRemark"]["edges"]
-    | GatsbyTypes.BioQuery["allMarkdownRemark"]["edges"]
+    | EventsQuery["allMarkdownRemark"]["edges"]
+    | BioQuery["allMarkdownRemark"]["edges"]
 type Images =
-    | GatsbyTypes.EventsQuery["allFile"]["edges"]
-    | GatsbyTypes.BioQuery["allFile"]["edges"]
+    | EventsQuery["allFile"]["edges"]
+    | BioQuery["allFile"]["edges"]
 
 export interface NodeWithImage<T> {
     node: T
-    image: GatsbyTypes.File
+    image: File
 }
 
 /**

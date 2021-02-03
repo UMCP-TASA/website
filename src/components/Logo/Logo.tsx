@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { withStyles, WithStyles, createStyles } from "@material-ui/core"
+import { LogoQuery } from "graphql-types"
 
 const styles = createStyles({
     root: {
@@ -26,7 +27,7 @@ type Props = WithStyles<typeof styles> & {
 
 function Logo(props: Props) {
     const { classes, white = false } = props
-    const data = useStaticQuery<GatsbyTypes.LogoQuery>(graphql`
+    const data = useStaticQuery<LogoQuery>(graphql`
         query Logo {
             black: file(relativePath: { eq: "logo.png" }) {
                 childImageSharp {

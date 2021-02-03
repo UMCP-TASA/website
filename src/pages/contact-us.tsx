@@ -14,6 +14,7 @@ import {
     Facebook,
     Instagram,
 } from "@material-ui/icons"
+import { ContactUsPageQuery } from "graphql-types"
 
 // Components
 import SEO from "components/seo"
@@ -33,7 +34,7 @@ const styles = (theme: Theme) =>
 
 type Props = PageProps &
     WithStyles<typeof styles> & {
-        data: GatsbyTypes.ContactUsPageQuery
+        data: ContactUsPageQuery
     }
 
 function ContactUsPage(props: Props) {

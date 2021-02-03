@@ -92,7 +92,7 @@ module.exports = {
         "gatsby-plugin-netlify-cms",
         "gatsby-transformer-sharp",
         "gatsby-plugin-sharp",
-        "gatsby-plugin-typegen",
+        "gatsby-plugin-graphql-codegen",
         {
             resolve: "gatsby-plugin-manifest",
             options: {

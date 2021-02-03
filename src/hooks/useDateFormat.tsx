@@ -1,7 +1,8 @@
 import { useStaticQuery, graphql } from "gatsby"
+import { DateFormatQuery } from "graphql-types"
 
 export default function useDateFormat() {
-    const data = useStaticQuery<GatsbyTypes.DateFormatQuery>(graphql`
+    const data = useStaticQuery<DateFormatQuery>(graphql`
         query DateFormat {
             site {
                 siteMetadata {

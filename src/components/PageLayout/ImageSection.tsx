@@ -1,5 +1,6 @@
 import React from "react"
 import { Theme, createStyles, withStyles, WithStyles } from "@material-ui/core"
+import { BackgroundImageFragment } from "graphql-types"
 
 import BackgroundImage from "gatsby-background-image"
 
@@ -31,7 +32,7 @@ const styles = (theme: Theme) =>
     })
 
 type Props = WithStyles<typeof styles> & {
-    image: GatsbyTypes.BackgroundImageFragment
+    image: BackgroundImageFragment
     children: React.ReactNode
 }
 

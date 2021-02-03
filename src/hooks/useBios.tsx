@@ -1,8 +1,9 @@
 import { useStaticQuery, graphql } from "gatsby"
 import { mapImgToNode } from "utils/hookUtils"
+import { BioQuery } from "graphql-types"
 
 // Type Definitions
-type BioEdge = GatsbyTypes.BioQuery["allMarkdownRemark"]["edges"][0]
+type BioEdge = BioQuery["allMarkdownRemark"]["edges"][0]
 type BioNode = BioEdge["node"]
 
 export type BioArrayType = ReturnType<typeof useBios>
@@ -14,7 +15,7 @@ export type BioImageType = BioType["image"]
  */
 export default function useBios() {
     // Because static queries can't have parameters, we have to query for everything
-    const data = useStaticQuery<GatsbyTypes.BioQuery>(graphql`
+    const data = useStaticQuery<BioQuery>(graphql`
         query Bio {
             allMarkdownRemark(
                 filter: { frontmatter: { category: { eq: "bio" } } }

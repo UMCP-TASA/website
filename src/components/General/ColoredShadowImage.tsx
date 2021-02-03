@@ -1,7 +1,8 @@
 import React from "react"
 import { Theme, createStyles, withStyles, WithStyles } from "@material-ui/core"
-import Img, { GatsbyImageProps } from "gatsby-image"
+import Img, { FluidObject, GatsbyImageProps } from "gatsby-image"
 import clsx from "clsx"
+import { RaisedImageFragment, Maybe } from "graphql-types"
 
 const styles = (theme: Theme) =>
     createStyles({
@@ -25,23 +26,23 @@ const styles = (theme: Theme) =>
 
 type Props = WithStyles<typeof styles> &
     GatsbyImageProps & {
-        image: GatsbyTypes.Maybe<GatsbyTypes.RaisedImageFragment>
+        image: Maybe<RaisedImageFragment>
     }
 
 function ColoredShadowImage(props: Props) {
     const { classes, className, image, ...rest } = props
-    if (!image) throw new Error(`${name} does not exist`)
+    if (!image) throw new Error(`Image does not exist`)
 
     return (
         <div className={classes.root}>
             <Img
                 className={clsx(classes.img, className)}
-                fluid={image.childImageSharp?.fluid}
+                fluid={image.childImageSharp?.fluid as FluidObject}
                 {...rest}
             />
             <Img
                 className={classes.coloredShadow}
-                fluid={image.childImageSharp?.fluid}
+                fluid={image.childImageSharp?.fluid as FluidObject}
                 style={{
                     position: "absolute",
                     overflow: "visible",

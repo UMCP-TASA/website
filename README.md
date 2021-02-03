@@ -142,12 +142,13 @@ With Netlify, we can make our own link shortening service! The magic all happens
 
 # GraphQL Type Generation
 
-Gatsby uses [GraphQL](https://www.gatsbyjs.org/docs/recipes/querying-data/) to query data. We use [gatsby-plugin-typegen](https://www.gatsbyjs.org/packages/gatsby-plugin-typegen/?=gatsby-plugin-ty) to automatically generate types from the queries we make. This plugin will automatically add types to any static queries we make. You can see an example of this in the [`Logo`]() component.
+Gatsby uses [GraphQL](https://www.gatsbyjs.org/docs/recipes/querying-data/) to query data. We use [gatsby-plugin-graphql-codegen](https://www.gatsbyjs.com/plugins/gatsby-plugin-graphql-codegen) to automatically generate types from the queries we make. Then, you can import the generated type from graphql types. You can see an example of this in the [`Logo`](src/components/Logo/Logo.tsx) component.
 
-```javascript
+```typescript
+import { LogoQuery } from "graphql-types"
+
 const data =
-    useStaticQuery <
-    GatsbyTypes.LogoQuery >
+    useStaticQuery<LogoQuery >
     graphql`
         query Logo {
             file(relativePath: { eq: "logo.png" }) {
@@ -161,7 +162,7 @@ const data =
     `
 ```
 
-Note how the query itself is named on the second line, and how `GatsbyTypes.LogoQuery` is present as the type for `useStaticQuery`. All generated types get stored in [`src/__generated__/gatsby-types.ts`](src/__generated__/gatsby-types.ts)
+Note how the query itself is named on the second line, and how `LogoQuery` is present as the type for `useStaticQuery`. All generated types get stored in [`graphql-types.ts`](graphql-types.ts)
 
 # Miscellaneous
 

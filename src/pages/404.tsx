@@ -1,6 +1,7 @@
 import React from "react"
 import { PageProps, graphql } from "gatsby"
 import { Theme, createStyles, withStyles, WithStyles } from "@material-ui/core"
+import { NotFoundPageQuery } from "graphql-types"
 
 // Components
 import SEO from "components/seo"
@@ -14,7 +15,7 @@ const styles = (theme: Theme) =>
 
 type Props = PageProps &
     WithStyles<typeof styles> & {
-        data: GatsbyTypes.NotFoundPageQuery
+        data: NotFoundPageQuery
     }
 
 function NotFoundPage(props: Props) {

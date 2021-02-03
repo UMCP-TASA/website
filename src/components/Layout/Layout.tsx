@@ -8,6 +8,7 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { SiteTitleQuery } from "graphql-types"
 
 import AnimatedHeader from "./Header/AnimatedHeader"
 import Footer from "./Footer"
@@ -18,7 +19,7 @@ type Props = {
 
 const Layout = (props: Props) => {
     const { children } = props
-    const data = useStaticQuery<GatsbyTypes.SiteTitleQuery>(graphql`
+    const data = useStaticQuery<SiteTitleQuery>(graphql`
         query SiteTitle {
             site {
                 siteMetadata {

@@ -10,6 +10,7 @@ import {
     Theme,
     WithStyles,
 } from "@material-ui/core"
+import { FooterQuery } from "graphql-types"
 import FacebookIcon from "@material-ui/icons/Facebook"
 import InstagramIcon from "@material-ui/icons/Instagram"
 
@@ -29,7 +30,7 @@ type Props = WithStyles<typeof styles>
 
 function Footer(props: Props) {
     const { classes } = props
-    const { site } = useStaticQuery<GatsbyTypes.FooterQuery>(
+    const { site } = useStaticQuery<FooterQuery>(
         graphql`
             query Footer {
                 site {

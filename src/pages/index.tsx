@@ -8,7 +8,7 @@ import {
     WithStyles,
     Container,
 } from "@material-ui/core"
-import { useSpring, animated, config } from "react-spring"
+import { HomePageQuery } from "graphql-types"
 
 // Components
 import SEO from "components/seo"
@@ -44,7 +44,7 @@ const styles = (theme: Theme) =>
 
 type Props = PageProps &
     WithStyles<typeof styles> & {
-        data: GatsbyTypes.HomePageQuery
+        data: HomePageQuery
     }
 
 function IndexPage(props: Props) {

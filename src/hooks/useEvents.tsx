@@ -1,9 +1,10 @@
 import { useStaticQuery, graphql } from "gatsby"
 import { mapImgToNode, NodeWithImage } from "utils/hookUtils"
+import { EventsQuery, Maybe } from "graphql-types"
 
 // Type Definitions
 
-type EventEdge = GatsbyTypes.EventsQuery["allMarkdownRemark"]["edges"][0]
+type EventEdge = EventsQuery["allMarkdownRemark"]["edges"][0]
 type EventNode = EventEdge["node"]
 
 export type EventHookOptions = Readonly<{
@@ -27,7 +28,7 @@ export interface EventFilterFunction {
 export default function useEvents(options: EventHookOptions) {
     const { tags, amount, filterFunctions } = options
     // Because static queries can't have parameters, we have to query for everything
-    const data = useStaticQuery<GatsbyTypes.EventsQuery>(graphql`
+    const data = useStaticQuery<EventsQuery>(graphql`
         query Events {
             allMarkdownRemark(
                 filter: { frontmatter: { category: { eq: "event" } } }
@@ -75,7 +76,7 @@ export default function useEvents(options: EventHookOptions) {
     let events = data.allMarkdownRemark.edges
 
     if (tags && tags.length > 0) {
-        const containsTag = (eventTag: GatsbyTypes.Maybe<string>) => {
+        const containsTag = (eventTag: Maybe<string>) => {
             return eventTag ? tags?.includes(eventTag) : false
         }
 

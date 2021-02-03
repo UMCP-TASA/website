@@ -14,6 +14,7 @@ import {
     createStyles,
 } from "@material-ui/core"
 import BackgroundImage from "gatsby-background-image"
+import { BackgroundImageFragment } from "graphql-types"
 import { useSpring, animated, config } from "react-spring"
 
 import useParallax from "hooks/useParallax"
@@ -57,7 +58,7 @@ const styles = (theme: Theme) =>
 
 type Props = WithStyles<typeof styles> &
     StyleProps & {
-        image: GatsbyTypes.BackgroundImageFragment
+        image: BackgroundImageFragment
         children?: React.ReactNode
         justify?: GridProps["justify"]
         animated?: boolean,

@@ -7,6 +7,7 @@ import {
     withStyles,
     WithStyles,
 } from "@material-ui/core"
+import { ArchivePageQuery } from "graphql-types"
 
 // Components
 import SEO from "components/seo"
@@ -20,7 +21,7 @@ const styles = (theme: Theme) => createStyles({})
 
 type Props = PageProps &
     WithStyles<typeof styles> & {
-        data: GatsbyTypes.ArchivePageQuery
+        data: ArchivePageQuery
     }
 
 function ArchivePage(props: Props) {

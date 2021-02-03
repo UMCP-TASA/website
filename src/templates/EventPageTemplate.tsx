@@ -7,6 +7,7 @@ import {
     withStyles,
     WithStyles,
 } from "@material-ui/core"
+import { IndividualEventPageQuery } from "graphql-types"
 
 import ParallaxBackground from "components/PageLayout/ParallaxBackground"
 import PageContent from "components/PageLayout/PageContent"
@@ -26,7 +27,7 @@ type PageContext = {
 }
 
 type Props = {
-    data: GatsbyTypes.IndividualEventPageQuery
+    data: IndividualEventPageQuery
     pageContext: PageContext
 } & PageProps &
     WithStyles<typeof styles>

@@ -2,6 +2,7 @@ import React from "react"
 import { PageProps, graphql } from "gatsby"
 import { Theme, createStyles, withStyles, WithStyles } from "@material-ui/core"
 import moment from "moment"
+import { EventPageQuery } from "graphql-types"
 
 // Components
 import SEO from "components/seo"
@@ -28,7 +29,7 @@ const styles = (theme: Theme) =>
 
 type Props = PageProps &
     WithStyles<typeof styles> & {
-        data: GatsbyTypes.EventPageQuery
+        data: EventPageQuery
     }
 
 function EventPage(props: Props) {

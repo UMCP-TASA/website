@@ -7,6 +7,7 @@ import {
     withStyles,
     WithStyles,
 } from "@material-ui/core"
+import { BoongaPageQuery } from "graphql-types"
 
 import SEO from "components/seo"
 import useBios from "hooks/useBios"
@@ -24,7 +25,7 @@ const styles = (theme: Theme) =>
 
 type Props = WithStyles<typeof styles> &
     PageProps & {
-        data: GatsbyTypes.BoongaPageQuery
+        data: BoongaPageQuery
     }
 
 function BoongaPage(props: Props) {

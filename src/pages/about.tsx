@@ -19,6 +19,7 @@ import {
 } from "@material-ui/icons"
 import VisibilitySensor from "react-visibility-sensor"
 import { useTrail, animated } from "react-spring"
+import { AboutPageQuery } from "graphql-types"
 
 import SEO from "components/seo"
 import PageContent from "components/PageLayout/PageContent"
@@ -28,6 +29,7 @@ import Text from "components/Typography/Text"
 import ContentWithIcon from "components/General/ContentWithIcon"
 import RaisedImage from "components/General/RaisedImage"
 import usePrefersReducedMotion from "hooks/usePrefersReducedMotion"
+
 
 const styles = (theme: Theme) =>
     createStyles({
@@ -46,7 +48,7 @@ type Goal = {
 
 type Props = WithStyles<typeof styles> &
     PageProps & {
-        data: GatsbyTypes.AboutPageQuery
+        data: AboutPageQuery
     }
 
 function AboutPage(props: Props) {
