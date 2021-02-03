@@ -63,14 +63,6 @@ module.exports = {
             },
         },
         {
-            resolve: "gatsby-plugin-web-font-loader",
-            options: {
-                google: {
-                    families: ["Roboto", "Roboto Slab"],
-                },
-            },
-        },
-        {
             resolve: "gatsby-plugin-mailchimp",
             options: {
                 endpoint:

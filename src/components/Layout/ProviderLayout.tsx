@@ -5,6 +5,7 @@
  */
 
 import React from "react"
+import Helmet from "react-helmet"
 import { ThemeProvider } from "@material-ui/core/styles"
 import CssBaseline from "@material-ui/core/CssBaseline"
 import theme from "../../theme"
@@ -18,6 +19,11 @@ function ProviderLayout(props: Props) {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
+            <Helmet>
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
+                <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+            </Helmet>
+
             {children}
         </ThemeProvider>
     );
