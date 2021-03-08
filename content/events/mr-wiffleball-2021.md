@@ -1,6 +1,6 @@
 ---
 title: Mr. Wiffleball 2021
-date: 2021-03-08T18:45:54.584Z
+date: 2021-03-26T23:00:00.000Z
 imgsrc: assets/mr.-wiffleball-2021.jpg
 category: event
 pinned: true
