@@ -86,7 +86,7 @@ collections:
                 hint: "New positions can be added in the Editable Options collection",
                 valueField: "options.*",
                 searchFields: ["options.*"],
-                default: "select",
+                default: [],
             }
 
           - {
