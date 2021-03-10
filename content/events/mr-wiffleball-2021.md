@@ -4,7 +4,8 @@ date: 2021-03-26T23:00:00.000Z
 imgsrc: assets/mr.-wiffleball-2021.jpg
 category: event
 pinned: true
-tags: select
+tags:
+  - social
 link: https://www.facebook.com/events/803791446874139/
 ---
 Y’all already know what time it is... Presenting our hottest event of the year, our very exciting annual male beauty pageant ![✨](https://static.xx.fbcdn.net/images/emoji.php/v9/tf4/1/16/2728.png)𝓜𝓻. 𝓦𝓲𝓯𝓯𝓵𝓮𝓫𝓪𝓵𝓵![✨](https://static.xx.fbcdn.net/images/emoji.php/v9/tf4/1/16/2728.png)

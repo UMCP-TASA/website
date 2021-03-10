@@ -4,7 +4,8 @@ date: 2021-02-27T00:00:00.000Z
 imgsrc: assets/coffeehouse2021.jpg
 category: event
 pinned: true
-tags: select
+tags: 
+  - social
 link: https://www.facebook.com/events/279649050163562/
 ---
 Join UMCP TASA at our 𝒶𝓃𝓃𝓊𝒶𝓁 ℂ𝕙𝕒𝕣𝕚𝕥𝕪 ℂ𝕠𝕗𝕗𝕖𝕖𝕙𝕠𝕦𝕤𝕖 on Friday, February 26 at 7pm\

@@ -4,7 +4,9 @@ date: 2021-03-02T00:00:00.000Z
 imgsrc: assets/go-undercover-with-tasa.jpg
 category: event
 pinned: false
-tags: select
+tags:
+  - social
+  - gbm
 link: https://www.facebook.com/events/155675269623280/
 ---
 Come join us for our GBM planned by our lovely JOs on Monday at 7 pm!
