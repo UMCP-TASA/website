@@ -1,7 +1,7 @@
 ---
 name: Charlotte Yang
 category: bio
-imgsrc: assets/Kyle-Board.jpg
+imgsrc: assets/img_2556-charlotte-yang.jpg
 position: Co-Fundraising Chair
 majors:
   - Landscape Architecture
