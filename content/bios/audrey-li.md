@@ -2,7 +2,7 @@
 name: Audrey Li
 category: bio
 imgsrc: assets/li_audrey_vertical-audrey-li.jpeg
-position: Co-Historian
+position: Videographer
 majors:
   - Mechanical Engineering
 ---
