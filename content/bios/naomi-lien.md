@@ -1,7 +1,7 @@
 ---
 name: Naomi Lien
 category: bio
-imgsrc: assets/Alythia-Board.jpg
+imgsrc: assets/700ebbbe-9b0c-465a-a631-119aeb5c1901-naomi-lien.jpeg
 position: Public Relations
 majors:
   - Graphic Design
