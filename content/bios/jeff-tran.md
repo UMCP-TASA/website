@@ -7,4 +7,4 @@ majors:
   - Computer Science
   - Economics
 ---
-What's good fam my name is Jeff and I am a Computer Science & Economics major while simultaneously pursuing a Masters of Finance😤. In my free time I quarantine by myself (is what I tell the Feds)👀. For all of you studious souls, connect w/ me on LinkedIn🙌. For the other Unholy individuals💦, you can find me wherever you get your booze🍾. I love TASA because everyone is extremely supportive, so definitely do not hesitate to reach out to any of us. 👍🥡🥢🥟🍚🥂
+ter.ps/kickback What's good homies my name is Jeff and I am a CS & Econ major. If your car has a check engine or your iPhone screen is cracked and you go to GBMs I’ll give u 100% off 🤫. TASA is all love ❤️ no cap 🚫🧢 so whether you’re having a good day or bad come out to GBMs and occasionally drink free boba🧋. Don’t hesitate to c̶o̶m̶e̶ ̶t̶o̶ ̶T̶A̶S̶A̶ ̶p̶a̶r̶t̶i̶e̶s̶ reach out to any of us!
