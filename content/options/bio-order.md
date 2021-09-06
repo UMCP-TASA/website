@@ -16,7 +16,7 @@ options:
   - Co-Historian
   - Webmaster
   - Graphic Designer
-  - Sports Chair
+  - Social Chair
   - Night Market Director
   - Senior Advisor
   - Alumni Advisor
