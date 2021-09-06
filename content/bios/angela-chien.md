@@ -1,10 +1,9 @@
 ---
-name: Angela Chien
+name: Alythia Vo
 category: bio
-imgsrc: assets/Angela-C-Board.jpg
+imgsrc: assets/alythia-vo-copres.jpg
 position: Senior Advisor
 majors:
-  - Finance
-  - Management
+  - Neurophys and Spanish
 ---
-My two loves are Taiwan and Trader Joe's so I'm always down for a trip to either.
+Hello! I am Alythia and I am now old and irrelevant but TASA will always have my whole heart. Feel free to reach out for anything and I will try to respond within 3-5 days :))
