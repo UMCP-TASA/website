@@ -1,9 +1,9 @@
 ---
 name: Katherine Luo
 category: bio
-imgsrc: assets/Katherine-L-Board.jpg
+imgsrc: assets/f81_2532-katherine-luo.jpg
 position: Co-Historian
 majors:
-  - General Biology
+  - Culture Chair
 ---
-Heyo! I am Katherine Luo, a sophomore majoring in General biology on the pre-health track. I mostly love landscape photography but is getting more into portraits. Go TASA!
+Heyo! I am Katherine Luo, a junior majoring in general biology on the pre-OT track. I spend all of my time bullet journaling and playing Pokémon sword. My favorite Pokémons are umbreon, Tapu Lele, and Xerneas <3
