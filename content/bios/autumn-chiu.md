@@ -1,9 +1,9 @@
 ---
-name: Autumn Chiu
+name: Clarissa Xia
 category: bio
-imgsrc: assets/Autumn-Board.jpg
+imgsrc: assets/img_2518-clarissa-xia.jpg
 position: Co-President
 majors:
-  - Computer Science
+  - Neurophys and Psychology
 ---
-Hai!! I'm Autumn and I'm a computer science major. I have a illogical love for chicken nuggets and I'm always down for a midnight mcdonald's run. I also love coffee and looonng naps! Don't be afraid to reach out thru fb or insta if you're interested in TASA! I'd love to meet you:)
+Hi! My name is Clarissa and I'm a junior double majoring in Physiology & Neurobiology and Psychology. In my free time, I like to take long naps, read, bake, and pet my cat. After a long year at home, I'm super excited for another amazing year of TASA and meeting new people! Feel free to reach out, I love making new friends :)
