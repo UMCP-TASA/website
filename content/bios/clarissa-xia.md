@@ -2,7 +2,7 @@
 name: Clarissa Xia
 category: bio
 imgsrc: assets/Clarissa-Board.jpg
-position: Culture Chair
+position: Co-President
 majors:
   - Neurobiology & Physiology
   - Psychology
