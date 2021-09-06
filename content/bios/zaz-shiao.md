@@ -1,9 +1,9 @@
 ---
 name: Zaz Shiao
 category: bio
-imgsrc: assets/Zaz-Board.jpg
-position: Co-Fundraising Chair
+imgsrc: assets/2010-zaz-shiao.png
+position: External VP
 majors:
   - Information Science
 ---
-Hi I'm Zaz, a rising sophomore
+hi im zaz a junior at the University of Maryland College Park. I like music and food
