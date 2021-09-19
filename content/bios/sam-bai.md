@@ -1,7 +1,7 @@
 ---
 name: Sam Bai
 category: bio
-imgsrc: assets/sam-bai-sam-bai.jpg
+imgsrc: assets/sam.png
 position: Internal VP
 majors:
   - Computer Science
