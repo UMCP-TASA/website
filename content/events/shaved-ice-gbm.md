@@ -1,13 +1,13 @@
 ---
 title: Shaved Ice GBM
-date: 2019-09-13T23:00:11.106Z
-imgsrc: assets/shaved-ice-gbm.jpg
+date: 2021-09-24T23:00:11.106Z
+imgsrc: assets/shavedice.jpg
 category: event
 pinned: false
 tags:
   - cultural
   - social
-link: https://www.facebook.com/events/910023222701412/
+link: https://www.facebook.com/events/436400124461302/
 ---
 Chill with TASA and try some refreshing shaved ice with new and old friends!
 --- 
