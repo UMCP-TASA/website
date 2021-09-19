@@ -1,7 +1,7 @@
 ---
 name: Zaz Shiao
 category: bio
-imgsrc: assets/2010-zaz-shiao.png
+imgsrc: assets/tiffany.png
 position: External VP
 majors:
   - Information Science
