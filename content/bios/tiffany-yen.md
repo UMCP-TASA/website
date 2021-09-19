@@ -1,7 +1,7 @@
 ---
 name: Tiffany Yen
 category: bio
-imgsrc: assets/91319213-4e86-44ea-a674-b117e5fd6483-tiffany-yen.jpg
+imgsrc: assets/tiffany.png
 position: Graphic Designer
 majors:
   - Marketing and Info Systems
