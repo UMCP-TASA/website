@@ -1,7 +1,7 @@
 ---
 name: Callie Wen
 category: bio
-imgsrc: assets/2d93d8d0-a692-44c5-8e8e-d4b4e08bd506-callie-wen.jpeg
+imgsrc: assets/callie.png
 position: Co-President
 majors:
   - Finance
