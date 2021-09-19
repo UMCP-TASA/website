@@ -1,7 +1,7 @@
 ---
 name: Matthew Wu
 category: bio
-imgsrc: assets/41e98e3b-0ca4-4512-a21d-ed101fc9bd3d-matthew-wu.jpeg
+imgsrc: assets/matthew.png
 position: ITASA Rep
 majors:
   - CS+MechE
