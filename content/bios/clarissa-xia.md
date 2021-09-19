@@ -1,7 +1,7 @@
 ---
 name: Clarissa Xia
 category: bio
-imgsrc: assets/img_2518-clarissa-xia.jpg
+imgsrc: assets/clarissa.png
 position: Co-President
 majors:
   - Neurophys and Psychology
