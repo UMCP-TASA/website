@@ -1,7 +1,7 @@
 ---
 name: Amber Wang
 category: bio
-imgsrc: assets/22fb0cd7-1c0f-4e28-b753-4050b48a9129-amber-wang.jpeg
+imgsrc: assets/amber.png
 position: AASU Rep
 majors:
   - Computer Science
