@@ -1,7 +1,7 @@
 ---
 name: Zaz Shiao
 category: bio
-imgsrc: assets/20210629_191913-daniel-zhang.jpg
+imgsrc: assets/zaz.png
 position: External VP
 majors:
   - Information Science
