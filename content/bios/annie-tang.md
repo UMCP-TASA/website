@@ -1,7 +1,7 @@
 ---
 name: Annie Tang
 category: bio
-imgsrc: assets/img_5322-annie-tang.jpg
+imgsrc: assets/annie.png
 position: Co-Historian
 majors:
   - General Biology
