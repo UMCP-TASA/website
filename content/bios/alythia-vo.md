@@ -1,7 +1,7 @@
 ---
 name: Alythia Vo
 category: bio
-imgsrc: assets/3608f897-852a-4dd2-951f-2b3abae48f97-alythia-vo.jpg
+imgsrc: assets/alythia.png
 position: Senior Advisor
 majors:
   - Neurophys and Spanish
