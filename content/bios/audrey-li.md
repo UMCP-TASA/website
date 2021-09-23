@@ -1,7 +1,7 @@
 ---
 name: Audrey Li
 category: bio
-imgsrc: assets/li_audrey_vertical-audrey-li.jpeg
+imgsrc: assets/audrey.png
 position: Videographer
 majors:
   - Mechanical Engineering
