@@ -1,7 +1,7 @@
 ---
 name: Anthony He
 category: bio
-imgsrc: assets/dsc_0139-anthony-he.jpg
+imgsrc: assets/anthony.png
 position: Treasurer
 majors:
   - Computer Science
