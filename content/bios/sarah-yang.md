@@ -1,9 +1,9 @@
 ---
 name: Sarah Yang
 category: bio
-imgsrc: assets/Sarah-Board.jpg
-position: Secretary
+imgsrc: assets/sarah.png
+position: Senior Advisor
 majors:
-  - Philosophy
+  - Philosophy + Physiology/Neurobiology
 ---
-Howdy yalls!! I'm Sarah and I'm a junior philosophy major on the pre-med track. Outside of TASA, I'm also a campus tour guide! Some of my hobbies include curating Spotify playlists, doing my 10 step skincare routine, and eating ice cream. I'm super friendly and love making new friends so I can't wait to meet y'all and make you guys part of our TASA fam :^))
+Hi guys! I’m a senior Philosophy & Physiology/Neurobiology double major on the premed track. I love food, reading, journaling, and spending time with friends and family. Outside of TASA you can find me around campus giving tours or studying somewhere. I love meeting new people so don’t be afraid to say hi :^))

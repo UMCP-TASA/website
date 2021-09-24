@@ -1,10 +1,9 @@
 ---
 name: Daniel Zhang
 category: bio
-imgsrc: assets/Daniel-Board.jpg
-position: Co-Fundraising Chair
+imgsrc: assets/20210629_191913-daniel-zhang.jpg
+position: Senior Advisor
 majors:
-  - Computer Science
-  - General Biology
+  - CS and CBMG
 ---
-Sadge 24/7
+slaw bunny

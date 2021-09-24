@@ -1,10 +1,9 @@
 ---
 name: Callie Wen
 category: bio
-imgsrc: assets/Callie-Board.jpg
-position: Treasurer
+imgsrc: assets/callie.png
+position: Co-President
 majors:
-  - Operations Mgmt
-  - Business Analytics
+  - Finance
 ---
-hi yall! im a sophomore business major also minoring in asian american studies and law and society. during quarantine, ive been crocheting lil stuffed animals and trying to learn tricks on my longboard (but i kinda suck.) if you have a dog, PLEASE send me pics and we will instantly be friends. in fact, i'll be friends with everyone except people who think white cheddar cheezits are superior to extra toasty cheezits. sorry matthew.
+Hi guys! I’m Callie, a junior majoring in Finance (yucky) and minoring in Asian American Studies and Law & Society. Hmu anytime for a boba run! Aspiring gym bro but too afraid to go alone so hmu for that too. Or just hmu for any reason, I like new friends!! Especially if you think toasty Cheezits >>>> white cheddar (we will be besties!)

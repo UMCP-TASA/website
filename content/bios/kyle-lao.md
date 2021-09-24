@@ -1,9 +1,9 @@
 ---
 name: Kyle Lao
 category: bio
-imgsrc: assets/Kyle-Board.jpg
-position: Internal VP
+imgsrc: assets/kyle.png
+position: Alumni Advisor
 majors:
-  - Math
+  - CS
 ---
-Hello ! My name's Kyle...I'm a senior Mathematics Major on the MCERT Program to earn my Masters in Secondary Education next year. Outside of TASA, you can find me hibernating in Commons 7 as I try to cope with fifteen weeks of online classes.
+Hi! I'm Kyle & I'm a graduate student at UMD. I was a part of TASA throughout all of undergraduate and am now one of TASA's Alum Advisors! Since I'm still on campus this year, I hope to see you at some of our events--this year's Board is truly something special ((:

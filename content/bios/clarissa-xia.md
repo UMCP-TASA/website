@@ -1,10 +1,9 @@
 ---
 name: Clarissa Xia
 category: bio
-imgsrc: assets/Clarissa-Board.jpg
-position: Culture Chair
+imgsrc: assets/clarissa.png
+position: Co-President
 majors:
-  - Neurobiology & Physiology
-  - Psychology
+  - Neurophys and Psychology
 ---
-Hi! I'm a sophomore double majoring in Neurobiology and Physiology and Psychology. Like an old lady, I spend my quarantine free time baking, knitting, and petting my cat, but I swear I'm fun (and not 90 years old) when I'm on campus. I love TASA and I'm always looking to make some new friends so feel free to reach out!
+Hi! My name is Clarissa and I'm a junior double majoring in Physiology & Neurobiology and Psychology. In my free time, I like to take long naps, read, bake, and pet my cat. After a long year at home, I'm super excited for another amazing year of TASA and meeting new people! Feel free to reach out, I love making new friends :)

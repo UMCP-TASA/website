@@ -1,10 +1,9 @@
 ---
 name: Tiffany Yen
 category: bio
-imgsrc: assets/Tiffany-Board.jpg
-position: Public Relations
+imgsrc: assets/tiffany.png
+position: Graphic Designer
 majors:
-  - Marketing
-  - Information Systems
+  - Marketing and Info Systems
 ---
-Heyo! I'm Tiffany and I am a sophomore majoring in Marketing and Information Systems! I love art, food, aesthetic things, kdramas, sad/chill music, and Taiwan ofc. Can't wait to meet y'alls! :^)
+Hi! My name is Tiffany and I'm a junior majoring in marketing and info sys. I love art and design, photography, pretty buildings, and good vibes. Can't wait to meet y'all in person next semester <3 Go TASA! 台灣 No.1 :D

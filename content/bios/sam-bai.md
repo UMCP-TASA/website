@@ -1,9 +1,10 @@
 ---
 name: Sam Bai
 category: bio
-imgsrc: assets/Sam-Board.jpg
-position: Co-Historian
+imgsrc: assets/sam.png
+position: Internal VP
 majors:
   - Computer Science
+  - Statistics
 ---
-Hey everyone! I'm Sam, and I'm a sophomore majoring in Computer Science (and maybe Statistics, but we'll see lol). Outside of TASA, I'm a part of TerpWushu, so if you ever want to try out Chinese martial arts, just hit me up and come check us out! In my spare time, I like to run, draw, read Webtoons, and play Pokemon Go (add me!). If you ever need someone to talk to about school or just life in general, I gotchu :). Looking forward to meeting everyone!
+Hi everyone! I'm Sam and I'm a junior majoring in Computer Science and Statistics. I love running, aesthetic notes, and pretending I have a good eating/sleeping schedule. If you ever wanna talk, just bribe me with boba. Looking forward to meeting y'all!

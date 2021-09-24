@@ -1,10 +1,9 @@
 ---
 name: Gloria Ngo
 category: bio
-imgsrc: assets/Gloria-Board.jpg
-position: Graphic Designer
+imgsrc: assets/237967330_4521697181225097_5565521338618822086_n-gloria-ngo.jpg
+position: Senior Advisor
 majors:
-  - Accounting
-  - Information Systems
+  - Accounting and Information Systems
 ---
-Hi, I'm Gloria and I'm a junior majoring in accounting and information systems. In my free time, I like to cook, play TFT (and league uwu), and read! Can't wait to meet all you guys <3
+Hi I'm Gloria and I'm a senior accounting and information systems major. On board, I am one of the senior advisors for TASA. :) In my free time, I like to cook, drink coffee, and play games! Can't wait to meet everyone!

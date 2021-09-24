@@ -1,10 +1,9 @@
 ---
 name: Karen Liu
 category: bio
-imgsrc: assets/Karen-Board.jpg
-position: External VP
+imgsrc: assets/karen.png
+position: Senior Advisor
 majors:
-  - Statistics
-  - Community Health
+  - Behavioral and Community Health
 ---
-Hi I’m Karen and I’m a junior at UMD majoring in Behavioral and Community Health. In my free time I like to run lol. Can’t wait to meet everyone!
+Oldie. Just here to advise.
