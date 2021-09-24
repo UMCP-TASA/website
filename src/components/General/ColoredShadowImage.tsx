@@ -13,7 +13,7 @@ const styles = (theme: Theme) =>
             borderRadius: theme.shape.borderRadius,
             zIndex: 20,
         },
-        coloredShadow: {           
+        coloredShadow: {
             borderRadius: theme.shape.borderRadius,
             top: "12px",
             left: "12px",
@@ -21,7 +21,7 @@ const styles = (theme: Theme) =>
             width: "100%",
             height: "100%",
             backgroundSize: "cover",
-            zIndex: 10, 
+            zIndex: 10,
             overflow: "visible",
 
             transform: "scale(.92)",
@@ -50,11 +50,6 @@ function ColoredShadowImage(props: Props) {
                 className={classes.coloredShadow}
                 image={image.childImageSharp?.gatsbyImageData}
                 alt="Background"
-                // imgStyle={{
-                //     transform: "scale(.92)",
-                //     filter: "blur(12px)",
-                //     transition: "opacity .45s",
-                // }}
             />
         </div>
     )

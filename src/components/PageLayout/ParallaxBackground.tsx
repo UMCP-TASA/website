@@ -5,14 +5,7 @@
 
 import React from "react"
 import { graphql } from "gatsby"
-import {
-    Grid,
-    GridProps,
-    Theme,
-    withStyles,
-    WithStyles,
-    createStyles,
-} from "@material-ui/core"
+import { Grid, GridProps, Theme, makeStyles } from "@material-ui/core"
 import { getImage } from "gatsby-plugin-image"
 import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from "gatsby-background-image"
@@ -28,46 +21,44 @@ type StyleProps = {
 
 const AnimatedGrid = animated(Grid)
 
-const styles = (theme: Theme) =>
-    createStyles({
-        root: {
-            height: (props: StyleProps) =>
-                props.imageHeight ? props.imageHeight : "80vh",
-            //maxHeight: "1000px",
-            overflow: "hidden",
-            position: "relative",
-            backgroundPosition: "center center",
-            backgroundSize: "cover",
-            margin: "0",
-            padding: "0",
-            border: "0",
-        },
-        filter: {
-            width: "100%",
-            height: "100%",
-            position: "absolute",
-            background: "rgba(0, 0, 0, 0.5)",
-            zIndex: -1,
-        },
-        raised: {
-            zIndex: 1,
-            width: "100%",
-            height: "100%",
-            margin: "auto",
-            textAlign: "center",
-        },
-    })
+const useStyles = makeStyles({
+    root: {
+        height: (props: StyleProps) =>
+            props.imageHeight ? props.imageHeight : "80vh",
+        overflow: "hidden",
+        position: "relative",
+        backgroundPosition: "center center",
+        backgroundSize: "cover",
+        margin: "0",
+        padding: "0",
+        border: "0",
+    },
+    filter: {
+        width: "100%",
+        height: "100%",
+        position: "absolute",
+        background: "rgba(0, 0, 0, 0.5)",
+        zIndex: -1,
+    },
+    raised: {
+        zIndex: 1,
+        width: "100%",
+        height: "100%",
+        margin: "auto",
+        textAlign: "center",
+    },
+})
 
-type Props = WithStyles<typeof styles> &
-    StyleProps & {
-        image: BackgroundImageFragment
-        children?: React.ReactNode
-        justify?: GridProps["justifyContent"]
-        animated?: boolean,
-    }
+type Props = StyleProps & {
+    image: BackgroundImageFragment
+    children?: React.ReactNode
+    justify?: GridProps["justifyContent"]
+    animated?: boolean
+}
 
 function ParallaxBackground(props: Props) {
-    const { classes, image, justify = "center", animated = true, children } = props
+    const { image, justify = "center", animated = true, children } = props
+    const classes = useStyles(props)
     const { transform } = useParallax()
     const springStyle = useSpring({
         from: { opacity: 0, transform: "translate(-30px)" },
@@ -99,16 +90,12 @@ function ParallaxBackground(props: Props) {
     )
 }
 
-export default withStyles(styles)(ParallaxBackground)
+export default ParallaxBackground
 
 export const imageQueryFragment = graphql`
     fragment BackgroundImage on File {
         childImageSharp {
-            gatsbyImageData(
-                quality: 100,
-                placeholder: BLURRED,
-                formats: [WEBP]
-            )
+            gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [WEBP])
         }
     }
 `
