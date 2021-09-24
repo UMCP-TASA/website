@@ -16,11 +16,17 @@ const styles = (theme: Theme) =>
         coloredShadow: {           
             borderRadius: theme.shape.borderRadius,
             top: "12px",
+            left: "12px",
             position: "absolute",
             width: "100%",
             height: "100%",
             backgroundSize: "cover",
-            zIndex: 10,     
+            zIndex: 10, 
+            overflow: "visible",
+
+            transform: "scale(.92)",
+            filter: "blur(12px)",
+            transition: "opacity .45s",
         },
     })
 
@@ -44,15 +50,11 @@ function ColoredShadowImage(props: Props) {
                 className={classes.coloredShadow}
                 image={image.childImageSharp?.gatsbyImageData}
                 alt="Background"
-                style={{
-                    position: "absolute",
-                    overflow: "visible",
-                }}
-                imgStyle={{
-                    transform: "scale(.92)",
-                    filter: "blur(12px)",
-                    transition: "opacity .45s",
-                }}
+                // imgStyle={{
+                //     transform: "scale(.92)",
+                //     filter: "blur(12px)",
+                //     transition: "opacity .45s",
+                // }}
             />
         </div>
     )
