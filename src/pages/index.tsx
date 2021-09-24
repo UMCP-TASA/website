@@ -42,6 +42,9 @@ const styles = (theme: Theme) =>
         },
     })
 
+const calendarStyle = {border: 0, width:"100%", height:"50em",frameborder:0,scrolling:"no"} ;
+      
+    
 type Props = PageProps &
     WithStyles<typeof styles> & {
         data: HomePageQuery
@@ -96,6 +99,10 @@ function IndexPage(props: Props) {
                     <ButtonLink to="about" variant="contained" color="primary">
                         About TASA
                     </ButtonLink>
+                </Section>
+
+                <Section title= "Calendar" maxWidth="lg"> 
+                <iframe src="https://calendar.google.com/calendar/embed?src=rl5mn4gl33s9d1kf6dervrrv28%40group.calendar.google.com&ctz=America%2FNew_York" style={calendarStyle}></iframe>
                 </Section>
 
                 <Section title="Events" maxWidth="lg">
