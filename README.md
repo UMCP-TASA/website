@@ -22,8 +22,10 @@ The official University of Maryland, College Park Taiwanese American Student Ass
 Everything is already set-up in the [package.json](package.json) so all you have to do is
 
 ```
-npm install
+yarn install
 ```
+
+Follow [the yarn installation docs](https://classic.yarnpkg.com/en/docs/install) if you need to install yarn!
 
 ## Gatsby
 

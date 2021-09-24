@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {
     Card,
     CardContent,
@@ -51,7 +51,7 @@ function Bio(props: Props) {
     return (
         <Card className={classes.root}>
             <div className={classes.content}>
-                <Img fluid={image.childImageSharp?.fluid} />
+                <GatsbyImage image={image.childImageSharp?.gatsbyImageData} alt={`${name}'s' bio picture`}/>
                 <CardContent>
                     <Text
                         variant="h5"
@@ -69,7 +69,7 @@ function Bio(props: Props) {
             <CardActions className={classes.action}>
                 <Grid
                     container
-                    justify="center"
+                    justifyContent="center"
                     alignItems="flex-start"
                     spacing={1}
                 >

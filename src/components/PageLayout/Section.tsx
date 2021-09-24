@@ -47,7 +47,7 @@ function Section(props: Props) {
             <Grid
                 container
                 alignItems="center"
-                justify="center"
+                justifyContent="center"
                 direction="column"
                 spacing={3}
             >

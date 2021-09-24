@@ -43,11 +43,7 @@ export default function useBios() {
                     node {
                         id
                         relativePath
-                        childImageSharp {
-                            fluid {
-                                ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
+                        ...RaisedImage
                     }
                 }
             }

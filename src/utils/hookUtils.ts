@@ -1,4 +1,4 @@
-import { EventsQuery, BioQuery } from "graphql-types"
+import { EventsQuery, BioQuery, RaisedImageFragment } from "graphql-types"
 
 type Edges =
     | EventsQuery["allMarkdownRemark"]["edges"]
@@ -9,7 +9,7 @@ type Images =
 
 export interface NodeWithImage<T> {
     node: T
-    image: File
+    image: RaisedImageFragment
 }
 
 /**

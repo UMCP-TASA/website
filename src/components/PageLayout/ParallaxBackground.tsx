@@ -13,6 +13,8 @@ import {
     WithStyles,
     createStyles,
 } from "@material-ui/core"
+import { getImage } from "gatsby-plugin-image"
+import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from "gatsby-background-image"
 import { BackgroundImageFragment } from "graphql-types"
 import { useSpring, animated, config } from "react-spring"
@@ -60,7 +62,7 @@ type Props = WithStyles<typeof styles> &
     StyleProps & {
         image: BackgroundImageFragment
         children?: React.ReactNode
-        justify?: GridProps["justify"]
+        justify?: GridProps["justifyContent"]
         animated?: boolean,
     }
 
@@ -73,19 +75,21 @@ function ParallaxBackground(props: Props) {
         config: { clamp: true, ...config.molasses },
         immediate: !animated || usePrefersReducedMotion(),
     })
+
+    const bgImage = convertToBgImage(getImage(image))
     return (
         <BackgroundImage
             className={classes.root}
-            fluid={image.childImageSharp?.fluid}
             style={{ transform: transform }}
             loading="eager"
+            {...bgImage}
         >
             <div className={classes.filter} />
             <Grid
                 className={classes.raised}
                 container
                 alignItems="center"
-                justify={justify}
+                justifyContent={justify}
             >
                 <AnimatedGrid item xs={12} style={springStyle}>
                     {children}
@@ -100,10 +104,11 @@ export default withStyles(styles)(ParallaxBackground)
 export const imageQueryFragment = graphql`
     fragment BackgroundImage on File {
         childImageSharp {
-            fluid(quality: 100, pngQuality: 100, maxHeight: 1000) {
-                ...GatsbyImageSharpFluid_withWebp
-                ...GatsbyImageSharpFluidLimitPresentationSize
-            }
+            gatsbyImageData(
+                quality: 100,
+                placeholder: BLURRED,
+                formats: [WEBP]
+            )
         }
     }
 `

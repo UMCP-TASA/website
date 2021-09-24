@@ -1,6 +1,6 @@
 import React from "react"
 import { Theme, createStyles, withStyles, WithStyles } from "@material-ui/core"
-import Img, { FluidObject, GatsbyImageProps } from "gatsby-image"
+import { GatsbyImage, GatsbyImageProps } from "gatsby-plugin-image"
 import clsx from "clsx"
 import { RaisedImageFragment, Maybe } from "graphql-types"
 
@@ -35,14 +35,15 @@ function ColoredShadowImage(props: Props) {
 
     return (
         <div className={classes.root}>
-            <Img
+            <GatsbyImage
                 className={clsx(classes.img, className)}
-                fluid={image.childImageSharp?.fluid as FluidObject}
+                image={image.childImageSharp?.gatsbyImageData}
                 {...rest}
             />
-            <Img
+            <GatsbyImage
                 className={classes.coloredShadow}
-                fluid={image.childImageSharp?.fluid as FluidObject}
+                image={image.childImageSharp?.gatsbyImageData}
+                alt="Background"
                 style={{
                     position: "absolute",
                     overflow: "visible",

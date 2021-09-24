@@ -145,7 +145,7 @@ function IndexPage(props: Props) {
                         <Grid
                             container
                             alignItems="stretch"
-                            justify="center"
+                            justifyContent="center"
                             spacing={3}
                         >
                             {presidentBios.map((bio) => (
