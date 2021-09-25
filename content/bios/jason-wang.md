@@ -1,7 +1,7 @@
 ---
 name: Jason Wang
 category: bio
-imgsrc: assets/img_1959-2-slam2pan.jpg
+imgsrc: assets/jason.png
 position: Secretary
 majors:
   - Computer Science
