@@ -1,7 +1,7 @@
 ---
 name: Gloria Ngo
 category: bio
-imgsrc: assets/237967330_4521697181225097_5565521338618822086_n-gloria-ngo.jpg
+imgsrc: assets/gloria.png
 position: Senior Advisor
 majors:
   - Accounting and Information Systems
