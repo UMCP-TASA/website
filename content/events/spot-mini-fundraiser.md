@@ -6,6 +6,7 @@ category: event
 pinned: false
 tags:
   - social
+  - fundraising
 link: https://fb.me/e/1CkC6pQ5r
 ---
 Head to the Spot Mini often? Me too.![🍵](https://static.xx.fbcdn.net/images/emoji.php/v9/t42/1.5/16/1f375.png)
