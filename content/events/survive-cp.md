@@ -6,7 +6,7 @@ category: event
 pinned: false
 tags:
   - social
-link: https://www.facebook.com/events/748890675535423/
+link: https://fb.me/e/193ALgVk3
 ---
 aaaHHHHhhhhhhhhhhhhh! ![🏃](https://static.xx.fbcdn.net/images/emoji.php/v9/t3b/1/16/1f3c3.png)![🏃‍♀️](https://static.xx.fbcdn.net/images/emoji.php/v9/ta9/1/16/1f3c3_200d_2640.png)![🧟](https://static.xx.fbcdn.net/images/emoji.php/v9/t13/1/16/1f9df.png)![🧟](https://static.xx.fbcdn.net/images/emoji.php/v9/t13/1/16/1f9df.png)![🧟](https://static.xx.fbcdn.net/images/emoji.php/v9/t13/1/16/1f9df.png)![🧟](https://static.xx.fbcdn.net/images/emoji.php/v9/t13/1/16/1f9df.png)![🧟](https://static.xx.fbcdn.net/images/emoji.php/v9/t13/1/16/1f9df.png)![🧟](https://static.xx.fbcdn.net/images/emoji.php/v9/t13/1/16/1f9df.png)
 
