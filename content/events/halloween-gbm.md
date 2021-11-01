@@ -1,17 +1,20 @@
 ---
 title: Halloween GBM
-date: 2020-10-26T23:00:00.000Z
-imgsrc: assets/halloween-gbm.jpg
+date: 2020-11-02T00:00:00.000Z
+imgsrc: assets/halloweengbm.jpg
 category: event
 pinned: false
 tags:
   - gbm
-link: https://www.facebook.com/events/1327111140961337/
+link: https://fb.me/e/1qpoOdu7P
 ---
-Hello! It is time for our annual collaboration event with FCA! Sadly this year, we are not able to hold Survive CP because of the ongoing COVID-19 Pandemic. But do not worry because in place of it, we will be doing virtual escape rooms!! I can guarantee you that it will be fun and it will be a great opportunity to meet new people! So do not forget to save the date. 10/26 @7pm, and we will see everyone there!!
+\*mysterious sound\*\
+\*rustling\*\
+"What's that?" -College Student 1\
+"ooOOOOooooo"\
+"Huh?" -College Student 2\
+"oooOOOOOooolala!"
 
-Also there will be a RAFFLE at the end of the event with prizes of free boba and a gift card! What better way to spend your Monday night than with friends, fun, and free stuff? ![🤩](https://static.xx.fbcdn.net/images/emoji.php/v9/t58/1/16/1f929.png)
+Why the ooOOlala?
 
-When: October 26 @7pm\
-Where: ZOOM\
-Who: EVERYONE
+Halloweekend DOESN'T end here:) Come out to our 𝐇𝐚𝐥𝐥𝐨𝐰𝐞𝐞𝐧 𝐆𝐁𝐌 this Monday, November 1, at Tawes 0101!![🎃](https://static.xx.fbcdn.net/images/emoji.php/v9/t86/1/16/1f383.png) ![🧟](https://static.xx.fbcdn.net/images/emoji.php/v9/t13/1/16/1f9df.png) ![👻](https://static.xx.fbcdn.net/images/emoji.php/v9/td7/1/16/1f47b.png) ![🧡](https://static.xx.fbcdn.net/images/emoji.php/v9/tfd/1/16/1f9e1.png) ![🕷](https://static.xx.fbcdn.net/images/emoji.php/v9/t6d/1/16/1f577.png) ![🍬](https://static.xx.fbcdn.net/images/emoji.php/v9/t78/1/16/1f36c.png) ![🏚](https://static.xx.fbcdn.net/images/emoji.php/v9/t8/1/16/1f3da.png)
