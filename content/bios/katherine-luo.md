@@ -1,7 +1,7 @@
 ---
 name: Katherine Luo
 category: bio
-imgsrc: assets/f81_2532-katherine-luo.jpg
+imgsrc: assets/katherinel.png
 position: Culture Chair
 majors:
   - General Biology

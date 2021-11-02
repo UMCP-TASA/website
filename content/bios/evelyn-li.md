@@ -1,7 +1,7 @@
 ---
 name: Evelyn Li
 category: bio
-imgsrc: assets/tasa_pf-evelyn-li.jpg
+imgsrc: assets/evelyn.png
 position: Co-Fundraising Chair
 majors:
   - Neuro/Phys & Anthropology

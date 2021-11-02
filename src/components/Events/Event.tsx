@@ -119,7 +119,7 @@ function Event(props: Props) {
                     <GridWithItems
                         container
                         alignItems="center"
-                        justify="center"
+                        justifyContent="center"
                         spacing={2}
                         xs={false}
                         sm={false}

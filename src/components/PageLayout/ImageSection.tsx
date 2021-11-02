@@ -2,6 +2,8 @@ import React from "react"
 import { Theme, createStyles, withStyles, WithStyles } from "@material-ui/core"
 import { BackgroundImageFragment } from "graphql-types"
 
+import { convertToBgImage } from "gbimage-bridge"
+import { getImage } from "gatsby-plugin-image"
 import BackgroundImage from "gatsby-background-image"
 
 const styles = (theme: Theme) =>
@@ -27,7 +29,7 @@ const styles = (theme: Theme) =>
             [theme.breakpoints.down("xs")]: {
                 paddingLeft: theme.spacing(3),
                 paddingRight: theme.spacing(3),
-            }
+            },
         },
     })
 
@@ -38,13 +40,9 @@ type Props = WithStyles<typeof styles> & {
 
 function ImageSection(props: Props) {
     const { classes, image, children } = props
-
+    const bgImage = convertToBgImage(getImage(image))
     return (
-        <BackgroundImage
-            className={classes.root}
-            fluid={image.childImageSharp?.fluid}
-            loading="eager"
-        >
+        <BackgroundImage className={classes.root} loading="eager" {...bgImage}>
             <div className={classes.filter} />
             <div className={classes.content}>{children}</div>
         </BackgroundImage>

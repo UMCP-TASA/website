@@ -1,26 +1,29 @@
 ---
 title: Survive CP
-date: 2019-11-03T19:00:44.944Z
-imgsrc: assets/survivecp.jpg
+date: 2021-10-24T18:00:44.944Z
+imgsrc: assets/survive_cp.jpg
 category: event
 pinned: false
 tags:
   - social
-link: https://www.facebook.com/events/748890675535423/
+link: https://fb.me/e/193ALgVk3
 ---
-Hear ye, hear ye…\
-\
-The zombie kingdoms of TASA and FCA have decided to ally together and create a new, unified TASA x FCA empire!\
-\
-They want to expand and have decided on UMD as their next targeted conquest.\
-\
-Their mission? Turn all the students into zombies. To do this, they will be sending out 10 of their best zombie taggers from the TASA x FCA empire to turn everyone undead.\
-\
-Your mission? Travel throughout campus, complete tasks, and avoid being turned into a zombie at all costs!\
-\
-TASA x FCA present Survive CP 2019!
+aaaHHHHhhhhhhhhhhhhh! ![🏃](https://static.xx.fbcdn.net/images/emoji.php/v9/t3b/1/16/1f3c3.png)![🏃‍♀️](https://static.xx.fbcdn.net/images/emoji.php/v9/ta9/1/16/1f3c3_200d_2640.png)![🧟](https://static.xx.fbcdn.net/images/emoji.php/v9/t13/1/16/1f9df.png)![🧟](https://static.xx.fbcdn.net/images/emoji.php/v9/t13/1/16/1f9df.png)![🧟](https://static.xx.fbcdn.net/images/emoji.php/v9/t13/1/16/1f9df.png)![🧟](https://static.xx.fbcdn.net/images/emoji.php/v9/t13/1/16/1f9df.png)![🧟](https://static.xx.fbcdn.net/images/emoji.php/v9/t13/1/16/1f9df.png)![🧟](https://static.xx.fbcdn.net/images/emoji.php/v9/t13/1/16/1f9df.png)
 
-1. Sign up as a player! You’ll be grouped into teams of 4 and try to protect the students of UMD while escaping zombies along the way. <https://ter.ps/scp19player>
-2. Be a zombie tagger! You’ll be working for the enemy: the TASA x FCA empire. **PLEASE NOTE: Taggers are limited to 10 sign ups. After that, the form will close.** <https://ter.ps/scp19tagger>
-3. Be a volunteer! You’ll help us run the event + man stations + do other things. [https://ter.ps/scp19volunt](https://l.facebook.com/l.php?u=https%3A%2F%2Fter.ps%2Fscp19volunt&h=AT1ktVBX3uo3SP7pu0N6MQToobjzFdCama1aelyBknGBNb3UNE7-AT2c5PTPRmY7rxsVSLtc9qtWJ1lSRydTcnb_4s9iv4k9tLRUDkMBvYQMcy-DmsGNzycsrvrg8HS69CzfuiDZEJo5ODv9wDk7)\
-   Forms close on 11/1 at midnight!
+TASA & FCA once again present to you... 𝐒𝐮𝐫𝐯𝐢𝐯𝐞 𝐂𝐏, our famous campus-wide scavenger hunt while zombies try to tag you!
+
+𝐖𝐡𝐨'𝐬 𝐢𝐧𝐯𝐢𝐭𝐞𝐝? You!
+
+𝐖𝐡𝐚𝐭?\
+𝙋𝙡𝙖𝙮𝙚𝙧𝙨, complete each station without getting tagged by a zombie! Register as pairs or individuals!\
+𝙕𝙤𝙢𝙗𝙞𝙚𝙨, tag players!\
+𝙑𝙤𝙡𝙪𝙣𝙩𝙚𝙚𝙧𝙨, help run the event!
+
+𝐖𝐡𝐞𝐧? Sunday, Oct. 24, 2-4PM\
+𝐖𝐡𝐞𝐫𝐞? Check in @Nyumburu Amphitheater\
+𝐖𝐡𝐲? Meet cool ppl, have the time of your LIFE, & watch players struggle![😜](https://static.xx.fbcdn.net/images/emoji.php/v9/t20/1/16/1f61c.png)
+
+𝙋𝙡𝙖𝙮𝙚𝙧 form: [https://go.umd.edu/survivecpplayer](https://l.facebook.com/l.php?u=https%3A%2F%2Fgo.umd.edu%2Fsurvivecpplayer%3Ffbclid%3DIwAR1AzSMLL1JLUuA4MpFnFOUJFrV7xNld3QjtpTFLI3AfPAz23zNMPVgVDAY&h=AT2zmAfMKyqwEI8L55gzlXv30-l6CaYBAvj19WSkJ92Jfuo_miW9Zrq0oNRkJXQ05ePBxMyFHskqYiquQAW03usG2JJTphh_45NI0Yu-I_G2CDXSaqS5OD7M1UPjftKWTcte&__tn__=q&c[0]=AT06RX90m9WKT4mdhIHMiEpoBLblBpW346NOfY9HJtuzFQ1IEdpck8Z5W9nCsDm8U8CVCZuufigLOpCJjHKR7D9YD2ZRAVgVFgGNDpHFQ25iJMQQrcOcm06yg8kIEpnWRvu0gf8javB3kmzX-iTnwXJt)\
+𝙕𝙤𝙢𝙗𝙞𝙚𝙨 form: [https://go.umd.edu/survivecpzombie](https://go.umd.edu/survivecpzombie?fbclid=IwAR3tNnZcIYhM_VpbnoGdr_Xxj4ReakH2mBUY4c_5p8wc_mmM_uYOn1d5sr4) \*Close after 10 Applications\*\
+𝙑𝙤𝙡𝙪𝙣𝙩𝙚𝙚𝙧 form: [https://go.umd.edu/survivecpvolunteer](https://go.umd.edu/survivecpvolunteer?fbclid=IwAR069oqZrb6FxKF_6ZDyeqJ09uKUSCkaAkopoAK3RWmTcBhgME-FnQ28c4s)\
+All forms due Fri, 10/22 @11:59pm.

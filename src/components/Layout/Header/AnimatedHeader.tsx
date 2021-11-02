@@ -68,7 +68,7 @@ function Header(props: Props) {
         >
             <Toolbar>
                 <Container>
-                    <Grid container alignItems="center" justify="space-between">
+                    <Grid container alignItems="center" justifyContent="space-between">
                         <Grid item>
                             <Link className={classes.link} to="/">
                                 <Logo white={!scrollTrigger} />

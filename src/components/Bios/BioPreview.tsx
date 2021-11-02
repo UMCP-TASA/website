@@ -1,5 +1,4 @@
 import React from "react"
-import Img from "gatsby-image"
 import {
     Grid,
     Collapse,
@@ -12,7 +11,7 @@ import {
 // Components
 import Text from "components/Typography/Text"
 import MarkdownContent from "components/General/MarkdownContent"
-import RaisedImage from "components/General/RaisedImage"
+import { RaisedImage } from "components/Image"
 
 // Types
 import { BioType } from "hooks/useBios"
@@ -39,9 +38,9 @@ function BioPreview(props: Props) {
     const { name = "Undefined", position = "Undefined" } = node.frontmatter
 
     return (
-        <Grid container alignItems="stretch" justify="center" spacing={3}>
+        <Grid container alignItems="stretch" justifyContent="center" spacing={3}>
             <Grid item xs={12} sm={6}>
-                <RaisedImage alt={`${name} bio preview`} image={image} />
+                <RaisedImage alt={`${name} bio preview`} imageNode={image} />
             </Grid>
             <Grid item xs={12} sm={6}>
                 <Grid container direction="column" className={classes.text}>

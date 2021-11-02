@@ -27,9 +27,8 @@ import ParallaxBackground from "components/PageLayout/ParallaxBackground"
 import Section from "components/PageLayout/Section"
 import Text from "components/Typography/Text"
 import ContentWithIcon from "components/General/ContentWithIcon"
-import RaisedImage from "components/General/RaisedImage"
+import { RaisedImage } from "components/Image"
 import usePrefersReducedMotion from "hooks/usePrefersReducedMotion"
-
 
 const styles = (theme: Theme) =>
     createStyles({
@@ -138,7 +137,7 @@ function AboutPage(props: Props) {
                         <Grid
                             container
                             spacing={6}
-                            justify="center"
+                            justifyContent="center"
                             className={classes.missionStatement}
                         >
                             {missionTrails.map((props, index) => (
@@ -190,26 +189,32 @@ function AboutPage(props: Props) {
 
                     <Grid container spacing={5}>
                         <Grid item xs={12} sm={4}>
-                            <RaisedImage image={pic1} alt="Angela big little" />
-                        </Grid>
-                        <Grid item xs={false} sm={4}>
-                            <RaisedImage image={pic2} alt="Nathan big little" />
+                            <RaisedImage
+                                imageNode={pic1}
+                                alt="Angela big little"
+                            />
                         </Grid>
                         <Grid item xs={false} sm={4}>
                             <RaisedImage
-                                image={pic3}
+                                imageNode={pic2}
+                                alt="Nathan big little"
+                            />
+                        </Grid>
+                        <Grid item xs={false} sm={4}>
+                            <RaisedImage
+                                imageNode={pic3}
                                 alt="Rebecca big little"
                             />
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <RaisedImage
-                                image={pic4}
+                                imageNode={pic4}
                                 alt="Stephan big little"
                             />
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <RaisedImage
-                                image={pic5}
+                                imageNode={pic5}
                                 alt="Justin family tree"
                             />
                         </Grid>

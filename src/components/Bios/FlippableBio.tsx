@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { useSpring, animated as a } from "react-spring"
 import {
     Grid,
@@ -31,13 +31,13 @@ const styles = (theme: Theme) =>
             top: "0px",
             width: "100%",
             height: "100%",
+            zIndex: 20,
         },
         img: {
             borderRadius: theme.shape.borderRadius,
             width: "100%",
             height: "100%",
             backgroundSize: "cover",
-            zIndex: 10,
             boxShadow: theme.shadows[9],
         },
         filter: {
@@ -66,19 +66,21 @@ type Props = WithStyles<typeof styles> & {
     bioData: BioType
 }
 
-const AnimatedImg = a(Img)
+const AnimatedImg = a(GatsbyImage)
 
 function Bio(props: Props) {
     const { classes, bioData } = props
     const [flipped, setFlipped] = useState(false)
-    const { transform, opacity } = useSpring({
+    const { transform, opacity, zIndex } = useSpring({
         opacity: flipped ? 1 : 0,
         transform: `perspective(600px) rotateY(${flipped ? 180 : 0}deg)`,
         config: { mass: 5, tension: 500, friction: 80 },
+        zIndex: flipped ? 10 : 50,
         immediate: usePrefersReducedMotion(),
     })
 
     const { node, image } = bioData
+    const imageData = image.childImageSharp?.gatsbyImageData
 
     if (!node.frontmatter)
         throw new Error("Frontmatter does not exist for node")
@@ -96,15 +98,18 @@ function Bio(props: Props) {
                 onMouseOver={() => setFlipped(true)}
                 onMouseOut={() => setFlipped(false)}
             >
-                <AnimatedImg
-                    fluid={image.childImageSharp?.fluid}
-                    alt={`${name} bio image`}
-                    className={classes.img}
+                <a.div
                     style={{
-                        opacity: opacity.interpolate((o) => 1 - (o as number)),
                         transform,
+                        zIndex,
                     }}
-                />
+                >
+                    <GatsbyImage
+                        image={imageData}
+                        alt={`${name} bio image`}
+                        className={classes.img}
+                    />
+                </a.div>
                 <a.div
                     className={classes.back}
                     style={{
@@ -114,11 +119,6 @@ function Bio(props: Props) {
                         ),
                     }}
                 >
-                    <Img
-                        fluid={image.childImageSharp?.fluid}
-                        className={classes.img}
-                        style={{ width: "100%", height: "100%" }}
-                    />
                     <div className={classes.filter} />
                     <div className={classes.content}>
                         <div>
@@ -128,7 +128,7 @@ function Bio(props: Props) {
                             />
                             <Grid
                                 container
-                                justify="center"
+                                justifyContent="center"
                                 alignItems="flex-start"
                                 spacing={1}
                             >

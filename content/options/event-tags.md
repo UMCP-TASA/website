@@ -6,4 +6,5 @@ options:
   - social
   - gbm
   - planning
+  - fundraising
 ---

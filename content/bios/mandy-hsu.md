@@ -1,7 +1,7 @@
 ---
 name: Mandy Hsu
 category: bio
-imgsrc: assets/f30b58bc-0cfd-4647-b355-241b96e93388-mandy-hsu.jpeg
+imgsrc: assets/mandy.png
 position: Night Market Director
 majors:
   - Communications (Public Relations)

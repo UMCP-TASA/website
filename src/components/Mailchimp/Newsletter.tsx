@@ -95,7 +95,7 @@ function Newsletter(props: Props) {
                     spacing={2}
                     alignItems="center"
                     alignContent="center"
-                    justify="center"
+                    justifyContent="center"
                 >
                     <Grid item xs={1}>
                         <EmailIcon className={classes.icon} />

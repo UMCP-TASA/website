@@ -1,7 +1,7 @@
 ---
 name: Jeff Tran
 category: bio
-imgsrc: assets/46cd129b-1351-4d22-8443-77983521c713-jeff-tran.jpeg
+imgsrc: assets/jeff.png
 position: Social Chair
 majors:
   - Computer Science

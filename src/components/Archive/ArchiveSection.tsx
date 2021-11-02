@@ -40,7 +40,7 @@ function ArchiveSection(props: Props) {
                 container
                 className={classes.margin}
                 alignItems="center"
-                justify="center"
+                justifyContent="center"
                 spacing={3}
             >
                 <Grid item>
