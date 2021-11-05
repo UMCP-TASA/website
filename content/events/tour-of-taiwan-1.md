@@ -1,6 +1,6 @@
 ---
 title: Tour of Taiwan
-date: 2020-11-19T23:00:00.000Z
+date: 2021-11-19T23:00:00.000Z
 imgsrc: assets/touroftaiwan.jpg
 category: event
 pinned: true
