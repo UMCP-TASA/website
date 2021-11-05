@@ -20,15 +20,6 @@ export type Scalars = {
   JSON: any;
 };
 
-
-
-
-
-
-
-
-
-
 export type File = Node & {
   sourceInstanceName: Scalars['String'];
   absolutePath: Scalars['String'];
@@ -155,7 +146,6 @@ export type Internal = {
   owner: Scalars['String'];
   type: Scalars['String'];
 };
-
 
 export type Directory = Node & {
   sourceInstanceName: Scalars['String'];
@@ -315,10 +305,6 @@ export type SitePage = Node & {
   context?: Maybe<SitePageContext>;
   pluginCreator?: Maybe<SitePlugin>;
   pluginCreatorId?: Maybe<Scalars['String']>;
-<<<<<<< HEAD
-  componentPath?: Maybe<Scalars['String']>;
-=======
->>>>>>> ab7d92c14acbd2feb274fc5ff2dafeaa0afd3144
 };
 
 export type SitePageContext = {
@@ -433,7 +419,6 @@ export type SitePluginPackageJson = {
   description?: Maybe<Scalars['String']>;
   version?: Maybe<Scalars['String']>;
   main?: Maybe<Scalars['String']>;
-  author?: Maybe<Scalars['String']>;
   license?: Maybe<Scalars['String']>;
   dependencies?: Maybe<Array<Maybe<SitePluginPackageJsonDependencies>>>;
   devDependencies?: Maybe<Array<Maybe<SitePluginPackageJsonDevDependencies>>>;
@@ -550,10 +535,10 @@ export type MarkdownRemarkFrontmatter = {
   pinned?: Maybe<Scalars['Boolean']>;
   tags?: Maybe<Array<Maybe<Scalars['String']>>>;
   link?: Maybe<Scalars['String']>;
-  options?: Maybe<Array<Maybe<Scalars['String']>>>;
   name?: Maybe<Scalars['String']>;
   position?: Maybe<Scalars['String']>;
   majors?: Maybe<Array<Maybe<Scalars['String']>>>;
+  options?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
 
 
@@ -567,7 +552,6 @@ export type MarkdownRemarkFrontmatterDateArgs = {
 export type MarkdownRemarkFields = {
   slug?: Maybe<Scalars['String']>;
 };
-
 
 export type ImageFormat =
   | 'NO_CHANGE'
@@ -818,6 +802,25 @@ export type ImageSharpResize = {
   originalName?: Maybe<Scalars['String']>;
 };
 
+export type GatsbyImageFormat =
+  | 'NO_CHANGE'
+  | 'AUTO'
+  | 'JPG'
+  | 'PNG'
+  | 'WEBP'
+  | 'AVIF';
+
+export type GatsbyImageLayout =
+  | 'FIXED'
+  | 'FULL_WIDTH'
+  | 'CONSTRAINED';
+
+export type GatsbyImagePlaceholder =
+  | 'DOMINANT_COLOR'
+  | 'TRACED_SVG'
+  | 'BLURRED'
+  | 'NONE';
+
 export type Query = {
   file?: Maybe<File>;
   allFile: FileConnection;
@@ -1002,9 +1005,6 @@ export type QuerySitePageArgs = {
   context?: Maybe<SitePageContextFilterInput>;
   pluginCreator?: Maybe<SitePluginFilterInput>;
   pluginCreatorId?: Maybe<StringQueryOperatorInput>;
-<<<<<<< HEAD
-  componentPath?: Maybe<StringQueryOperatorInput>;
-=======
 };
 
 
@@ -1031,7 +1031,6 @@ export type QuerySitePluginArgs = {
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
   internal?: Maybe<InternalFilterInput>;
->>>>>>> ab7d92c14acbd2feb274fc5ff2dafeaa0afd3144
 };
 
 
@@ -1181,10 +1180,10 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   pinned?: Maybe<BooleanQueryOperatorInput>;
   tags?: Maybe<StringQueryOperatorInput>;
   link?: Maybe<StringQueryOperatorInput>;
-  options?: Maybe<StringQueryOperatorInput>;
   name?: Maybe<StringQueryOperatorInput>;
   position?: Maybe<StringQueryOperatorInput>;
   majors?: Maybe<StringQueryOperatorInput>;
+  options?: Maybe<StringQueryOperatorInput>;
 };
 
 export type BooleanQueryOperatorInput = {
@@ -1403,10 +1402,10 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___frontmatter___pinned'
   | 'childrenMarkdownRemark___frontmatter___tags'
   | 'childrenMarkdownRemark___frontmatter___link'
-  | 'childrenMarkdownRemark___frontmatter___options'
   | 'childrenMarkdownRemark___frontmatter___name'
   | 'childrenMarkdownRemark___frontmatter___position'
   | 'childrenMarkdownRemark___frontmatter___majors'
+  | 'childrenMarkdownRemark___frontmatter___options'
   | 'childrenMarkdownRemark___excerpt'
   | 'childrenMarkdownRemark___rawMarkdownBody'
   | 'childrenMarkdownRemark___fileAbsolutePath'
@@ -1468,10 +1467,10 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___pinned'
   | 'childMarkdownRemark___frontmatter___tags'
   | 'childMarkdownRemark___frontmatter___link'
-  | 'childMarkdownRemark___frontmatter___options'
   | 'childMarkdownRemark___frontmatter___name'
   | 'childMarkdownRemark___frontmatter___position'
   | 'childMarkdownRemark___frontmatter___majors'
+  | 'childMarkdownRemark___frontmatter___options'
   | 'childMarkdownRemark___excerpt'
   | 'childMarkdownRemark___rawMarkdownBody'
   | 'childMarkdownRemark___fileAbsolutePath'
@@ -2632,7 +2631,6 @@ export type SitePluginPackageJsonFilterInput = {
   description?: Maybe<StringQueryOperatorInput>;
   version?: Maybe<StringQueryOperatorInput>;
   main?: Maybe<StringQueryOperatorInput>;
-  author?: Maybe<StringQueryOperatorInput>;
   license?: Maybe<StringQueryOperatorInput>;
   dependencies?: Maybe<SitePluginPackageJsonDependenciesFilterListInput>;
   devDependencies?: Maybe<SitePluginPackageJsonDevDependenciesFilterListInput>;
@@ -2811,49 +2809,6 @@ export type SitePageFieldsEnum =
   | 'context___nextSlug'
   | 'context___prevTitle'
   | 'context___prevSlug'
-<<<<<<< HEAD
-  | 'pluginCreator___id'
-  | 'pluginCreator___parent___id'
-  | 'pluginCreator___parent___parent___id'
-  | 'pluginCreator___parent___parent___children'
-  | 'pluginCreator___parent___children'
-  | 'pluginCreator___parent___children___id'
-  | 'pluginCreator___parent___children___children'
-  | 'pluginCreator___parent___internal___content'
-  | 'pluginCreator___parent___internal___contentDigest'
-  | 'pluginCreator___parent___internal___description'
-  | 'pluginCreator___parent___internal___fieldOwners'
-  | 'pluginCreator___parent___internal___ignoreType'
-  | 'pluginCreator___parent___internal___mediaType'
-  | 'pluginCreator___parent___internal___owner'
-  | 'pluginCreator___parent___internal___type'
-  | 'pluginCreator___children'
-  | 'pluginCreator___children___id'
-  | 'pluginCreator___children___parent___id'
-  | 'pluginCreator___children___parent___children'
-  | 'pluginCreator___children___children'
-  | 'pluginCreator___children___children___id'
-  | 'pluginCreator___children___children___children'
-  | 'pluginCreator___children___internal___content'
-  | 'pluginCreator___children___internal___contentDigest'
-  | 'pluginCreator___children___internal___description'
-  | 'pluginCreator___children___internal___fieldOwners'
-  | 'pluginCreator___children___internal___ignoreType'
-  | 'pluginCreator___children___internal___mediaType'
-  | 'pluginCreator___children___internal___owner'
-  | 'pluginCreator___children___internal___type'
-  | 'pluginCreator___internal___content'
-  | 'pluginCreator___internal___contentDigest'
-  | 'pluginCreator___internal___description'
-  | 'pluginCreator___internal___fieldOwners'
-  | 'pluginCreator___internal___ignoreType'
-  | 'pluginCreator___internal___mediaType'
-  | 'pluginCreator___internal___owner'
-  | 'pluginCreator___internal___type'
-  | 'pluginCreator___resolve'
-  | 'pluginCreator___name'
-  | 'pluginCreator___version'
-=======
   | 'pluginCreator___resolve'
   | 'pluginCreator___name'
   | 'pluginCreator___version'
@@ -2861,7 +2816,6 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___browserAPIs'
   | 'pluginCreator___ssrAPIs'
   | 'pluginCreator___pluginFilepath'
->>>>>>> ab7d92c14acbd2feb274fc5ff2dafeaa0afd3144
   | 'pluginCreator___pluginOptions___plugins'
   | 'pluginCreator___pluginOptions___plugins___resolve'
   | 'pluginCreator___pluginOptions___plugins___id'
@@ -2874,10 +2828,7 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___isTSX'
   | 'pluginCreator___pluginOptions___jsxPragma'
   | 'pluginCreator___pluginOptions___allExtensions'
-<<<<<<< HEAD
-=======
   | 'pluginCreator___pluginOptions___pathToEmotionCacheProps'
->>>>>>> ab7d92c14acbd2feb274fc5ff2dafeaa0afd3144
   | 'pluginCreator___pluginOptions___aliases___root'
   | 'pluginCreator___pluginOptions___name'
   | 'pluginCreator___pluginOptions___path'
@@ -2894,10 +2845,7 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___withWebp'
   | 'pluginCreator___pluginOptions___tracedSVG'
   | 'pluginCreator___pluginOptions___loading'
-<<<<<<< HEAD
-=======
   | 'pluginCreator___pluginOptions___decoding'
->>>>>>> ab7d92c14acbd2feb274fc5ff2dafeaa0afd3144
   | 'pluginCreator___pluginOptions___disableBgImageOnAlpha'
   | 'pluginCreator___pluginOptions___disableBgImage'
   | 'pluginCreator___pluginOptions___offsetY'
@@ -2919,18 +2867,10 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___include_favicon'
   | 'pluginCreator___pluginOptions___cacheDigest'
   | 'pluginCreator___pluginOptions___pathCheck'
-<<<<<<< HEAD
-  | 'pluginCreator___nodeAPIs'
-  | 'pluginCreator___browserAPIs'
-  | 'pluginCreator___ssrAPIs'
-  | 'pluginCreator___pluginFilepath'
-=======
->>>>>>> ab7d92c14acbd2feb274fc5ff2dafeaa0afd3144
   | 'pluginCreator___packageJson___name'
   | 'pluginCreator___packageJson___description'
   | 'pluginCreator___packageJson___version'
   | 'pluginCreator___packageJson___main'
-  | 'pluginCreator___packageJson___author'
   | 'pluginCreator___packageJson___license'
   | 'pluginCreator___packageJson___dependencies'
   | 'pluginCreator___packageJson___dependencies___name'
@@ -2942,10 +2882,6 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___packageJson___peerDependencies___name'
   | 'pluginCreator___packageJson___peerDependencies___version'
   | 'pluginCreator___packageJson___keywords'
-<<<<<<< HEAD
-  | 'pluginCreatorId'
-  | 'componentPath';
-=======
   | 'pluginCreator___subPluginPaths'
   | 'pluginCreator___id'
   | 'pluginCreator___parent___id'
@@ -2986,7 +2922,6 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___internal___owner'
   | 'pluginCreator___internal___type'
   | 'pluginCreatorId';
->>>>>>> ab7d92c14acbd2feb274fc5ff2dafeaa0afd3144
 
 export type SitePageGroupConnection = {
   totalCount: Scalars['Int'];
@@ -3043,10 +2978,6 @@ export type SitePageFilterInput = {
   context?: Maybe<SitePageContextFilterInput>;
   pluginCreator?: Maybe<SitePluginFilterInput>;
   pluginCreatorId?: Maybe<StringQueryOperatorInput>;
-<<<<<<< HEAD
-  componentPath?: Maybe<StringQueryOperatorInput>;
-=======
->>>>>>> ab7d92c14acbd2feb274fc5ff2dafeaa0afd3144
 };
 
 export type SitePageSortInput = {
@@ -3178,7 +3109,6 @@ export type SitePluginFieldsEnum =
   | 'packageJson___description'
   | 'packageJson___version'
   | 'packageJson___main'
-  | 'packageJson___author'
   | 'packageJson___license'
   | 'packageJson___dependencies'
   | 'packageJson___dependencies___name'
@@ -3192,36 +3122,6 @@ export type SitePluginFieldsEnum =
   | 'packageJson___keywords'
   | 'subPluginPaths'
   | 'id'
-<<<<<<< HEAD
-  | 'frontmatter___title'
-  | 'frontmatter___date'
-  | 'frontmatter___imgsrc'
-  | 'frontmatter___category'
-  | 'frontmatter___pinned'
-  | 'frontmatter___tags'
-  | 'frontmatter___link'
-  | 'frontmatter___options'
-  | 'frontmatter___name'
-  | 'frontmatter___position'
-  | 'frontmatter___majors'
-  | 'excerpt'
-  | 'rawMarkdownBody'
-  | 'fileAbsolutePath'
-  | 'fields___slug'
-  | 'html'
-  | 'htmlAst'
-  | 'excerptAst'
-  | 'headings'
-  | 'headings___id'
-  | 'headings___value'
-  | 'headings___depth'
-  | 'timeToRead'
-  | 'tableOfContents'
-  | 'wordCount___paragraphs'
-  | 'wordCount___sentences'
-  | 'wordCount___words'
-=======
->>>>>>> ab7d92c14acbd2feb274fc5ff2dafeaa0afd3144
   | 'parent___id'
   | 'parent___parent___id'
   | 'parent___parent___parent___id'
@@ -3959,94 +3859,79 @@ export type ImageSharpSortInput = {
   order?: Maybe<Array<Maybe<SortOrderEnum>>>;
 };
 
-export type RaisedImageFragment = (
-  Pick<File, 'id'>
-  & { childImageSharp?: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
-);
+export type RaisedImageFragment = { id: string, childImageSharp?: { gatsbyImageData: any } | null | undefined };
 
 export type FooterQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type FooterQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'copyright' | 'facebook' | 'instagram'>> }> };
+export type FooterQuery = { site?: { siteMetadata?: { copyright?: string | null | undefined, facebook?: string | null | undefined, instagram?: string | null | undefined } | null | undefined } | null | undefined };
 
 export type SiteTitleQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type SiteTitleQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
+export type SiteTitleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined };
 
-export type BackgroundImageFragment = { childImageSharp?: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> };
+export type BackgroundImageFragment = { childImageSharp?: { gatsbyImageData: any } | null | undefined };
 
 export type SeoQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type SeoQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title' | 'description'>> }> };
+export type SeoQuery = { site?: { siteMetadata?: { title?: string | null | undefined, description?: string | null | undefined } | null | undefined } | null | undefined };
 
 export type BioQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type BioQuery = { allMarkdownRemark: { edges: Array<{ node: (
-        Pick<MarkdownRemark, 'id' | 'html' | 'excerpt'>
-        & { frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'majors' | 'name' | 'position' | 'imgsrc' | 'category'>> }
-      ) }> }, allFile: { edges: Array<{ node: (
-        Pick<File, 'id' | 'relativePath'>
-        & RaisedImageFragment
-      ) }> }, order?: Maybe<{ frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'options'>> }> };
+export type BioQuery = { allMarkdownRemark: { edges: Array<{ node: { id: string, html?: string | null | undefined, excerpt?: string | null | undefined, frontmatter?: { majors?: Array<string | null | undefined> | null | undefined, name?: string | null | undefined, position?: string | null | undefined, imgsrc?: string | null | undefined, category?: string | null | undefined } | null | undefined } }> }, allFile: { edges: Array<{ node: { id: string, relativePath: string, childImageSharp?: { gatsbyImageData: any } | null | undefined } }> }, order?: { frontmatter?: { options?: Array<string | null | undefined> | null | undefined } | null | undefined } | null | undefined };
 
 export type DateFormatQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type DateFormatQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'dateFormat'>> }> };
+export type DateFormatQuery = { site?: { siteMetadata?: { dateFormat?: string | null | undefined } | null | undefined } | null | undefined };
 
 export type EventsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type EventsQuery = { allMarkdownRemark: { edges: Array<{ node: (
-        Pick<MarkdownRemark, 'html' | 'excerpt' | 'id'>
-        & { fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'tags' | 'date' | 'category' | 'imgsrc' | 'pinned' | 'link'>> }
-      ) }> }, allFile: { edges: Array<{ node: (
-        Pick<File, 'id' | 'relativePath'>
-        & RaisedImageFragment
-      ) }> } };
+export type EventsQuery = { allMarkdownRemark: { edges: Array<{ node: { html?: string | null | undefined, excerpt?: string | null | undefined, id: string, fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { title?: string | null | undefined, tags?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, category?: string | null | undefined, imgsrc?: string | null | undefined, pinned?: boolean | null | undefined, link?: string | null | undefined } | null | undefined } }> }, allFile: { edges: Array<{ node: { id: string, relativePath: string, childImageSharp?: { gatsbyImageData: any } | null | undefined } }> } };
 
 export type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type NotFoundPageQuery = { pageBackground?: Maybe<BackgroundImageFragment> };
+export type NotFoundPageQuery = { pageBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
 
 export type AboutPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type AboutPageQuery = { background?: Maybe<BackgroundImageFragment>, pic1?: Maybe<RaisedImageFragment>, pic2?: Maybe<RaisedImageFragment>, pic3?: Maybe<RaisedImageFragment>, pic4?: Maybe<RaisedImageFragment>, pic5?: Maybe<RaisedImageFragment> };
+export type AboutPageQuery = { background?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined, pic1?: { id: string, childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined, pic2?: { id: string, childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined, pic3?: { id: string, childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined, pic4?: { id: string, childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined, pic5?: { id: string, childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
 
 export type ArchivePageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type ArchivePageQuery = { background?: Maybe<BackgroundImageFragment> };
+export type ArchivePageQuery = { background?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
 
 export type BoardPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type BoardPageQuery = { boardBackground?: Maybe<BackgroundImageFragment> };
+export type BoardPageQuery = { boardBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
 
 export type BoongaPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type BoongaPageQuery = { boardBackground?: Maybe<BackgroundImageFragment> };
+export type BoongaPageQuery = { boardBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
 
 export type ContactUsPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type ContactUsPageQuery = { contactBackground?: Maybe<BackgroundImageFragment>, site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'facebook' | 'instagram'>> }> };
+export type ContactUsPageQuery = { contactBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined, site?: { siteMetadata?: { facebook?: string | null | undefined, instagram?: string | null | undefined } | null | undefined } | null | undefined };
 
 export type EventPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type EventPageQuery = { background?: Maybe<BackgroundImageFragment> };
+export type EventPageQuery = { background?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
 
 export type HomePageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type HomePageQuery = { mainBackground?: Maybe<BackgroundImageFragment>, presidentBackground?: Maybe<BackgroundImageFragment>, newsletterBackground?: Maybe<BackgroundImageFragment> };
+export type HomePageQuery = { mainBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined, presidentBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined, newsletterBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
 
 export type IndividualEventPageQueryVariables = Exact<{
   slug?: Maybe<Scalars['String']>;
@@ -4054,7 +3939,30 @@ export type IndividualEventPageQueryVariables = Exact<{
 }>;
 
 
-export type IndividualEventPageQuery = { markdownRemark?: Maybe<(
-    Pick<MarkdownRemark, 'html' | 'id'>
-    & { frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'tags' | 'date' | 'link'>> }
-  )>, file?: Maybe<BackgroundImageFragment> };
+export type IndividualEventPageQuery = { markdownRemark?: { html?: string | null | undefined, id: string, frontmatter?: { title?: string | null | undefined, tags?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, link?: string | null | undefined } | null | undefined } | null | undefined, file?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
+
+export type GatsbyImageSharpFixedFragment = { base64?: string | null | undefined, width: number, height: number, src: string, srcSet: string };
+
+export type GatsbyImageSharpFixed_TracedSvgFragment = { tracedSVG?: string | null | undefined, width: number, height: number, src: string, srcSet: string };
+
+export type GatsbyImageSharpFixed_WithWebpFragment = { base64?: string | null | undefined, width: number, height: number, src: string, srcSet: string, srcWebp?: string | null | undefined, srcSetWebp?: string | null | undefined };
+
+export type GatsbyImageSharpFixed_WithWebp_TracedSvgFragment = { tracedSVG?: string | null | undefined, width: number, height: number, src: string, srcSet: string, srcWebp?: string | null | undefined, srcSetWebp?: string | null | undefined };
+
+export type GatsbyImageSharpFixed_NoBase64Fragment = { width: number, height: number, src: string, srcSet: string };
+
+export type GatsbyImageSharpFixed_WithWebp_NoBase64Fragment = { width: number, height: number, src: string, srcSet: string, srcWebp?: string | null | undefined, srcSetWebp?: string | null | undefined };
+
+export type GatsbyImageSharpFluidFragment = { base64?: string | null | undefined, aspectRatio: number, src: string, srcSet: string, sizes: string };
+
+export type GatsbyImageSharpFluidLimitPresentationSizeFragment = { maxHeight: number, maxWidth: number };
+
+export type GatsbyImageSharpFluid_TracedSvgFragment = { tracedSVG?: string | null | undefined, aspectRatio: number, src: string, srcSet: string, sizes: string };
+
+export type GatsbyImageSharpFluid_WithWebpFragment = { base64?: string | null | undefined, aspectRatio: number, src: string, srcSet: string, srcWebp?: string | null | undefined, srcSetWebp?: string | null | undefined, sizes: string };
+
+export type GatsbyImageSharpFluid_WithWebp_TracedSvgFragment = { tracedSVG?: string | null | undefined, aspectRatio: number, src: string, srcSet: string, srcWebp?: string | null | undefined, srcSetWebp?: string | null | undefined, sizes: string };
+
+export type GatsbyImageSharpFluid_NoBase64Fragment = { aspectRatio: number, src: string, srcSet: string, sizes: string };
+
+export type GatsbyImageSharpFluid_WithWebp_NoBase64Fragment = { aspectRatio: number, src: string, srcSet: string, srcWebp?: string | null | undefined, srcSetWebp?: string | null | undefined, sizes: string };
