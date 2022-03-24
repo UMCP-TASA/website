@@ -1,5 +1,5 @@
 ---
-title: Mr. Wfiffleball
+title: Mr. Wiffleball
 date: 2022-04-02T23:00:39.805Z
 imgsrc: assets/wiffleball.jpg
 category: event
