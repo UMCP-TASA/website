@@ -1,25 +1,19 @@
 ---
 title: Tour of Taiwan
-date: 2020-11-21T23:00:00.000Z
-imgsrc: assets/tour-of-taiwan-.jpg
+date: 2021-11-19T23:00:00.000Z
+imgsrc: assets/touroftaiwan.jpg
 category: event
 pinned: true
 tags:
   - gbm
-link: https://www.facebook.com/events/1277875742564975
+link: https://fb.me/e/P7A2J6Ia
 ---
-We are more than halfway through the semester and that means it's time for TASA's biggest event of the fall - ![🇹🇼](https://static.xx.fbcdn.net/images/emoji.php/v9/t16/1/16/1f1f9_1f1fc.png) 𝐓𝐨𝐮𝐫 𝐨𝐟 𝐓𝐚𝐢𝐰𝐚𝐧 ![🇹🇼](https://static.xx.fbcdn.net/images/emoji.php/v9/t16/1/16/1f1f9_1f1fc.png)
+HERE IT IS! The LARGEST Event of the Fall Semester: UMCP TASA's 𝐓𝐨𝐮𝐫 𝐨𝐟 𝐓𝐚𝐢𝐰𝐚𝐧!![⭐️](https://www.facebook.com/images/emoji.php/v9/tb4/1/16/2b50.png)
 
-Come out to learn about Taiwanese culture, watch us cook up some delicious street food, and 𝘵𝘰𝘶𝘳 𝘛𝘢𝘪𝘸𝘢𝘯 without leaving your house or spending $$$! Even though it will be in a virtual setting, we still have loads of fun activities planned so you won't feel like you're missing a thing! ![🥳](https://static.xx.fbcdn.net/images/emoji.php/v9/t6d/1/16/1f973.png)
+Come learn about Taiwanese Culture & taste some GOOD food![🍥](https://www.facebook.com/images/emoji.php/v9/t4a/1/16/1f365.png)![🥠](https://www.facebook.com/images/emoji.php/v9/t4b/1/16/1f960.png)![🍨](https://www.facebook.com/images/emoji.php/v9/tcd/1/16/1f368.png)![🍦](https://www.facebook.com/images/emoji.php/v9/tcb/1/16/1f366.png)![🥮](https://www.facebook.com/images/emoji.php/v9/t0/1/16/1f96e.png)![🍰](https://www.facebook.com/images/emoji.php/v9/t64/1/16/1f370.png)![🫕](https://www.facebook.com/images/emoji.php/v9/t8a/1/16/1fad5.png)(P.S. If you know anything about Taiwan, you know 7/11 is the superior convenience store--it'll be our theme for the event).![🥳](https://www.facebook.com/images/emoji.php/v9/t6d/1/16/1f973.png)![🥳](https://www.facebook.com/images/emoji.php/v9/t6d/1/16/1f973.png)
 
-If that's not enough, we also have amazing RAFFLES with fanTASAtic prizes - including a Nintendo Switch and Airpod Pros ![😱](https://static.xx.fbcdn.net/images/emoji.php/v9/t2c/1/16/1f631.png)\
-You definitely won't want to miss out! ![🤩](https://static.xx.fbcdn.net/images/emoji.php/v9/t58/1/16/1f929.png)
+Buy raffle tickets and keep your eyes peeled for snack packs![💸](https://www.facebook.com/images/emoji.php/v9/t62/1/16/1f4b8.png)![👀](https://www.facebook.com/images/emoji.php/v9/tc8/1/16/1f440.png) Mark your calendars. Cause this event.. is it.
 
-Tour of Taiwan Website:\
-[https://touroftaiwan.umcptasa.com/](https://touroftaiwan.umcptasa.com/?fbclid=IwAR27KUjmhbXYCn_a87rK1pBKjCIf96FtmXqL0-dW0h8OaVUTx0sIwzjmqhA)\
---> check out our cool website where you can watch videos and buy raffle tickets!!
-
-Who: EVERYONE!\
-Where: UMCP TASA's Discord Server @ [https://ter.ps/tasadiscord](https://l.facebook.com/l.php?u=https%3A%2F%2Fter.ps%2Ftasadiscord%3Ffbclid%3DIwAR0y7gV188dNDpwABIh1qknPNkYx8OtJFBVZZXtKT84xitYYgN__5fx3NUk&h=AT2wY8Z8Y0I17QTQ47d7bD5koahAnAE7Ku3U3DN0Zbfh_DLxe52hyK26xLPqsrSzXW-VgEUif0K8_YHmxBd2z70ieS1M2vlQDExPGYGI6S-_iY7_XURmCHh30iwCvB82-OnD&__tn__=q&c[0]=AT03C_6ee3RDFesSrGsF_28WUEeJU5pEtdGOkqpRszXFFiYcQ9L8IQ7qFM2X1WIJIYJf0JFeZVHpjOv_PrHjQoHD_bKQRWv53uj_7hGiMLTzkbQf-wHvNliPC3VHEwVfScw110Sk5mHTjLsG_Tyud2BK)\
-When: Saturday, Nov. 21 @ 6-9 PM\
-Why: Fun times and cool prizes!
+𝐖𝐡𝐨: Everyone!\
+𝐖𝐡𝐞𝐧: Friday, November 19, 6-9PM\
+𝐖𝐡𝐞𝐫𝐞: Stamp Colony Ballroom![✨](https://www.facebook.com/images/emoji.php/v9/tf4/1/16/2728.png)![✨](https://www.facebook.com/images/emoji.php/v9/tf4/1/16/2728.png)
