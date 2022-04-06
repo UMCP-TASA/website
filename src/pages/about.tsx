@@ -191,7 +191,7 @@ function AboutPage(props: Props) {
                         <Grid item xs={12} sm={4}>
                             <RaisedImage
                                 imageNode={pic1}
-                                alt="Angela big little"
+                                alt="Clarissa big little"
                             />
                         </Grid>
                         <Grid item xs={false} sm={4}>
@@ -203,7 +203,7 @@ function AboutPage(props: Props) {
                         <Grid item xs={false} sm={4}>
                             <RaisedImage
                                 imageNode={pic3}
-                                alt="Rebecca big little"
+                                alt="Sam big little"
                             />
                         </Grid>
                         <Grid item xs={12} sm={6}>
@@ -228,6 +228,10 @@ function AboutPage(props: Props) {
                         tradition
                     </Text>
 
+                    </Section>
+         
+                    <Section>
+                    {/* <Button onClick={App.render} text="Call Component"/> */}
                     <Button
                         href="https://familytree.umcptasa.com"
                         target="_blank"
@@ -263,22 +267,22 @@ function AboutPage(props: Props) {
 
 export const query = graphql`
     query AboutPage {
-        background: file(relativePath: { eq: "tasa2019.jpg" }) {
+        background: file(relativePath: { eq: "tasa2022.jpg" }) {
             ...BackgroundImage
         }
-        pic1: file(relativePath: { eq: "angela_biglittle.jpg" }) {
+        pic1: file(relativePath: { eq: "clarissafam.JPG" }) {
             ...RaisedImage
         }
-        pic2: file(relativePath: { eq: "nathan_biglittle.jpg" }) {
+        pic2: file(relativePath: { eq: "alythiafam.JPG" }) {
             ...RaisedImage
         }
-        pic3: file(relativePath: { eq: "rebecca_biglittle.jpg" }) {
+        pic3: file(relativePath: { eq: "samfam.JPG" }) {
             ...RaisedImage
         }
-        pic4: file(relativePath: { eq: "stephan_biglittle.jpg" }) {
+        pic4: file(relativePath: { eq: "jasonfam.JPG" }) {
             ...RaisedImage
         }
-        pic5: file(relativePath: { eq: "justin_familytree.jpg" }) {
+        pic5: file(relativePath: { eq: "sarahfam.JPG" }) {
             ...RaisedImage
         }
     }
