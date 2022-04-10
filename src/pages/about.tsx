@@ -114,9 +114,17 @@ function AboutPage(props: Props) {
                 </Text>
             </ParallaxBackground>
             <PageContent>
-                <Section>
+                <Section title="Night Market" maxWidth="lg">
+                        <Text align="center" paragraph>
+                            Night Market is TASA's biggest event of the spring semester, 
+                            where we try to bring genuine night market experience from Taiwan to College
+                            Park. The night will feature fun games, interesting cultural activities, and tasty food. Entrance is free!
+                        </Text>
+                </Section>
+                
+                <Section title="Mission Statement" maxWidth="lg">
                     <Text align="center">
-                        TASA at UMCP is dedicated to develop and maintain
+                    TASA at UMCP is dedicated to develop and maintain
                         Taiwanese/Taiwanese American student life and
                         organizational relations at the University of Maryland -
                         College Park, as well as developing relations with
@@ -124,138 +132,6 @@ function AboutPage(props: Props) {
                     </Text>
                 </Section>
 
-                <Section title="Mission Statement" maxWidth="lg">
-                    <Text align="center">
-                        At TASA, we aim to provide these functions:
-                    </Text>
-
-                    <VisibilitySensor
-                        onChange={(isVisible) => setMissionVisible(isVisible)}
-                        active={!isMissionVisible}
-                        partialVisibility
-                    >
-                        <Grid
-                            container
-                            spacing={6}
-                            justifyContent="center"
-                            className={classes.missionStatement}
-                        >
-                            {missionTrails.map((props, index) => (
-                                <AnimatedGrid
-                                    item
-                                    xs={12}
-                                    md={4}
-                                    key={goals[index].title}
-                                    style={props}
-                                >
-                                    <ContentWithIcon
-                                        icon={goals[index].icon}
-                                        title={`${index + 1}. ${
-                                            goals[index].title
-                                        }`}
-                                        description={goals[index].description}
-                                    />
-                                </AnimatedGrid>
-                            ))}
-                            {/* {goals.map((goal, index) => (
-                                <Grid item xs={12} md={4} key={goal.title}>
-                                    <ContentWithIcon
-                                        icon={goal.icon}
-                                        title={`${index + 1}. ${goal.title}`}
-                                        description={goal.description}
-                                    />
-                                </Grid>
-                            ))} */}
-                        </Grid>
-                    </VisibilitySensor>
-                </Section>
-
-                <Section title="Big/Little System" maxWidth="lg">
-                    <Container maxWidth="md">
-                        <Text align="center" paragraph>
-                            We are an organization committed to making everyone
-                            feel welcome so we have very our own big/little
-                            system. Every new member of TASA will receive a
-                            veteran TASA member as a big who will serve as a
-                            mentor throughout their college career and help them
-                            become acquainted with TASA. The big/little system
-                            is an integral part of TASA that helps us form the
-                            TASA family that we pride ourselves in. At the
-                            beginning of every school year, we host a few
-                            big/little GBMs so that new members can meet current
-                            members and choose their big.
-                        </Text>
-                    </Container>
-
-                    <Grid container spacing={5}>
-                        <Grid item xs={12} sm={4}>
-                            <RaisedImage
-                                imageNode={pic1}
-                                alt="Angela big little"
-                            />
-                        </Grid>
-                        <Grid item xs={false} sm={4}>
-                            <RaisedImage
-                                imageNode={pic2}
-                                alt="Nathan big little"
-                            />
-                        </Grid>
-                        <Grid item xs={false} sm={4}>
-                            <RaisedImage
-                                imageNode={pic3}
-                                alt="Rebecca big little"
-                            />
-                        </Grid>
-                        <Grid item xs={12} sm={6}>
-                            <RaisedImage
-                                imageNode={pic4}
-                                alt="Stephan big little"
-                            />
-                        </Grid>
-                        <Grid item xs={12} sm={6}>
-                            <RaisedImage
-                                imageNode={pic5}
-                                alt="Justin family tree"
-                            />
-                        </Grid>
-                    </Grid>
-                </Section>
-
-                <Section title="Family Tree">
-                    <Text align="center" paragraph>
-                        Dive into the past and explore your lineage. Check out
-                        this interactive tree to see years of TASA Big/Little
-                        tradition
-                    </Text>
-
-                    <Button
-                        href="https://familytree.umcptasa.com"
-                        target="_blank"
-                        color="primary"
-                        variant="contained"
-                    >
-                        Family Tree
-                    </Button>
-                </Section>
-
-                <Section title="Junior Officer System">
-                    <Text
-                        variant="subtitle1"
-                        align="center"
-                        color="textSecondary"
-                        paragraph
-                    >
-                        Want to work with the ones who make it all happen? Want
-                        to join the planning of events and meetings?
-                    </Text>
-                    <Text align="center" paragraph>
-                        Members of TASA can apply to become junior officers of
-                        TASA. To qualify and maintain membership, members are
-                        expected to reguarly attend weekly GBMs, help lead
-                        planning for events, attend a few board meetings, and be
-                        role models for the rest of the organization.
-                    </Text>
-                </Section>
             </PageContent>
         </>
     )
@@ -263,7 +139,7 @@ function AboutPage(props: Props) {
 
 export const query = graphql`
     query AboutPage {
-        background: file(relativePath: { eq: "tasa2019.jpg" }) {
+        background: file(relativePath: { eq: "tasa2022.jpg"}) {
             ...BackgroundImage
         }
         pic1: file(relativePath: { eq: "angela_biglittle.jpg" }) {
