@@ -114,9 +114,17 @@ function AboutPage(props: Props) {
                 </Text>
             </ParallaxBackground>
             <PageContent>
-                <Section>
+                <Section title="Night Market" maxWidth="lg">
+                        <Text align="center" paragraph>
+                            Night Market is TASA's biggest event of the spring semester, 
+                            where we try to bring genuine night market experience from Taiwan to College
+                            Park. The night will feature fun games, interesting cultural activities, and tasty food. Entrance is free!
+                        </Text>
+                </Section>
+                
+                <Section title="Mission Statement" maxWidth="lg">
                     <Text align="center">
-                        TASA at UMCP is dedicated to develop and maintain
+                    TASA at UMCP is dedicated to develop and maintain
                         Taiwanese/Taiwanese American student life and
                         organizational relations at the University of Maryland -
                         College Park, as well as developing relations with
@@ -124,6 +132,7 @@ function AboutPage(props: Props) {
                     </Text>
                 </Section>
 
+<<<<<<< HEAD
                 <Section title="Mission Statement" maxWidth="lg">
                     <Text align="center">
                         At TASA, we aim to provide these functions:
@@ -260,6 +269,8 @@ function AboutPage(props: Props) {
                         role models for the rest of the organization.
                     </Text>
                 </Section>
+=======
+>>>>>>> 1b59cc9e97e3f31fbc0bb185a5c8a41691d81ec7
             </PageContent>
         </>
     )
@@ -267,7 +278,11 @@ function AboutPage(props: Props) {
 
 export const query = graphql`
     query AboutPage {
+<<<<<<< HEAD
         background: file(relativePath: { eq: "tasa2022.jpg" }) {
+=======
+        background: file(relativePath: { eq: "tasa2022.jpg"}) {
+>>>>>>> 1b59cc9e97e3f31fbc0bb185a5c8a41691d81ec7
             ...BackgroundImage
         }
         pic1: file(relativePath: { eq: "clarissafam.JPG" }) {

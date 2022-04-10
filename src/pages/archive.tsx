@@ -35,21 +35,9 @@ function ArchivePage(props: Props) {
             <SEO title="Events" />
             <ParallaxBackground image={background}>
                 <Text variant="h3" color="white" align="center">
-                    Archive
+                    Misc
                 </Text>
             </ParallaxBackground>
-            <PageContent>
-                <ArchiveSection
-                    title="2018-2019"
-                    boardLink="https://umcptasa.github.io/old-html-website/pages/board1819.html"
-                    eventsLink="https://umcptasa.github.io/old-html-website/pages/events1819.html"
-                />
-                <ArchiveSection
-                    title="2019-2020"
-                    boardLink="https://umcptasa.github.io/old-html-website/pages/board.html"
-                    eventsLink="https://umcptasa.github.io/old-html-website/pages/events.html"
-                />
-            </PageContent>
         </>
     )
 }
