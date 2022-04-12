@@ -199,7 +199,7 @@ As described in the [Gatsby docs on fragments](https://www.gatsbyjs.org/docs/usi
 ```javascript
 export const query = graphql`
     query HomePage {
-        mainBackground: file(relativePath: { eq: "Taiwan.png" }) {
+        mainBackground: file(relativePath: { eq: "Taiwan.jpg" }) {
             ...BackgroundImage
         }
         presidentBackground: file(relativePath: { eq: "bg10.jpg" }) {

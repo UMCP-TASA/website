@@ -65,14 +65,37 @@ function ContactUsPage(props: Props) {
             </ParallaxBackground>
 
             <PageContent>
-                <Section>
-                    <Text align="left">
-                        umcptasa@gmail.com
-                    </Text>
-                    <Text align = "left">
-                        301-532-9501
-                    </Text>
+                <Section maxWidth="lg">
+                    <Grid container spacing={5} alignItems="center">
+                        <Grid item xs={12} md={9}>
+                            <Text variant="h3" color="textSecondary" align="center">
+                            Send us a message
+                            </Text>
+                            <ContactUsForm />
+                        </Grid>
+                        <Grid item xs={12} md={3}>
+                            <ContentWithIcon
+                                className={classes.sideInfo}
+                                icon={<PinDrop fontSize="large" />}
+                                title="Find us at UMD's office"
+                                description="Adele H. Stamp Union, Student Involvement Suite 0207G
+                                University of Maryland, College Park"
+                            />
+                            <ContentWithIcon
+                                className={classes.sideInfo}
+                                icon={<BusinessCenter fontSize="large" />}
+                                title="Connect on social media"
+                            >
+                                <IconButton href={facebook}>
+                                    <Facebook fontSize="large"/>
+                                </IconButton>
 
+                                <IconButton href={instagram}>
+                                    <Instagram fontSize="large"/>
+                                </IconButton>
+                            </ContentWithIcon>
+                        </Grid>
+                    </Grid>
                 </Section>
             </PageContent>
         </>

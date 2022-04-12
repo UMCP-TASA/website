@@ -3,10 +3,7 @@ import { PageProps, graphql } from "gatsby"
 import { Theme, createStyles, withStyles, WithStyles } from "@material-ui/core"
 import moment from "moment"
 import { EventPageQuery } from "graphql-types"
-import {
-    Container,
-    Grid,
-} from "@material-ui/core"
+
 // Components
 import SEO from "components/seo"
 import Section from "components/PageLayout/Section"
@@ -15,7 +12,6 @@ import ParallaxBackground from "components/PageLayout/ParallaxBackground"
 import Text from "components/Typography/Text"
 import ButtonLink from "components/Button/ButtonLink"
 import EventsGrid from "components/Events/EventsGrid"
-import { RaisedImage } from "components/Image"
 
 // Hooks
 import useEvents from "hooks/useEvents"
@@ -38,7 +34,7 @@ type Props = PageProps &
 
 function EventPage(props: Props) {
     const { data, classes } = props
-    const { background, pic1} = data
+    const { background } = data
 
     if (!background) throw new Error("Events background does not exist.")
 
@@ -53,74 +49,44 @@ function EventPage(props: Props) {
     return (
         <>
             <SEO title="Events" />
-            <ParallaxBackground image={background} imageHeight={"65vh"}>
+            <ParallaxBackground image={background}>
                 <Text variant="h3" color="white" align="center">
-                    Program
+                    Events
                 </Text>
             </ParallaxBackground>
             <PageContent>
-                <Section title="5:00 PM" maxWidth="lg">
+                <Section title="Upcoming Events" maxWidth="lg">
+                    <EventsGrid events={futureEvents} />
                 </Section>
-                <Section title="Set Up and Performer Arrival" maxWidth="lg">
-                </Section>
-                <Section title="5:00 - 6:00 PM" maxWidth="lg">
-                </Section>
-                <Section title="Tech Rehearsal" maxWidth="lg">
-                </Section>
-                <Section title="6:30 PM" maxWidth="lg">
-                </Section>
-                <Section title="1st Shift Volunteers Arrive/Instructions given" maxWidth="lg">
-                </Section>
-                <Section title="7:00 - 8:00 PM" maxWidth="lg">
-                </Section>
-                <Section title="Volunteer 1st Shift" maxWidth="lg">
-                </Section>
-                <Section title="7:00 PM" maxWidth="lg">
-                </Section>
-                <Section title="Night Market Starts" maxWidth="lg">
-                </Section>
-                <Section title="7:30 - 8:20 PM" maxWidth="lg">
-                </Section>
-                <Section title="Performances" maxWidth="lg">
-                </Section>
-                <Section title="7:50 PM" maxWidth="lg">
-                </Section>
-                <Section title="2nd Shift Volunteers Arrive/Instructions given" maxWidth="lg">
-                </Section>
-                <Section title="8:00 - 9:00 PM" maxWidth="lg">
-                </Section>
-                <Section title="Volunteer 2nd Shift" maxWidth="lg">
-                </Section>
-                <Section title="8:50 PM" maxWidth="lg">
-                </Section>
-                <Section title="3rd Shift Volunteers Arrive/Instructions given" maxWidth="lg">
-                </Section>
-                <Section title="9:00 - 10:00 PM" maxWidth="lg">
-                </Section>
-                <Section title="Volunteer 3rd Shift" maxWidth="lg">
-                </Section>
-                <Section title="10:00 PM" maxWidth="lg">
-                </Section>
-                <Section title="Night Market Ends and Clean Up" maxWidth="lg">
-                </Section>
-                <Section title="Big/Little System" maxWidth="lg">
-                    <Grid container spacing={5}>
-                        <Grid item xs={12} sm={4}>
-                            <RaisedImage
-                                imageNode={pic1}
-                                alt="programming"
-                            />
-                        </Grid>
-                    </Grid>
-                    </Section>
-                
 
+                <Section title="Notable Events" maxWidth="lg">
+                    <EventsGrid events={importantEvents} sm={6} />
+                </Section>
+
+                <Section title="Past Events" maxWidth="lg">
+                    <EventsGrid events={pastEvents} />
+                </Section>
+
+                <Section>
+                    <Text
+                        variant="h5"
+                        color="textSecondary"
+                        align="center"
+                        paragraph
+                    >
+                        Want to check out events further back? Check out our
+                        archives!
+                    </Text>
+                    <ButtonLink
+                        to="/archive"
+                        className={classes.margin}
+                        variant="contained"
+                        color="primary"
+                    >
+                        Archives
+                    </ButtonLink>
+                </Section>
             </PageContent>
-            {/* <SEO title="Events" />
-            <ParallaxBackground image={background}>
-                
-            </ParallaxBackground> */}
-
         </>
     )
 }
@@ -129,9 +95,6 @@ export const query = graphql`
     query EventPage {
         background: file(relativePath: { eq: "events.jpg" }) {
             ...BackgroundImage
-        }
-        pic1: file(relativePath: { eq: "programming.png" }) {
-            ...RaisedImage
         }
     }
 `

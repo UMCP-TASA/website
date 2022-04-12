@@ -22,17 +22,17 @@ function HeaderLinks(props: Props) {
             />
             <HeaderLink
                 to="/events"
-                text="Program"
+                text="Events"
                 scrollTrigger={scrollTrigger}
             />
             <HeaderLink
                 to="/board"
-                text="Tickets"
+                text="Board"
                 scrollTrigger={scrollTrigger}
             />
             <HeaderLink
                 to="/archive"
-                text="Misc"
+                text="Archive"
                 scrollTrigger={scrollTrigger}
             />
             <HeaderLink

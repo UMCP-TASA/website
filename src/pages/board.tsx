@@ -30,8 +30,8 @@ type Props = WithStyles<typeof styles> &
 
 function BoardPage(props: Props) {
     const { data, classes } = props
-    const { background } = data
-    if (!background) throw new Error("Board background does not exist.")
+    const { boardBackground } = data
+    if (!boardBackground) throw new Error("Board background does not exist.")
 
     const bios = useBios()
     const presidents = bios.slice(0, 2)
@@ -40,44 +40,42 @@ function BoardPage(props: Props) {
     return (
         <>
             <SEO title="Board" />
-            <ParallaxBackground image={background}>
+            <ParallaxBackground image={boardBackground}>
                 <Text variant="h3" color="white" align="center" paragraph>
-                    Tickets
+                    Meet the Board
+                </Text>
+                <Text variant="h6" color="white" align="center">
+                    Check out the people who make it all happen!
                 </Text>
             </ParallaxBackground>
             <PageContent>
-            <Section title="Ticket System" maxWidth="lg">
-                        <Text align="center" paragraph>
-                            $3 for 3; $5 for 6; $10 for 13
+                <Section maxWidth="lg">
+                    <Hidden xsDown>
+                        <Text
+                            variant="subtitle1"
+                            color="textSecondary"
+                            align="center"
+                            paragraph
+                        >
+                            Tip: Learn more about the board by hovering or
+                            tapping over their picture!
                         </Text>
-                </Section>
-                <Section title="Ring Toss" maxWidth="lg">
-                        <Text align="center" paragraph>
-                            Ring toss costs 2 tickets to play and every bottle you get, you earn one ticket back.
-                        </Text>
-                </Section>
-                <Section title="Plinko" maxWidth="lg">
-                        <Text align="center" paragraph>
-                            Plinko costs 1 ticket to play. You roll a golf ball along a path and depending on what cup you get the ball in you will 
-                        </Text>
-                </Section>
-                <Section title="Shuttlecock" maxWidth="lg">
-                        <Text align="center" paragraph>
-                            
-                        </Text>
+                    </Hidden>
+
+                    <BioGrid bios={presidents} />
+                    <BioGrid bios={rest} />
                 </Section>
             </PageContent>
-
-
         </>
     )
 }
 
 export const query = graphql`
     query BoardPage {
-        background: file(relativePath: { eq: "events.jpg" }) {
+        boardBackground: file(relativePath: { eq: "boardPic.jpg" }) {
             ...BackgroundImage
         }
     }
 `
+
 export default withStyles(styles)(BoardPage)
