@@ -1,11 +1,11 @@
 import React from "react"
 import { Theme, createStyles, withStyles, WithStyles } from "@material-ui/core"
 
-// Components
 import SEO from "components/seo"
 import Hero from "components/Home/Hero"
 import Welcome from "components/Home/Welcome"
 import Goals from "components/Home/Goals"
+import UpcomingEvents from "components/Home/UpcomingEvents"
 
 import { ThemeProvider } from "@material-ui/core/styles"
 import theme from "../theme"
@@ -27,6 +27,7 @@ function IndexPage(props: Props) {
                 <Hero />
                 <Welcome />
                 <Goals />
+                <UpcomingEvents />
             </div>
         </ThemeProvider>
     )
