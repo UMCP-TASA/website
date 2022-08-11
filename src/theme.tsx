@@ -101,10 +101,10 @@ theme.typography.h6 = {
     fontWeight: "normal",
     lineHeight: "1.2",
     [theme.breakpoints.only("xs")]: {
-        fontSize: "0.5rem",
+        fontSize: "0.75rem",
     },
     [theme.breakpoints.only("sm")]: {
-        fontSize: "0.8rem",
+        fontSize: "0.85rem",
     },
     [theme.breakpoints.up("md")]: {
         fontSize: "1.25rem",
@@ -115,10 +115,10 @@ theme.typography.subtitle1 = {
     fontWeight: "bold",
     lineHeight: "2",
     [theme.breakpoints.only("xs")]: {
-        fontSize: "0.6rem",
+        fontSize: "0.75rem",
     },
     [theme.breakpoints.only("sm")]: {
-        fontSize: "0.8rem",
+        fontSize: "0.85rem",
     },
     [theme.breakpoints.up("md")]: {
         fontSize: "1.25rem",
@@ -129,10 +129,10 @@ theme.typography.body1 = {
     fontWeight: "normal",
     lineHeight: "1.5",
     [theme.breakpoints.only("xs")]: {
-        fontSize: "0.6rem",
+        fontSize: "0.75rem",
     },
     [theme.breakpoints.only("sm")]: {
-        fontSize: "0.8rem",
+        fontSize: "0.85rem",
     },
     [theme.breakpoints.up("md")]: {
         fontSize: "1rem",
