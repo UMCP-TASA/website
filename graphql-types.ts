@@ -3950,11 +3950,6 @@ export type EventPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type EventPageQuery = { background?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
 
-export type HomePageQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type HomePageQuery = { mainBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined, presidentBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined, newsletterBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
-
 export type IndividualEventPageQueryVariables = Exact<{
   slug?: Maybe<Scalars['String']>;
   imgsrc?: Maybe<Scalars['String']>;
