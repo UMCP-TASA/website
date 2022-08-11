@@ -6,6 +6,7 @@ import Hero from "components/Home/Hero"
 import Welcome from "components/Home/Welcome"
 import Goals from "components/Home/Goals"
 import UpcomingEvents from "components/Home/UpcomingEvents"
+import NewsletterContact from "components/Home/NewsletterContact"
 
 import { ThemeProvider } from "@material-ui/core/styles"
 import theme from "../theme"
@@ -27,7 +28,9 @@ function IndexPage(props: Props) {
                 <Hero />
                 <Welcome />
                 <Goals />
+                <a id="upcoming-events" />
                 <UpcomingEvents />
+                <NewsletterContact />
             </div>
         </ThemeProvider>
     )
