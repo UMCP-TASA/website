@@ -5,6 +5,7 @@ import { Theme, createStyles, withStyles, WithStyles } from "@material-ui/core"
 import SEO from "components/seo"
 import Hero from "components/Home/Hero"
 import Welcome from "components/Home/Welcome"
+import Goals from "components/Home/Goals"
 
 import { ThemeProvider } from "@material-ui/core/styles"
 import theme from "../theme"
@@ -25,6 +26,7 @@ function IndexPage(props: Props) {
                 <SEO title="Home" />
                 <Hero />
                 <Welcome />
+                <Goals />
             </div>
         </ThemeProvider>
     )
