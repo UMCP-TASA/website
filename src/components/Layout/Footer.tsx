@@ -29,6 +29,11 @@ const styles = (theme: Theme) =>
                 paddingRight: theme.spacing(2),
             },
         },
+        icon: {
+            [theme.breakpoints.only("xs")]: {
+                padding: "0.2rem",
+            },
+        },
     })
 
 type Props = WithStyles<typeof styles>
@@ -86,19 +91,19 @@ function Footer(props: Props) {
                 wrap="nowrap"
             >
                 <Grid item>
-                    <IconButton href={facebook}>
+                    <IconButton className={classes.icon} href={facebook}>
                         <FontAwesomeIcon icon={faFacebook} />
                     </IconButton>
 
-                    <IconButton href={instagram}>
+                    <IconButton className={classes.icon} href={instagram}>
                         <FontAwesomeIcon icon={faInstagram} />
                     </IconButton>
 
-                    <IconButton href={youtube}>
+                    <IconButton className={classes.icon} href={youtube}>
                         <FontAwesomeIcon icon={faYoutube} />
                     </IconButton>
 
-                    <IconButton href={discord}>
+                    <IconButton className={classes.icon} href={discord}>
                         <FontAwesomeIcon icon={faDiscord} />
                     </IconButton>
                 </Grid>

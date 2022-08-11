@@ -47,6 +47,12 @@ const styles = (theme: Theme) =>
             top: "50%",
             transform: "translateY(-50%)",
         },
+        subtitle: {
+            [theme.breakpoints.only("xs")]: {
+                padding: "0.2rem 40% 0.2rem 0%",
+                lineHeight: "1",
+            },
+        },
         button: {
             [theme.breakpoints.only("xs")]: {
                 fontSize: "0.7rem",
@@ -81,7 +87,7 @@ function Hero(props: Props) {
                 <Text variant="h1" color="white">
                     Student Association
                 </Text>
-                <Text variant="h6" color="white">
+                <Text className={classes.subtitle} variant="h6" color="white">
                     Dedicated to promoting Taiwan's rich culture and heritage
                 </Text>
                 <ButtonLink
