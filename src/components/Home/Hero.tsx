@@ -47,9 +47,6 @@ const styles = (theme: Theme) =>
             top: "50%",
             transform: "translateY(-50%)",
         },
-        tasa: {
-            fontWeight: "bold",
-        },
         button: {
             [theme.breakpoints.only("xs")]: {
                 fontSize: "0.7rem",
@@ -78,10 +75,10 @@ function Hero(props: Props) {
                 <Text variant="h4" color="white">
                     University of Maryland College Park
                 </Text>
-                <Text className={classes.tasa} variant="h1" color="white">
+                <Text variant="h1" color="white">
                     Taiwanese American
                 </Text>
-                <Text className={classes.tasa} variant="h1" color="white">
+                <Text variant="h1" color="white">
                     Student Association
                 </Text>
                 <Text variant="h6" color="white">

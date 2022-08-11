@@ -16,7 +16,7 @@ const styles = (theme: Theme) =>
     createStyles({
         container: {
             [theme.breakpoints.only("xs")]: {
-                padding: "1rem 5%",
+                padding: "1rem 20%",
             },
             [theme.breakpoints.only("sm")]: {
                 padding: "1rem 10%",
@@ -58,10 +58,12 @@ function Goals(props: Props) {
             <Text variant="h2" color="primary">
                 Our Goals
             </Text>
-            <Text color="textPrimary" align="center" paragraph>
+            <Text variant="h6" color="textPrimary" align="center">
                 At TASA, we aim to provide these functions:
             </Text>
-
+            <Text variant="body1">
+                <br></br>
+            </Text>
             <div className={classes.grid}>
                 <div className={classes.goal}>
                     <Text variant="h2" color="secondary">
@@ -70,7 +72,7 @@ function Goals(props: Props) {
                     <Text variant="h3" color="textSecondary">
                         AWARENESS
                     </Text>
-                    <Text variant="body2" color="textPrimary">
+                    <Text variant="body1" color="textPrimary">
                         {
                             "Promote awareness of Taiwanese and Taiwanese American culture, language, history, and current affairs"
                         }
@@ -83,7 +85,7 @@ function Goals(props: Props) {
                     <Text variant="h3" color="textSecondary">
                         LIAISON
                     </Text>
-                    <Text variant="body2" color="textPrimary">
+                    <Text variant="body1" color="textPrimary">
                         {
                             "Serve as the liaison for the Taiwanese and Taiwanese American individuals at the University of Maryland, College Park"
                         }
@@ -96,7 +98,7 @@ function Goals(props: Props) {
                     <Text variant="h3" color="textSecondary">
                         FORUM
                     </Text>
-                    <Text variant="body2" color="textPrimary">
+                    <Text variant="body1" color="textPrimary">
                         {
                             "Provide the forum needed for the exchange of information, ideas, and feelings among individuals of the Taiwanese and Taiwanese American community"
                         }
@@ -109,7 +111,7 @@ function Goals(props: Props) {
                     <Text variant="h3" color="textSecondary">
                         INFORM
                     </Text>
-                    <Text variant="body2" color="textPrimary">
+                    <Text variant="body1" color="textPrimary">
                         {
                             "Inform students and members at the university on the various political news in the Taiwanese community"
                         }
@@ -122,7 +124,7 @@ function Goals(props: Props) {
                     <Text variant="h3" color="textSecondary">
                         SUPPORT
                     </Text>
-                    <Text variant="body2" color="textPrimary">
+                    <Text variant="body1" color="textPrimary">
                         {
                             "Support social and educational events and develop programs that will benefit the Taiwanese and Taiwanese American community as a whole"
                         }
@@ -135,7 +137,7 @@ function Goals(props: Props) {
                     <Text variant="h3" color="textSecondary">
                         RELATIONSHIPS
                     </Text>
-                    <Text variant="body2" color="textPrimary">
+                    <Text variant="body1" color="textPrimary">
                         {
                             "Develop strong relationships with other organizations at the University of Maryland, the administration, and other organizations nationwide, in order to communicate and fulfill our needs and goals"
                         }

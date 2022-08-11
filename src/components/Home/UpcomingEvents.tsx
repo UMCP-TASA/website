@@ -9,7 +9,7 @@ const styles = (theme: Theme) =>
     createStyles({
         container: {
             [theme.breakpoints.down("xs")]: {
-                padding: "1rem 25%",
+                padding: "1rem 10%",
             },
             [theme.breakpoints.up("sm")]: {
                 padding: "1rem 5%",
@@ -24,13 +24,14 @@ const styles = (theme: Theme) =>
             display: "grid",
             [theme.breakpoints.down("xs")]: {
                 gap: "1rem",
+                padding: "1rem 20%",
             },
             [theme.breakpoints.up("sm")]: {
                 gap: "1.5rem",
                 gridTemplateColumns: "repeat(3, 1fr)",
+                padding: "1rem 0",
             },
             margin: 0,
-            padding: "1rem 0",
         },
         button: {
             fontWeight: "bold",
@@ -71,7 +72,7 @@ function UpcomingEvents(props: Props) {
             </Text>
             <Text variant="body1" color="textPrimary" align="center">
                 TASA organizes many fun events throughout the year! Be sure to
-                follow us on Facebook for all the latest announcements!
+                follow us on social media for all the latest announcements!
             </Text>
             <div className={classes.events}>{events}</div>
             <ButtonLink

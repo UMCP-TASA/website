@@ -5,10 +5,7 @@ import Text from "components/Typography/Text"
 const styles = (theme: Theme) =>
     createStyles({
         container: {
-            [theme.breakpoints.only("xs")]: {
-                padding: "1rem",
-            },
-            [theme.breakpoints.only("sm")]: {
+            [theme.breakpoints.down("sm")]: {
                 padding: "1rem 10%",
             },
             [theme.breakpoints.up("md")]: {
