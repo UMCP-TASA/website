@@ -275,6 +275,8 @@ export type SiteSiteMetadata = {
   copyright?: Maybe<Scalars['String']>;
   facebook?: Maybe<Scalars['String']>;
   instagram?: Maybe<Scalars['String']>;
+  youtube?: Maybe<Scalars['String']>;
+  discord?: Maybe<Scalars['String']>;
 };
 
 export type SiteFunction = Node & {
@@ -2114,6 +2116,8 @@ export type SiteSiteMetadataFilterInput = {
   copyright?: Maybe<StringQueryOperatorInput>;
   facebook?: Maybe<StringQueryOperatorInput>;
   instagram?: Maybe<StringQueryOperatorInput>;
+  youtube?: Maybe<StringQueryOperatorInput>;
+  discord?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SiteConnection = {
@@ -2171,6 +2175,8 @@ export type SiteFieldsEnum =
   | 'siteMetadata___copyright'
   | 'siteMetadata___facebook'
   | 'siteMetadata___instagram'
+  | 'siteMetadata___youtube'
+  | 'siteMetadata___discord'
   | 'port'
   | 'host'
   | 'pathPrefix'
@@ -3886,7 +3892,7 @@ export type RaisedImageFragment = { id: string, childImageSharp?: { gatsbyImageD
 export type FooterQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type FooterQuery = { site?: { siteMetadata?: { copyright?: string | null | undefined, facebook?: string | null | undefined, instagram?: string | null | undefined } | null | undefined } | null | undefined };
+export type FooterQuery = { site?: { siteMetadata?: { copyright?: string | null | undefined, facebook?: string | null | undefined, instagram?: string | null | undefined, youtube?: string | null | undefined, discord?: string | null | undefined } | null | undefined } | null | undefined };
 
 export type SiteTitleQueryVariables = Exact<{ [key: string]: never; }>;
 

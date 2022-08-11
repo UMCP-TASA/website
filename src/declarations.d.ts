@@ -19,6 +19,8 @@ declare module "root/site-config" {
         copyright: string
         facebookLink: string
         instagramLink: string
+        youtubeLink: string
+        discordLink: string
     }
 }
 

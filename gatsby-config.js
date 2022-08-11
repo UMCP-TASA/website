@@ -14,6 +14,8 @@ module.exports = {
         copyright: config.copyright,
         facebook: config.facebookLink,
         instagram: config.instagramLink,
+        youtube: config.youtubeLink,
+        discord: config.discordLink,
     },
     plugins: [
         "gatsby-plugin-typescript",
