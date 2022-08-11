@@ -14,11 +14,23 @@ module.exports = {
         copyright: config.copyright,
         facebook: config.facebookLink,
         instagram: config.instagramLink,
+        youtube: config.youtubeLink,
+        discord: config.discordLink,
     },
     plugins: [
         "gatsby-plugin-typescript",
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-material-ui",
+        {
+            resolve: `gatsby-plugin-google-fonts-v2`,
+            options: {
+                fonts: [
+                    {
+                        family: `Readex Pro`,
+                    },
+                ]
+,            },
+        },
         {
             resolve: `gatsby-alias-imports`,
             options: {

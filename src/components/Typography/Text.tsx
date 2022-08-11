@@ -19,8 +19,12 @@ const styles = (theme: Theme) =>
             color: theme.palette.success.main,
         },
         heading: {
-            fontFamily: ["Roboto Slab", "Times New Roman", "serif"].join(","),
-            // fontWeight: 700,
+            fontFamily: [
+                "Readex Pro",
+                "Roboto Slab",
+                "Times New Roman",
+                "serif",
+            ].join(","),
         },
     })
 

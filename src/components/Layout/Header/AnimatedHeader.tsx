@@ -50,7 +50,7 @@ function Header(props: Props) {
     const { classes, title } = props
     const scrollTrigger = useScrollTrigger({
         disableHysteresis: true,
-        threshold: 100,      
+        threshold: 100,
     })
     const animatedStyles = useSpring({
         background: scrollTrigger ? "#ffffffff" : "#ffffff00",
@@ -68,18 +68,22 @@ function Header(props: Props) {
         >
             <Toolbar>
                 <Container>
-                    <Grid container alignItems="center" justifyContent="space-between">
+                    <Grid
+                        container
+                        alignItems="center"
+                        justifyContent="space-between"
+                    >
                         <Grid item>
                             <Link className={classes.link} to="/">
                                 <Logo white={!scrollTrigger} />
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Hidden xsDown>
+                            <Hidden smDown>
                                 {/* Hidden is a component that lets us hide or show things depending on the size of the screen*/}
                                 <HeaderLinks scrollTrigger={scrollTrigger} />
                             </Hidden>
-                            <Hidden smUp>
+                            <Hidden mdUp>
                                 <HeaderMenu scrollTrigger={scrollTrigger} />
                             </Hidden>
                         </Grid>

@@ -35,11 +35,6 @@ function HeaderLinks(props: Props) {
                 text="Archive"
                 scrollTrigger={scrollTrigger}
             />
-            <HeaderLink
-                to="/contact-us"
-                text="Contact Us"
-                scrollTrigger={scrollTrigger}
-            />
         </>
     )
 }

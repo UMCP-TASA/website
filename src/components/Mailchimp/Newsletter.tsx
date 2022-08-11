@@ -18,10 +18,7 @@ import Text from "components/Typography/Text"
 const styles = (theme: Theme) =>
     createStyles({
         root: {
-            marginTop: theme.spacing(2),
             backgroundColor: "white",
-            padding: theme.spacing(2),
-            paddingLeft: theme.spacing(3),
             width: "100%",
             borderRadius: theme.shape.borderRadius,
         },
@@ -40,11 +37,12 @@ const styles = (theme: Theme) =>
     })
 
 type Props = WithStyles<typeof styles> & {
+    className?: string
     maxWidth?: ContainerProps["maxWidth"]
 }
 
 function Newsletter(props: Props) {
-    const { classes, maxWidth = "lg" } = props
+    const { classes, className = "", maxWidth = "lg" } = props
     const [email, setEmail] = useState<string>("")
     const [msg, setMsg] = useState<React.ReactNode>()
     const [disabled, setDisabled] = useState<boolean>(false)
@@ -104,7 +102,7 @@ function Newsletter(props: Props) {
                         <TextField
                             required
                             className={classes.textField}
-                            label="Email"
+                            label="Subscribe to our newsletter!"
                             name="email"
                             fullWidth
                             value={email}

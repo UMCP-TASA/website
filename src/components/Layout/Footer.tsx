@@ -5,14 +5,19 @@ import {
     Grid,
     IconButton,
     withStyles,
-    Toolbar,
     createStyles,
     Theme,
     WithStyles,
 } from "@material-ui/core"
 import { FooterQuery } from "graphql-types"
-import FacebookIcon from "@material-ui/icons/Facebook"
-import InstagramIcon from "@material-ui/icons/Instagram"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+    faFacebook,
+    faInstagram,
+    faYoutube,
+    faDiscord,
+} from "@fortawesome/free-brands-svg-icons"
 
 import Text from "components/Typography/Text"
 
@@ -38,6 +43,8 @@ function Footer(props: Props) {
                         copyright
                         facebook
                         instagram
+                        youtube
+                        discord
                     }
                 }
             }
@@ -46,7 +53,8 @@ function Footer(props: Props) {
 
     if (!site?.siteMetadata) throw new Error("Site metadata not defined")
 
-    const { facebook, instagram, copyright } = site.siteMetadata
+    const { facebook, instagram, youtube, discord, copyright } =
+        site.siteMetadata
 
     if (!facebook)
         throw new Error(
@@ -55,6 +63,14 @@ function Footer(props: Props) {
     if (!instagram)
         throw new Error(
             "Instagram link not defined in site metadata. Check gatsby-config"
+        )
+    if (!youtube)
+        throw new Error(
+            "YouTube link not defined in site metadata. Check gatsby-config"
+        )
+    if (!discord)
+        throw new Error(
+            "Discord link not defined in site metadata. Check gatsby-config"
         )
     if (!copyright)
         throw new Error(
@@ -71,11 +87,19 @@ function Footer(props: Props) {
             >
                 <Grid item>
                     <IconButton href={facebook}>
-                        <FacebookIcon />
+                        <FontAwesomeIcon icon={faFacebook} />
                     </IconButton>
 
                     <IconButton href={instagram}>
-                        <InstagramIcon />
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </IconButton>
+
+                    <IconButton href={youtube}>
+                        <FontAwesomeIcon icon={faYoutube} />
+                    </IconButton>
+
+                    <IconButton href={discord}>
+                        <FontAwesomeIcon icon={faDiscord} />
                     </IconButton>
                 </Grid>
                 <Grid item>

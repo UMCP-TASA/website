@@ -15,6 +15,8 @@ const config = {
     copyright: `Copyright © ${new Date().getFullYear()} UMCP TASA`, // Copyright string for the footer of the website and RSS feed.
     facebookLink: "https://www.facebook.com/umcptasa/",
     instagramLink: "https://www.instagram.com/umcptasa/",
+    youtubeLink: "https://www.youtube.com/channel/UC40-b0_FuCsHA1lM0vCZsng",
+    discordLink: "https://discord.gg/ppbFshcaFG",
 }
 
 // Validate
