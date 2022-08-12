@@ -16,27 +16,36 @@ const styles = (theme: Theme) =>
     createStyles({
         container: {
             [theme.breakpoints.only("xs")]: {
-                padding: "1rem 20%",
+                padding: "1rem 0",
             },
             [theme.breakpoints.only("sm")]: {
-                padding: "1rem 10%",
+                padding: "1rem 0",
             },
             [theme.breakpoints.up("md")]: {
-                padding: "2rem 15%",
+                padding: "2rem 0",
             },
             margin: 0,
             width: "100%",
             backgroundColor: "white",
             textAlign: "center",
         },
+        heading: {
+            padding: "0 10% 1rem 10%",
+        },
         grid: {
             display: "grid",
-            gap: "0.75rem",
+            [theme.breakpoints.only("xs")]: {
+                gap: "0.75rem",
+                padding: "0 20%",
+            },
             [theme.breakpoints.only("sm")]: {
+                gap: "0.75rem",
+                padding: "0 10%",
                 gridTemplateColumns: "repeat(2, 1fr)",
             },
             [theme.breakpoints.up("md")]: {
                 gap: "1.5rem",
+                padding: "0 15%",
                 gridTemplateColumns: "repeat(3, 1fr)",
             },
         },
@@ -55,15 +64,14 @@ function Goals(props: Props) {
 
     return (
         <div className={classes.container}>
-            <Text variant="h2" color="primary">
-                Our Goals
-            </Text>
-            <Text variant="h6" color="textPrimary" align="center">
-                At TASA, we aim to provide these functions:
-            </Text>
-            <Text variant="body1">
-                <br></br>
-            </Text>
+            <div className={classes.heading}>
+                <Text variant="h2" color="primary">
+                    Our Goals
+                </Text>
+                <Text variant="h6" color="textPrimary" align="center">
+                    At TASA, we aim to provide these functions:
+                </Text>
+            </div>
             <div className={classes.grid}>
                 <div className={classes.goal}>
                     <Text variant="h2" color="secondary">

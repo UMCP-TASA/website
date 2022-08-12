@@ -9,16 +9,19 @@ const styles = (theme: Theme) =>
     createStyles({
         container: {
             [theme.breakpoints.down("xs")]: {
-                padding: "1rem 10%",
+                padding: "1rem 0",
             },
             [theme.breakpoints.up("sm")]: {
-                padding: "1rem 5%",
+                padding: "1rem 0",
             },
             [theme.breakpoints.up("md")]: {
-                padding: "2rem 5%",
+                padding: "2rem 0",
             },
             margin: 0,
             textAlign: "center",
+        },
+        heading: {
+            padding: "0 10%",
         },
         events: {
             display: "grid",
@@ -29,7 +32,7 @@ const styles = (theme: Theme) =>
             [theme.breakpoints.up("sm")]: {
                 gap: "1.5rem",
                 gridTemplateColumns: "repeat(3, 1fr)",
-                padding: "1rem 0",
+                padding: "1rem 5%",
             },
             margin: 0,
         },
@@ -67,13 +70,16 @@ function UpcomingEvents(props: Props) {
 
     return (
         <div className={classes.container}>
-            <Text variant="h2" color="primary">
-                Upcoming Events
-            </Text>
-            <Text variant="body1" color="textPrimary" align="center">
-                TASA organizes many fun events throughout the year! Be sure to
-                follow us on social media for all the latest announcements!
-            </Text>
+            <div className={classes.heading}>
+                <Text variant="h2" color="primary">
+                    Upcoming Events
+                </Text>
+                <Text variant="body1" color="textPrimary" align="center">
+                    TASA organizes many fun events throughout the year! Be sure
+                    to follow us on social media for all the latest
+                    announcements!
+                </Text>
+            </div>
             <div className={classes.events}>{events}</div>
             <ButtonLink
                 className={classes.button}

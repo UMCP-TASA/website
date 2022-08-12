@@ -18,6 +18,7 @@ const styles = (theme: Theme) =>
         },
         title: {
             fontWeight: "bold",
+            paddingBottom: "1rem",
         },
     })
 
@@ -31,7 +32,6 @@ function Welcome(props: Props) {
                 Welcome to UMCP TASA!
             </Text>
             <Text variant="body1" color="textPrimary">
-                <br></br>
                 The <b>Taiwanese American Student Association (TASA)</b> at the
                 University of Maryland, College Park is a social and cultural
                 student organization dedicated to celebrating Taiwanese culture
