@@ -98,8 +98,7 @@ function MembershipPage(props: Props) {
 
                 <Section title="Form">
                     <Text>
-                        Here is the form if you are interested in partaking in 
-                        this wonderful journey with us!
+                        Order Your Membership Card Today!
                         </Text>
                     <Button 
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfgdUDFC9smFFwF-4DvmULrPQSuNbf2nHQLZiskcDazZaW0WQ/viewform"
