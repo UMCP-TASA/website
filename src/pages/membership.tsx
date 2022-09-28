@@ -51,12 +51,11 @@ function MembershipPage(props: Props) {
                         A TASA membership card brings fun, happiness, 
                         and premium benefits right to your door. These 
                         benefits include 10% off Cuppa Tea, Class520, and Aroy 
-                        Thai (more to come!!). In addition, this card 
-                        will grant you free event tickets and raffle 
-                        tickets at our major events (Tour of Taiwan and 
-                        Night Market)! For all of these perks, you only 
-                        have to pay a small price of $15 or bundle with 
-                        some friends by buying a group package!
+                        Thai (more to come!!). In addition, this card will award 
+                        you free event tickets AND raffle tickets at two of our 
+                        major events: Tour of Taiwan and Night Market! Receive all 
+                        of these perks for the small cost of $15, or get some 
+                        friends together and buy a group bundle!
                     </Text>
                 </Section>
                 
