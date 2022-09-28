@@ -35,6 +35,11 @@ function HeaderLinks(props: Props) {
                 text="Archive"
                 scrollTrigger={scrollTrigger}
             />
+            <HeaderLink
+                to="/membership"
+                text="Membership Cards"
+                scrollTrigger={scrollTrigger}
+            />
         </>
     )
 }

@@ -3956,6 +3956,11 @@ export type EventPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type EventPageQuery = { background?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
 
+export type MembershipPageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type MembershipPageQuery = { boardBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
+
 export type IndividualEventPageQueryVariables = Exact<{
   slug?: Maybe<Scalars['String']>;
   imgsrc?: Maybe<Scalars['String']>;
