@@ -107,7 +107,7 @@ function MembershipPage(props: Props) {
                         variant="contained"
                         color="secondary"
                         >
-                            Form
+                            Order Now
                     </Button>
                 </Section>
 
