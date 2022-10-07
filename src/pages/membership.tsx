@@ -71,13 +71,13 @@ function MembershipPage(props: Props) {
                         <li>
                             <Text>10% off at <a href="https://www.aroythaicollegepark.com/">
                                 Aroy Thai
-                            </a>
+                            </a> - 10% off on any purchase $10 or more
                             </Text>
                         </li>
                         <li>
                             <Text>10% off at <a href="https://www.class520cp.com/">
                                 Class520
-                            </a>
+                            </a> - 10% off for cash, 5% off for card, register ONLY
                             </Text>
                         </li>
                         <li>
