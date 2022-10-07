@@ -1,23 +1,53 @@
 {
     "events" : [ 
-         {
-             "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/JumboJumboFundraiser.png",
-             "title" : "Jumbo Jumbo Fundraiser",
-             "date" : "July 24, 2022",
-             "link": "https://www.facebook.com/events/459640435653324/?ref=newsfeed"
-         },
-         {
-             "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/EndOfYearBBQ.png",
-             "title" : "End of Year BBQ",
-             "date" : "May 11, 2022",
-             "link": "https://www.facebook.com/events/374471724610399/?ref=newsfeed"           
-         },
-         {
-             "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/SeniorSendoff.jpg",
-             "title" : "Senior Sendoff",
-             "date" : "May 7, 2022",
-             "link": "https://www.facebook.com/events/938686053469604/?ref=newsfeed"           
-         }
+        {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/FamilyNight22.png",
+            "title" : "Family Night GBM",
+            "date" : "October 10, 2022",
+            "link": "https://www.facebook.com/events/435031612032860"
+        },
+        {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/MogeFundraiser22.png",
+            "title" : "Moge Tee Fundraiser",
+            "date" : "September 30, 2022",
+            "link": "https://www.facebook.com/events/1465535570587447"
+        },
+        {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/SportsSnackSocial22.png",
+            "title" : "TASA x KSA Sports Snack Social",
+            "date" : "September 29, 2022",
+            "link": "https://www.facebook.com/events/799544864428218"
+        },
+        {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/BigLittle22.png",
+            "title" : "Big Little Week",
+            "date" : "September 9-30, 2022",
+            "link": "https://www.facebook.com/events/475469387579519"           
+        },
+        {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/ShavedIce22.png",
+            "title" : "Shaved Ice GBM",
+            "date" : "September 9, 2022",
+            "link": "https://www.facebook.com/events/391278013174166"           
+        },
+        {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/JumboJumboFundraiser.png",
+            "title" : "Jumbo Jumbo Fundraiser",
+            "date" : "July 24, 2022",
+            "link": "https://www.facebook.com/events/459640435653324"
+        },
+        {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/EndOfYearBBQ.png",
+            "title" : "End of Year BBQ",
+            "date" : "May 11, 2022",
+            "link": "https://www.facebook.com/events/374471724610399"           
+        },
+        {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/SeniorSendoff.jpg",
+            "title" : "Senior Sendoff",
+            "date" : "May 7, 2022",
+            "link": "https://www.facebook.com/events/938686053469604"           
+        }
  
-     ]
- }
+    ]
+}
