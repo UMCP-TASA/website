@@ -60,17 +60,22 @@ function MembershipPage(props: Props) {
                 <Section title="Current Benefits Include">
                     <ul>
                         <li>
-                            <Text>
-                                10% off at{" "}
-                                <a href="https://www.cuppatea.us/">Cuppa Tea</a>
+                            <Text>10% off at <a href="https://www.cuppatea.us/">
+                                Cuppa Tea
+                            </a>
+                            </Text>
+                            
+                        </li>
+                        <li>
+                            <Text>10% off at <a href="https://www.aroythaicollegepark.com/">
+                                Aroy Thai
+                            </a> - 10% off on any purchase $10 or more
                             </Text>
                         </li>
                         <li>
-                            <Text>
-                                10% off at{" "}
-                                <a href="https://www.aroythaicollegepark.com/">
-                                    Aroy Thai
-                                </a>
+                            <Text>10% off at <a href="https://www.class520cp.com/">
+                                Class520
+                            </a> - 10% off for cash, 5% off for card, register ONLY
                             </Text>
                         </li>
                         <li>
