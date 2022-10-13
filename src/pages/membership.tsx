@@ -46,13 +46,13 @@ function MembershipPage(props: Props) {
             <PageContent>
                 <Section title="What is a TASA Membership Card?">
                     <Text align="center">
-                        A TASA membership card brings fun, happiness, and
-                        premium benefits right to your door. These benefits
-                        include 10% off Cuppa Tea, Class520, and Aroy Thai (more
-                        to come!!). In addition, this card will award you free
-                        event tickets AND raffle tickets at two of our major
-                        events: Tour of Taiwan and Night Market! Receive all of
-                        these perks for the small cost of $15, or get some
+                        A TASA membership card brings fun, happiness,
+                        and premium benefits right to your door. These
+                        benefits include 10% off Aroy Thai, Box'd Kitchen, Class520, and Cuppa
+                        Tea (more to come!!). In addition, this card will award
+                        you free event tickets AND raffle tickets at two of our
+                        major events: Tour of Taiwan and Night Market! Receive all
+                        of these perks for the small cost of $15, or get some
                         friends together and buy a group bundle!
                     </Text>
                 </Section>
@@ -60,37 +60,31 @@ function MembershipPage(props: Props) {
                 <Section title="Current Benefits Include">
                     <ul>
                         <li>
-                            <Text>10% off at <a href="https://www.cuppatea.us/">
-                                Cuppa Tea
-                            </a>
-                            </Text>
-                            
-                        </li>
-                        <li>
-                            <Text>10% off at <a href="https://www.aroythaicollegepark.com/">
+                            <Text>10% off at <a href="https://www.aroythaicollegepark.com/" target="_blank">
                                 Aroy Thai
                             </a> - 10% off on any purchase $10 or more
                             </Text>
                         </li>
                         <li>
-                            <Text>10% off at <a href="https://www.class520cp.com/">
+                            <Text>10% off at <a href="https://boxdkitchen.com/" target="_blank">
+                                Box'd Kitchen
+                            </a>
+                            </Text>
+                        </li>
+                        <li>
+                            <Text>10% off at <a href="https://www.class520cp.com/" target="_blank">
                                 Class520
                             </a> - 10% off for cash, 5% off for card, register ONLY
                             </Text>
                         </li>
                         <li>
-                            <Text>
-                                10% off at{" "}
-                                <a href="https://www.class520cp.com/">
-                                    Class520
-                                </a>
+                            <Text>10% off at <a href="https://www.cuppatea.us/" target="_blank">
+                                Cuppa Tea
+                            </a>
                             </Text>
                         </li>
                         <li>
-                            <Text>
-                                Free Event Tickets to Tour of Taiwan and Night
-                                Market
-                            </Text>
+                            <Text>Free Event Tickets to Tour of Taiwan and Night Market</Text>
                         </li>
                         <li>
                             <Text>
@@ -99,6 +93,15 @@ function MembershipPage(props: Props) {
                             </Text>
                         </li>
                     </ul>
+                    <Button
+                        href="https://www.google.com/maps/d/u/0/edit?mid=1teAh6Njo7LKsmSuR9JUX8ZCwXEmU3Eg&usp=sharing"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        variant="contained"
+                        color="secondary"
+                    >
+                        Map of Restaurants
+                    </Button>
                 </Section>
 
                 <Section title="Pricing">
