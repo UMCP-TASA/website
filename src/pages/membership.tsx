@@ -2,7 +2,6 @@ import React from "react"
 import { PageProps, graphql } from "gatsby"
 import {
     Button,
-    Hidden,
     Theme,
     createStyles,
     withStyles,
@@ -11,13 +10,10 @@ import {
 import { MembershipPageQuery } from "graphql-types"
 
 import SEO from "components/seo"
-import useBios from "hooks/useBios"
-import BioGrid from "components/Bios/BioGrid"
 import PageContent from "components/PageLayout/PageContent"
 import ParallaxBackground from "components/PageLayout/ParallaxBackground"
 import Section from "components/PageLayout/Section"
 import Text from "components/Typography/Text"
-import ArchiveSection from "components/Archive/ArchiveSection"
 
 const styles = (theme: Theme) =>
     createStyles({
@@ -42,7 +38,9 @@ function MembershipPage(props: Props) {
                 <Text variant="h3" color="white" align="center">
                     TASA Membership Cards
                 </Text>
-                <Text align="center">Valid through the 2022-2023 school year</Text>
+                <Text align="center">
+                    Valid through the 2022-2023 school year
+                </Text>
             </ParallaxBackground>
 
             <PageContent>
@@ -89,7 +87,10 @@ function MembershipPage(props: Props) {
                             <Text>Free Event Tickets to Tour of Taiwan and Night Market</Text>
                         </li>
                         <li>
-                            <Text>Free Raffle Tickets at Tour of Taiwan and Night Market</Text>
+                            <Text>
+                                Free Raffle Tickets at Tour of Taiwan and Night
+                                Market
+                            </Text>
                         </li>
                     </ul>
                     <Button
@@ -110,9 +111,10 @@ function MembershipPage(props: Props) {
                     <Text>$100 for 10 cards</Text>
                 </Section>
 
-                <Section title="Form">
+                <Section title="Order Your Membership Card Today!">
                     <Text>
-                        Order Your Membership Card Today!
+                        Complete the form below if you are interested in
+                        partaking in this wonderful journey with us!
                     </Text>
                     <Button
                         href="https://docs.google.com/forms/d/e/1FAIpQLSeyCWp6tTGT_XKyxVNalwirqWu3OSi0Di1-Ul2_b3eFbwH2yQ/viewform"
@@ -124,10 +126,7 @@ function MembershipPage(props: Props) {
                         Order Now
                     </Button>
                 </Section>
-
-
             </PageContent>
-
         </>
     )
 }
