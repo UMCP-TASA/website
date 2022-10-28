@@ -115,7 +115,7 @@ function MembershipPage(props: Props) {
                         Order Your Membership Card Today!
                     </Text>
                     <Button
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfgdUDFC9smFFwF-4DvmULrPQSuNbf2nHQLZiskcDazZaW0WQ/viewform"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeyCWp6tTGT_XKyxVNalwirqWu3OSi0Di1-Ul2_b3eFbwH2yQ/viewform"
                         target="_blank"
                         rel="noreferrer noopener"
                         variant="contained"
