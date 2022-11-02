@@ -84,7 +84,7 @@ function MembershipPage(props: Props) {
                             </Text>
                         </li>
                         <li>
-                            <Text>Free Event Tickets to Tour of Taiwan and Night Market</Text>
+                            <Text>Free Event Tickets to Night Market</Text>
                         </li>
                         <li>
                             <Text>
