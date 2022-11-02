@@ -50,8 +50,8 @@ function MembershipPage(props: Props) {
                         and premium benefits right to your door. These
                         benefits include 10% off Aroy Thai, Box'd Kitchen, Class520, and Cuppa
                         Tea (more to come!!). In addition, this card will award
-                        you free event tickets AND raffle tickets at two of our
-                        major events: Tour of Taiwan and Night Market! Receive all
+                        you free raffle tickets at two of our
+                        major events: Tour of Taiwan and Night Market! You also get free event tickets to Night Market! Receive all
                         of these perks for the small cost of $15, or get some
                         friends together and buy a group bundle!
                     </Text>
@@ -84,7 +84,7 @@ function MembershipPage(props: Props) {
                             </Text>
                         </li>
                         <li>
-                            <Text>Free Event Tickets to Tour of Taiwan and Night Market</Text>
+                            <Text>Free Event Tickets to Night Market</Text>
                         </li>
                         <li>
                             <Text>
@@ -106,9 +106,6 @@ function MembershipPage(props: Props) {
 
                 <Section title="Pricing">
                     <Text>$15 for 1 card</Text>
-                    <Text>$27 for 2 cards</Text>
-                    <Text>$48 for 4 cards</Text>
-                    <Text>$100 for 10 cards</Text>
                 </Section>
 
                 <Section title="Order Your Membership Card Today!">
