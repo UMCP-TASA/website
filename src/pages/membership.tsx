@@ -48,8 +48,8 @@ function MembershipPage(props: Props) {
                     <Text align="center">
                         A TASA membership card brings fun, happiness,
                         and premium benefits right to your door. These
-                        benefits include 10% off Aroy Thai, Box'd Kitchen, Class520, and Cuppa
-                        Tea (more to come!!). In addition, this card will award
+                        benefits include 5-15% off Aroy Thai, Box'd Kitchen, Class520, Cuppa
+                        Tea, and Onikama Ramen Bar(more to come!!). In addition, this card will award
                         you free raffle tickets at two of our
                         major events: Tour of Taiwan and Night Market! You also get free event tickets to Night Market! Receive all
                         of these perks for the small cost of $15, or get some
@@ -62,7 +62,7 @@ function MembershipPage(props: Props) {
                         <li>
                             <Text>10% off at <a href="https://www.aroythaicollegepark.com/" target="_blank">
                                 Aroy Thai
-                            </a> - 10% off on any purchase $10 or more
+                            </a> - 10% off on any purchase above $10
                             </Text>
                         </li>
                         <li>
@@ -81,6 +81,12 @@ function MembershipPage(props: Props) {
                             <Text>10% off at <a href="https://www.cuppatea.us/" target="_blank">
                                 Cuppa Tea
                             </a>
+                            </Text>
+                        </li>
+                        <li>
+                            <Text>15% off at <a href="https://www.onikamaramenbar.com/" target="_blank">
+                                Onikama Ramen Bar
+                            </a> - 15% off on any purchase above $20
                             </Text>
                         </li>
                         <li>
@@ -105,7 +111,7 @@ function MembershipPage(props: Props) {
                 </Section>
 
                 <Section title="Pricing">
-                    <Text>$15 for 1 card</Text>
+                    <Text>$15 per card</Text>
                 </Section>
 
                 <Section title="Order Your Membership Card Today!">
