@@ -49,11 +49,11 @@ function MembershipPage(props: Props) {
                         A TASA membership card brings fun, happiness,
                         and premium benefits right to your door. These
                         benefits include 5-15% off Aroy Thai, Box'd Kitchen, Class520, Cuppa
-                        Tea, and Onikama Ramen Bar(more to come!!). In addition, this card will award
-                        you free raffle tickets at two of our
-                        major events: Tour of Taiwan and Night Market! You also get free event tickets to Night Market! Receive all
-                        of these perks for the small cost of $15, or get some
-                        friends together and buy a group bundle!
+                        Tea, and Onikama Ramen Bar (more to come!!). In addition, this card will 
+                        grant you free entry to Tour of Taiwan and free event tickets to Night 
+                        Market! On top of that, this card will supply you free raffle tickets to 
+                        both Tour of Taiwan and Night Market! Receive all of these perks for the 
+                        small cost of $15!
                     </Text>
                 </Section>
 
@@ -90,7 +90,7 @@ function MembershipPage(props: Props) {
                             </Text>
                         </li>
                         <li>
-                            <Text>Free Event Tickets to Night Market</Text>
+                            <Text>Free Entry to Tour of Taiwan and Free Event Tickets to Night Market</Text>
                         </li>
                         <li>
                             <Text>
