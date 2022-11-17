@@ -94,7 +94,7 @@ function MembershipPage(props: Props) {
                         </li>
                         <li>
                             <Text>
-                                Free Raffle Tickets at Tour of Taiwan and Night
+                                Free Raffle Tickets at Tour of Taiwan and Night 
                                 Market
                             </Text>
                         </li>
