@@ -46,66 +46,72 @@ function MembershipPage(props: Props) {
             <PageContent>
                 <Section title="What is a TASA Membership Card?">
                     <Text align="center">
-                        A TASA membership card brings fun, happiness, and
-                        premium benefits right to your door. These benefits
-                        include 10% off Cuppa Tea, Class520, and Aroy Thai (more
-                        to come!!). In addition, this card will award you free
-                        event tickets AND raffle tickets at two of our major
-                        events: Tour of Taiwan and Night Market! Receive all of
-                        these perks for the small cost of $15, or get some
-                        friends together and buy a group bundle!
+                        A TASA membership card brings fun, happiness,
+                        and premium benefits right to your door. These
+                        benefits include 5-15% off Aroy Thai, Box'd Kitchen, Class520, Cuppa
+                        Tea, and Onikama Ramen Bar (more to come!!). In addition, this card will 
+                        grant you free entry to Tour of Taiwan and free event tickets to Night 
+                        Market! On top of that, this card will supply you free raffle tickets to 
+                        both Tour of Taiwan and Night Market! Receive all of these perks for the 
+                        small cost of $15!
                     </Text>
                 </Section>
 
                 <Section title="Current Benefits Include">
                     <ul>
                         <li>
-                            <Text>10% off at <a href="https://www.cuppatea.us/">
-                                Cuppa Tea
+                            <Text>10% off at <a href="https://www.aroythaicollegepark.com/" target="_blank">
+                                Aroy Thai
+                            </a> - 10% off on any purchase above $10
+                            </Text>
+                        </li>
+                        <li>
+                            <Text>10% off at <a href="https://boxdkitchen.com/" target="_blank">
+                                Box'd Kitchen
                             </a>
                             </Text>
-                            
                         </li>
                         <li>
-                            <Text>10% off at <a href="https://www.aroythaicollegepark.com/">
-                                Aroy Thai
-                            </a> - 10% off on any purchase $10 or more
-                            </Text>
-                        </li>
-                        <li>
-                            <Text>10% off at <a href="https://www.class520cp.com/">
+                            <Text>10% off at <a href="https://www.class520cp.com/" target="_blank">
                                 Class520
                             </a> - 10% off for cash, 5% off for card, register ONLY
                             </Text>
                         </li>
                         <li>
-                            <Text>
-                                10% off at{" "}
-                                <a href="https://www.class520cp.com/">
-                                    Class520
-                                </a>
+                            <Text>10% off at <a href="https://www.cuppatea.us/" target="_blank">
+                                Cuppa Tea
+                            </a>
                             </Text>
                         </li>
                         <li>
-                            <Text>
-                                Free Event Tickets to Tour of Taiwan and Night
-                                Market
+                            <Text>15% off at <a href="https://www.onikamaramenbar.com/" target="_blank">
+                                Onikama Ramen Bar
+                            </a> - 15% off on any purchase above $20
                             </Text>
                         </li>
                         <li>
+                            <Text>Free Entry to Tour of Taiwan and Free Event Tickets to Night Market</Text>
+                        </li>
+                        <li>
                             <Text>
-                                Free Raffle Tickets at Tour of Taiwan and Night
+                                Free Raffle Tickets at Tour of Taiwan and Night 
                                 Market
                             </Text>
                         </li>
                     </ul>
+                    <Button
+                        href="https://www.google.com/maps/d/u/0/edit?mid=1teAh6Njo7LKsmSuR9JUX8ZCwXEmU3Eg&usp=sharing"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        variant="contained"
+                        color="secondary"
+                    >
+                        Map of Restaurants
+                    </Button>
                 </Section>
 
                 <Section title="Pricing">
-                    <Text>$15 for 1 card</Text>
-                    <Text>$27 for 2 cards</Text>
-                    <Text>$48 for 4 cards</Text>
-                    <Text>$100 for 10 cards</Text>
+                    <Text>$15 per card</Text>
                 </Section>
 
                 <Section title="Order Your Membership Card Today!">
@@ -114,7 +120,7 @@ function MembershipPage(props: Props) {
                         partaking in this wonderful journey with us!
                     </Text>
                     <Button
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfgdUDFC9smFFwF-4DvmULrPQSuNbf2nHQLZiskcDazZaW0WQ/viewform"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeyCWp6tTGT_XKyxVNalwirqWu3OSi0Di1-Ul2_b3eFbwH2yQ/viewform"
                         target="_blank"
                         rel="noreferrer noopener"
                         variant="contained"
