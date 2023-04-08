@@ -72,7 +72,7 @@ function BoardPage(props: Props) {
 
 export const query = graphql`
     query BoardPage {
-        boardBackground: file(relativePath: { eq: "boardPic.jpg" }) {
+        boardBackground: file(relativePath: { eq: "board2022.jpg" }) {
             ...BackgroundImage
         }
     }

@@ -2,7 +2,7 @@
 name: Karen Liu
 category: bio
 imgsrc: assets/Board2022/karen.png
-position: Senior Advisor
+position: Alumni Advisor
 majors:
     - Community Health
 ---
