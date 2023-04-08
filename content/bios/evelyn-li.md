@@ -2,7 +2,7 @@
 name: Evelyn Li
 category: bio
 imgsrc: assets/Board2022/evelyn.png
-position: Internal Vice President
+position: Internal VP
 majors:
     - Anthropology
     - Neuroscience

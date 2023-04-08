@@ -2,7 +2,7 @@
 name: Alina Yang
 category: bio
 imgsrc: assets/Board2022/alina.png
-position: AASU Representative
+position: AASU Rep
 majors:
     - Neurobiology and Physiology
 ---
