@@ -1,9 +1,10 @@
 ---
 name: Karen Liu
 category: bio
-imgsrc: assets/karen.png
+imgsrc: assets/Board2022/karen.png
 position: Senior Advisor
 majors:
-  - Behavioral and Community Health
+    - Community Health
 ---
-Oldie. Just here to advise.
+
+Fun Fact: "I can deadlift 175 lbs."

@@ -1,9 +1,11 @@
 ---
 name: Matthew Wu
 category: bio
-imgsrc: assets/matthew.png
-position: ITASA Rep
+imgsrc: assets/Board2022/matthew.png
+position: Senior Advisor
 majors:
-  - CS+MechE
+    - Computer Science
+    - Mechanical Engineering
 ---
-Casual Representer of ITASA
+
+Fun Fact: "In 10th grade I refused to wear shorts and wore jeans to school every single day."

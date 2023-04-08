@@ -1,9 +1,11 @@
 ---
 name: Evelyn Li
 category: bio
-imgsrc: assets/evelyn.png
-position: Co-Fundraising Chair
+imgsrc: assets/Board2022/evelyn.png
+position: Internal Vice President
 majors:
-  - Neuro/Phys & Anthropology
+    - Anthropology
+    - Neuroscience
 ---
-Hi, I'm Evelyn! I enjoy playing volleyball, learning new languages, and taking useless videos to look back on as a grandma. yay taiwan :)
+
+Fun Fact: "Looking at a papaya's insides gives me the heebie jeebies _papaya emoji_"

@@ -1,9 +1,10 @@
 ---
 name: Anthony He
 category: bio
-imgsrc: assets/anthony.png
-position: Treasurer
+imgsrc: assets/Board2022/anthony.png
+position: External Vice President
 majors:
-  - Computer Science
+    - Computer Science
 ---
-hellllo
+
+Fun Fact: "I no longer have hair."

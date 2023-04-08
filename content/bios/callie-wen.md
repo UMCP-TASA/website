@@ -1,9 +1,10 @@
 ---
 name: Callie Wen
 category: bio
-imgsrc: assets/callie.png
-position: Co-President
+imgsrc: assets/Board2022/callie.png
+position: Senior Advisor
 majors:
-  - Finance
+    - Finance
 ---
-Hi guys! I’m Callie, a junior majoring in Finance (yucky) and minoring in Asian American Studies and Law & Society. Hmu anytime for a boba run! Aspiring gym bro but too afraid to go alone so hmu for that too. Or just hmu for any reason, I like new friends!! Especially if you think toasty Cheezits >>>> white cheddar (we will be besties!)
+
+Fun Fact: "I like doing handstands, but I'm not very good at them."

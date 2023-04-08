@@ -1,9 +1,10 @@
 ---
 name: Mandy Hsu
 category: bio
-imgsrc: assets/mandy.png
-position: Night Market Director
+imgsrc: assets/Board2022/mandy.png
+position: Public Relations
 majors:
-  - Communications (Public Relations)
+    - Communication
 ---
-Hey guys! I’m Mandy and I’m a sophomore majoring in Communications on the Public Relations track. I love to crochet, watch tv, and romanticize my life ♡ I also LOVE Taiwan and visiting my friends and family there. Feel free to reach out about Night Market or literally anything else! I’m always online :)
+
+Fun Fact: "I used to run a moodboard account hehe ☺️"
