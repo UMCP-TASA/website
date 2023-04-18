@@ -23,8 +23,6 @@ Night Market entry will be FREE‼️ but we will also have tickets available to
 * 12 tickets for $10
 * 20 tickets for $15
 
-
-
 \[PARKING]
 
 There are many spots on campus where you can park for free during Night Market! All spots highlighted in green on the map below offer free parking in some or all spaces. Please make sure to follow all posted signage in whichever lot you park in. The closest locations are Regents Garage, Mowatt Garage, and Lot 1. 
@@ -33,4 +31,4 @@ There are many spots on campus where you can park for free during Night Market! 
 * Mowatt Garage - free parking in sections labeled U2.
 * Lot 1 - free parking anywhere with signs with black text.
 
-![](assets/parking-post.png)
+![A map showing the location of Night Market 2023 and surrounding parking availability](assets/parking-post.png "Night Market Parking Info")
