@@ -25,21 +25,15 @@ Night Market entry will be FREE‼️ but we will also have tickets available to
 * 12 tickets for $10
 * 20 tickets for $15
 
-
-
 \[SCHEDULE]
 
 Food, Games, and Activities will all open at 6pm and remain open until 9pm. Performances will begin at 8:45pm.
-
-
 
 \[LAYOUT]
 
 Tents will be stationed across McKeldin Mall where food, games, tickets, and more will be available. Please reference the map of the tent layout below to navigate during Night Market.
 
-![An illustrated layout of where different tables for food, games, and tickets will be during Night Market](static/assets/screenshot-2023-04-18-at-4.53.22-pm.jpeg "Night Market 2023 Layout")
-
-
+![An illustrated layout of where different tables for food, games, and tickets will be during Night Market](https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/screenshot-2023-04-18-at-4.53.22-pm.jpeg "Night Market 2023 Layout")
 
 \[PARKING]
 
@@ -49,4 +43,4 @@ There are many spots on campus where you can park for free during Night Market! 
 * Mowatt Garage - free parking in sections labeled U2.
 * Lot 1 - free parking anywhere with signs with black text.
 
-![A map showing the location of Night Market 2023 and surrounding parking availability](static/assets/cropped_parking_map.png "Night Market Parking Info")
+![A map showing the location of Night Market 2023 and surrounding parking availability](https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/cropped_parking_map.png "Night Market Parking Info")
