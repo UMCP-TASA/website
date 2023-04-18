@@ -1,6 +1,12 @@
 {
     "events" : [ 
         {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/nightmarket23banner.png",
+            "title" : "Night Market 2023",
+            "date" : "April 22, 2023",
+            "link": "https://www.facebook.com/events/1281162632755162"
+        },
+        {
             "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/Winter22.png",
             "title" : "Winter Wonderland GBM",
             "date" : "December 12, 2022",
