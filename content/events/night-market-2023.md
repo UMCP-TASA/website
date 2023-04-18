@@ -31,4 +31,4 @@ There are many spots on campus where you can park for free during Night Market! 
 * Mowatt Garage - free parking in sections labeled U2.
 * Lot 1 - free parking anywhere with signs with black text.
 
-![A map showing the location of Night Market 2023 and surrounding parking availability](assets/parking-post.png "Night Market Parking Info")
+![A map showing the location of Night Market 2023 and surrounding parking availability](https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/parking-post.png "Night Market Parking Info")
