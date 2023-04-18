@@ -33,7 +33,7 @@ Food, Games, and Activities will all open at 6pm and remain open until 9pm. Perf
 
 Tents will be stationed across McKeldin Mall where food, games, tickets, and more will be available. Please reference the map of the tent layout below to navigate during Night Market.
 
-![An illustrated layout of where different tables for food, games, and tickets will be during Night Market](static/assets/cropped_layout-2.png "Night Market 2023 Layout")
+![An illustrated layout of where different tables for food, games, and tickets will be during Night Market](https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/cropped_layout.png "Night Market 2023 Layout")
 
 \[PARKING]
 
