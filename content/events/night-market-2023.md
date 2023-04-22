@@ -8,6 +8,10 @@ tags:
   - cultural
 link: https://www.facebook.com/events/1281162632755162
 ---
+**UPDATE: Night Market will now be from 7-11 PM due to weather conditions. The performance schedule will not be changed.**
+
+
+
 𝓣𝓱𝓲𝓼 𝓢𝓪𝓽𝓾𝓻𝓭𝓪𝔂......find yourself in magical Jiufen and join us at 𝙐𝙈𝘾𝙋 𝙏𝘼𝙎𝘼'𝙨 𝙉𝙞𝙜𝙝𝙩 𝙈𝙖𝙧𝙠𝙚𝙩🏮🌉🌙
 On April 22 from 6-10 pm, we will be on 𝗠𝗰𝗞𝗲𝗹𝗱𝗶𝗻 𝗠𝗮𝗹𝗹 (😮) with food🍢, games🎲, and performances👯!
 
