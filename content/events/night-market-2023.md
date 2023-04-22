@@ -1,6 +1,6 @@
 ---
 title: Night Market 2023
-date: 2023-04-22T22:00:00.000Z
+date: 2023-04-23T03:00:00.000Z
 imgsrc: assets/nightmarket23banner.png
 category: event
 pinned: false
