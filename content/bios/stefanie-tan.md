@@ -1,5 +1,5 @@
 ---
-name: Brian Wu
+name: Stefanie Tan
 category: bio
 imgsrc: assets/Board2023/STEF.png
 position: Public Relations
