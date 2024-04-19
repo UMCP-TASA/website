@@ -1,5 +1,5 @@
 ---
-name: Cherlin Liao
+name: Annie Tang
 category: bio
 imgsrc: assets/Board2023/ANNIE.png
 position: Senior Advisor
