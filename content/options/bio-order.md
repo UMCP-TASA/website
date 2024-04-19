@@ -15,8 +15,7 @@ options:
     - Night Market Director
     - Social Chair
     - Co-Fundraising Chair
-    - ITASA Rep
-    - AASU Rep
+    - Outreach Chair
     - Senior Advisor
     - Alumni Advisor
 ---

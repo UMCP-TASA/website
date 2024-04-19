@@ -1,10 +1,10 @@
 ---
 name: Mandy Hsu
 category: bio
-imgsrc: assets/Board2022/mandy.png
-position: Public Relations
+imgsrc: assets/Board2023/MANDY.png
+position: Co-President
 majors:
-    - Communication
+    - Communications & Marketing
 ---
 
-Fun Fact: "I used to run a moodboard account hehe ☺️"
+Fun Fact: "I have a pet rabbit 🍠 and he only speaks Mandarin and Taiwanese"

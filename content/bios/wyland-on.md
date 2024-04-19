@@ -1,10 +1,10 @@
 ---
 name: Wyland On
 category: bio
-imgsrc: assets/Board2022/wyland.png
-position: Treasurer
+imgsrc: assets/Board2023/WYLAND.png
+position: Co-President
 majors:
     - Computer Science
 ---
 
-Fun Fact: "I drink milk despite being lactose intolerant."
+Fun Fact: "I macro-dosed dairy to fight against my lactose intolerance and it worked"
