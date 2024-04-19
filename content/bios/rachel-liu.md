@@ -1,10 +1,10 @@
 ---
 name: Rachel Liu
 category: bio
-imgsrc: assets/Board2022/rachel.png
-position: Night Market Director
+imgsrc: assets/Board2023/RACHEL.png
+position: Internal VP
 majors:
     - Computer Science
 ---
 
-Fun Fact: "My favorite color is pink."
+Fun Fact: "I refuse to eat yellow or orange colored candy"
