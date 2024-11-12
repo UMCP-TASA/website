@@ -1,7 +1,7 @@
 ---
 title: Tour of Taiwan 2024
 date: 2024-11-16T00:00:10.827Z
-imgsrc: static/assets/tot2024.png
+imgsrc: assets/tot2024.png
 category: event
 pinned: false
 tags:
