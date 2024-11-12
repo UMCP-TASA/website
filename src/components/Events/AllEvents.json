@@ -1,5 +1,11 @@
 {
-    "events" : [ 
+    "events" : [
+        {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/tot2024.png",
+            "title" : "Tour of Taiwan 2024",
+            "date" : "November 15, 2024",
+            "link": "https://www.instagram.com/p/DB2J0_IxpnZ/"
+        },
         {
             "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/Events/NightMarket23Banner.png",
             "title" : "Night Market 2023",
