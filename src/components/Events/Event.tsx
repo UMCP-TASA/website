@@ -126,7 +126,7 @@ function Event(props: Props) {
                         itemMargins={false}
                     >
                         <Button size="small" href={link} variant="contained">
-                            FB
+                            See Post
                         </Button>
 
                         <ButtonLink size="small" to={slug} variant="contained">
