@@ -1,5 +1,5 @@
 ---
-name: Wyland On
+name: Anthony He
 category: bio
 imgsrc: assets/Board2023/ANT.png
 year: 23-24
