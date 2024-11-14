@@ -1,5 +1,5 @@
 ---
-name: Anthiony He
+name: Wyland On
 category: bio
 imgsrc: assets/Board2023/ANT.png
 year: 23-24
