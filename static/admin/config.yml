@@ -43,7 +43,7 @@ collections:
                 multiple: true,
             }
           - {
-                label: "Facebook Event Page Link",
+                label: "Event Page Link",
                 name: "link",
                 widget: "string",
                 minimal: true,
@@ -73,6 +73,18 @@ collections:
                 widget: "image",
                 hint: "Square images are preferred!",
             }
+
+          - {
+                label: "Year",
+                name: "year",
+                widget: "relation",
+                collection: "options",
+                file: "years",
+                hint: "New years can be added in the Editable Options collection",
+                valueField: "options.*",
+                searchFields: ["options.*"],
+                default: [],
+          }
 
           # This could be changed to a select widget that provides a dropdown of possible positions.
           # You would have to update the list of positions in this file though
