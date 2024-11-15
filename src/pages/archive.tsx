@@ -49,6 +49,26 @@ function ArchivePage(props: Props) {
                     boardLink="https://umcptasa.github.io/old-html-website/pages/board.html"
                     eventsLink="https://umcptasa.github.io/old-html-website/pages/events.html"
                 />
+                {/* <ArchiveSection
+                    title="2020-2021"
+                    boardLink="/"
+                    eventsLink="/events"
+                />
+                <ArchiveSection
+                    title="2021-2022"
+                    boardLink="/"
+                    eventsLink="/events"
+                /> */}
+                <ArchiveSection
+                    title="2022-2023"
+                    boardLink="/board22"
+                    eventsLink="/events"
+                />
+                <ArchiveSection
+                    title="2023-2024"
+                    boardLink="/board23"
+                    eventsLink="/events"
+                />
             </PageContent>
         </>
     )

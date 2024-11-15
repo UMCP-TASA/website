@@ -70,6 +70,20 @@ module.exports = {
         {
             resolve: "gatsby-source-filesystem",
             options: {
+                name: "board2022",
+                path: `${__dirname}/content/board2022/`,
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "board2023",
+                path: `${__dirname}/content/board2023/`,
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
                 name: "order",
                 path: `${__dirname}/content/options/`,
             },

@@ -342,6 +342,9 @@ export type SitePluginPluginOptions = {
   allExtensions?: Maybe<Scalars['Boolean']>;
   pathToEmotionCacheProps?: Maybe<Scalars['String']>;
   fonts?: Maybe<Array<Maybe<SitePluginPluginOptionsFonts>>>;
+  aliases?: Maybe<SitePluginPluginOptionsAliases>;
+  name?: Maybe<Scalars['String']>;
+  path?: Maybe<Scalars['String']>;
   endpoint?: Maybe<Scalars['String']>;
   timeout?: Maybe<Scalars['Int']>;
   staticFolderName?: Maybe<Scalars['String']>;
@@ -364,7 +367,6 @@ export type SitePluginPluginOptions = {
   stripMetadata?: Maybe<Scalars['Boolean']>;
   defaultQuality?: Maybe<Scalars['Int']>;
   failOnError?: Maybe<Scalars['Boolean']>;
-  name?: Maybe<Scalars['String']>;
   short_name?: Maybe<Scalars['String']>;
   start_url?: Maybe<Scalars['String']>;
   background_color?: Maybe<Scalars['String']>;
@@ -377,8 +379,6 @@ export type SitePluginPluginOptions = {
   crossOrigin?: Maybe<Scalars['String']>;
   include_favicon?: Maybe<Scalars['Boolean']>;
   cacheDigest?: Maybe<Scalars['String']>;
-  aliases?: Maybe<SitePluginPluginOptionsAliases>;
-  path?: Maybe<Scalars['String']>;
   pathCheck?: Maybe<Scalars['Boolean']>;
 };
 
@@ -2551,6 +2551,9 @@ export type SitePluginPluginOptionsFilterInput = {
   allExtensions?: Maybe<BooleanQueryOperatorInput>;
   pathToEmotionCacheProps?: Maybe<StringQueryOperatorInput>;
   fonts?: Maybe<SitePluginPluginOptionsFontsFilterListInput>;
+  aliases?: Maybe<SitePluginPluginOptionsAliasesFilterInput>;
+  name?: Maybe<StringQueryOperatorInput>;
+  path?: Maybe<StringQueryOperatorInput>;
   endpoint?: Maybe<StringQueryOperatorInput>;
   timeout?: Maybe<IntQueryOperatorInput>;
   staticFolderName?: Maybe<StringQueryOperatorInput>;
@@ -2573,7 +2576,6 @@ export type SitePluginPluginOptionsFilterInput = {
   stripMetadata?: Maybe<BooleanQueryOperatorInput>;
   defaultQuality?: Maybe<IntQueryOperatorInput>;
   failOnError?: Maybe<BooleanQueryOperatorInput>;
-  name?: Maybe<StringQueryOperatorInput>;
   short_name?: Maybe<StringQueryOperatorInput>;
   start_url?: Maybe<StringQueryOperatorInput>;
   background_color?: Maybe<StringQueryOperatorInput>;
@@ -2586,8 +2588,6 @@ export type SitePluginPluginOptionsFilterInput = {
   crossOrigin?: Maybe<StringQueryOperatorInput>;
   include_favicon?: Maybe<BooleanQueryOperatorInput>;
   cacheDigest?: Maybe<StringQueryOperatorInput>;
-  aliases?: Maybe<SitePluginPluginOptionsAliasesFilterInput>;
-  path?: Maybe<StringQueryOperatorInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
 };
 
@@ -2761,6 +2761,9 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___pathToEmotionCacheProps'
   | 'pluginCreator___pluginOptions___fonts'
   | 'pluginCreator___pluginOptions___fonts___family'
+  | 'pluginCreator___pluginOptions___aliases___root'
+  | 'pluginCreator___pluginOptions___name'
+  | 'pluginCreator___pluginOptions___path'
   | 'pluginCreator___pluginOptions___endpoint'
   | 'pluginCreator___pluginOptions___timeout'
   | 'pluginCreator___pluginOptions___staticFolderName'
@@ -2783,7 +2786,6 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___stripMetadata'
   | 'pluginCreator___pluginOptions___defaultQuality'
   | 'pluginCreator___pluginOptions___failOnError'
-  | 'pluginCreator___pluginOptions___name'
   | 'pluginCreator___pluginOptions___short_name'
   | 'pluginCreator___pluginOptions___start_url'
   | 'pluginCreator___pluginOptions___background_color'
@@ -2796,8 +2798,6 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___crossOrigin'
   | 'pluginCreator___pluginOptions___include_favicon'
   | 'pluginCreator___pluginOptions___cacheDigest'
-  | 'pluginCreator___pluginOptions___aliases___root'
-  | 'pluginCreator___pluginOptions___path'
   | 'pluginCreator___pluginOptions___pathCheck'
   | 'pluginCreator___packageJson___name'
   | 'pluginCreator___packageJson___description'
@@ -3094,6 +3094,9 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___pathToEmotionCacheProps'
   | 'pluginOptions___fonts'
   | 'pluginOptions___fonts___family'
+  | 'pluginOptions___aliases___root'
+  | 'pluginOptions___name'
+  | 'pluginOptions___path'
   | 'pluginOptions___endpoint'
   | 'pluginOptions___timeout'
   | 'pluginOptions___staticFolderName'
@@ -3116,7 +3119,6 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___stripMetadata'
   | 'pluginOptions___defaultQuality'
   | 'pluginOptions___failOnError'
-  | 'pluginOptions___name'
   | 'pluginOptions___short_name'
   | 'pluginOptions___start_url'
   | 'pluginOptions___background_color'
@@ -3129,8 +3131,6 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___crossOrigin'
   | 'pluginOptions___include_favicon'
   | 'pluginOptions___cacheDigest'
-  | 'pluginOptions___aliases___root'
-  | 'pluginOptions___path'
   | 'pluginOptions___pathCheck'
   | 'packageJson___name'
   | 'packageJson___description'
@@ -3906,6 +3906,16 @@ export type SeoQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type SeoQuery = { site?: { siteMetadata?: { title?: string | null | undefined, description?: string | null | undefined } | null | undefined } | null | undefined };
 
+export type Bio22QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type Bio22Query = { allMarkdownRemark: { edges: Array<{ node: { id: string, html?: string | null | undefined, excerpt?: string | null | undefined, frontmatter?: { majors?: Array<string | null | undefined> | null | undefined, name?: string | null | undefined, position?: string | null | undefined, imgsrc?: string | null | undefined, category?: string | null | undefined } | null | undefined } }> }, allFile: { edges: Array<{ node: { id: string, relativePath: string, childImageSharp?: { gatsbyImageData: any } | null | undefined } }> }, order?: { frontmatter?: { options?: Array<string | null | undefined> | null | undefined } | null | undefined } | null | undefined };
+
+export type Bio23QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type Bio23Query = { allMarkdownRemark: { edges: Array<{ node: { id: string, html?: string | null | undefined, excerpt?: string | null | undefined, frontmatter?: { majors?: Array<string | null | undefined> | null | undefined, name?: string | null | undefined, position?: string | null | undefined, imgsrc?: string | null | undefined, category?: string | null | undefined } | null | undefined } }> }, allFile: { edges: Array<{ node: { id: string, relativePath: string, childImageSharp?: { gatsbyImageData: any } | null | undefined } }> }, order?: { frontmatter?: { options?: Array<string | null | undefined> | null | undefined } | null | undefined } | null | undefined };
+
 export type BioQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3941,10 +3951,15 @@ export type BoardPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type BoardPageQuery = { boardBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
 
-export type BoongaPageQueryVariables = Exact<{ [key: string]: never; }>;
+export type BoardPage22QueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type BoongaPageQuery = { boardBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
+export type BoardPage22Query = { boardBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
+
+export type BoardPage23QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type BoardPage23Query = { boardBackground?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined };
 
 export type ContactUsPageQueryVariables = Exact<{ [key: string]: never; }>;
 

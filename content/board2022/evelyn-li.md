@@ -2,7 +2,7 @@
 name: Evelyn Li
 category: board2022
 imgsrc: assets/Board2022/evelyn.png
-position: Internal Vice President
+position: Internal VP
 majors:
   - Neurobiology and Physiology
   - Anthopology

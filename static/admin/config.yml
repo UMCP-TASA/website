@@ -59,7 +59,7 @@ collections:
       label: "Bios"
       folder: "content/bios"
       create: true
-      sortableFields: ["name", "position", "year"]
+      sortableFields: ["name", "position"]
       fields:
           - { label: "Name", name: "name", widget: "string" }
           - {
@@ -75,24 +75,33 @@ collections:
                 hint: "Square images are preferred!",
             }
 
+    - name: board2022
+      identifier_field: name
+      label: "Board2022"
+      folder: "content/board2022"
+      create: true
+      sortableFields: ["name", "position"]
+      fields:
+          - { label: "Name", name: "name", widget: "string" }
           - {
-                label: "Year",
-                name: "year",
-                widget: "relation",
-                collection: "options",
-                file: "years",
-                hint: "New years can be added in the Editable Options collection",
-                valueField: "options.*",
-                searchFields: ["options.*"],
-                default: [],
-          }
+                label: "Category",
+                name: "category",
+                widget: "hidden",
+                default: "board2022",
+            }
+          - {
+                label: "Profile Picture",
+                name: "imgsrc",
+                widget: "image",
+                hint: "Square images are preferred!",
+            }
 
     - name: board2023
       identifier_field: name
       label: "Board2023"
       folder: "content/board2023"
       create: true
-      sortableFields: ["name", "position", "year"]
+      sortableFields: ["name", "position"]
       fields:
           - { label: "Name", name: "name", widget: "string" }
           - {
@@ -107,19 +116,6 @@ collections:
                 widget: "image",
                 hint: "Square images are preferred!",
             }
-
-          - {
-                label: "Year",
-                name: "year",
-                widget: "relation",
-                collection: "options",
-                file: "years",
-                hint: "New years can be added in the Editable Options collection",
-                valueField: "options.*",
-                searchFields: ["options.*"],
-                default: [],
-          }
-
 
           # This could be changed to a select widget that provides a dropdown of possible positions.
           # You would have to update the list of positions in this file though

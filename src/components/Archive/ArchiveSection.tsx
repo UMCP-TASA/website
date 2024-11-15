@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import {
     Button,
     Grid,
@@ -45,26 +46,29 @@ function ArchiveSection(props: Props) {
             >
                 <Grid item>
                     {boardLink ? (
-                        <Button
-                            href={boardLink}
-                            variant="contained"
-                            color="primary"
-                        >
-                            Board
-                        </Button>
+                        <Link to={boardLink}>
+                            <Button
+                                variant="contained"
+                                color="primary"
+                            >
+                                Board
+                            </Button>
+                        </Link>
                     ) : (
                         <></>
                     )}
                 </Grid>
                 <Grid item>
                     {eventsLink ? (
-                        <Button
-                            href={eventsLink}
-                            variant="contained"
-                            color="primary"
-                        >
-                            Events
-                        </Button>
+                        <Link to={eventsLink}>
+                            <Button
+                                href={eventsLink}
+                                variant="contained"
+                                color="primary"
+                            >
+                                Events
+                            </Button>
+                        </Link>
                     ) : (
                         <></>
                     )}
