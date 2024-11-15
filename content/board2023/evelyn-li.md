@@ -2,7 +2,6 @@
 name: Evelyn Li
 category: board2023
 imgsrc: assets/Board2023/EVELYN.png
-year: 23-24
 position: Senior Advisor
 majors:
     - Neuroscience & Anthropology

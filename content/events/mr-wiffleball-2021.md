@@ -3,7 +3,7 @@ title: Mr. Wiffleball 2021
 date: 2021-03-26T23:00:00.000Z
 imgsrc: assets/mr.-wiffleball-2021.jpg
 category: event
-pinned: true
+pinned: false
 tags:
   - social
 link: https://www.facebook.com/events/803791446874139/

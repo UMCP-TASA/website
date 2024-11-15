@@ -1,10 +1,9 @@
 ---
 name: Mia Hsu
 category: bio
-imgsrc: assets/Board2023/MIA.png
-position: Senior Advisor
+imgsrc: assets/Board2024/mia.png
+position: Alumni Advisor
 majors:
-    - Computer Science
+  - Computer Science
 ---
-
-Fun Fact: "This summer i lived with 7 roommates (one was a mouse 😀)"
+Fun Fact: "i'm a black belt in taekwondo 🙂‍↕️🥊"

@@ -2,7 +2,6 @@
 name: Stefanie Tan
 category: board2023
 imgsrc: assets/Board2023/STEF.png
-year: 23-24
 position: Public Relations
 majors:
     - Computer Science & Psychology

@@ -1,10 +1,10 @@
 ---
 name: Mandy Hsu
 category: bio
-imgsrc: assets/Board2023/MANDY.png
-position: Co-President
+imgsrc: assets/Board2024/mandy.png
+position: Alumni Advisor
 majors:
-    - Communications & Marketing
+  - Communication
+  - Marketing
 ---
-
-Fun Fact: "I have a pet rabbit 🍠 and he only speaks Mandarin and Taiwanese"
+Fun Fact: "I started journaling this summer! (had no internet at work)"

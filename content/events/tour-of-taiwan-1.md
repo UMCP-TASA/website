@@ -3,7 +3,7 @@ title: Tour of Taiwan
 date: 2020-11-21T23:00:00.000Z
 imgsrc: assets/tour-of-taiwan-.jpg
 category: event
-pinned: true
+pinned: false
 tags:
   - gbm
 link: https://www.facebook.com/events/1277875742564975

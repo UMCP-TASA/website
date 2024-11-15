@@ -1,10 +1,10 @@
 ---
 name: Ian Lee
 category: bio
-imgsrc: assets/Board2023/IAN.png
-position: Co-Historian
+imgsrc: assets/Board2024/ian.jpg
+position: Senior Advisor
 majors:
-    - Operations Management & Business Analytics and Finance
+  - Operations Management
+  - Businses Analytics and Finance
 ---
-
-Fun Fact: "I’m extremely allergic to horses"
+Fun Fact: "I think im developing IBS"

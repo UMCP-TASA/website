@@ -1,10 +1,9 @@
 ---
 name: Kyle Kuo
 category: bio
-imgsrc: assets/Board2023/KYLE.png
-position: Culture Chair
+imgsrc: assets/Board2024/kyle.png
+position: Senior Advisor
 majors:
-    - Computer Science
+  - Computer Science
 ---
-
-Fun Fact: "I drink milk during breakfast, lunch, and dinner🥛"
+Fun Fact: "I've swam against Anton, a member of the K-pop group Riize"

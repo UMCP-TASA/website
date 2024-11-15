@@ -16,6 +16,8 @@ options:
     - Social Chair
     - Co-Fundraising Chair
     - Outreach Chair
+    - ITASA Rep
+    - AASU Rep
     - Senior Advisor
     - Alumni Advisor
 ---

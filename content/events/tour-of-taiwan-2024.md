@@ -3,7 +3,7 @@ title: Tour of Taiwan 2024
 date: 2024-11-16T00:00:10.827Z
 imgsrc: assets/tot2024.png
 category: event
-pinned: false
+pinned: true
 tags:
   - cultural
 link: https://www.instagram.com/p/DB2J0_IxpnZ/

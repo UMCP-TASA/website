@@ -1,10 +1,10 @@
 ---
 name: John Li
 category: bio
-imgsrc: assets/Board2023/JOHN.png
-position: Social Chair
+imgsrc: assets/Board2024/john.jpg
+position: Internal VP
 majors:
-    - General Biology and Computer Science
+  - Biology
+  - Computer Science
 ---
-
-Fun Fact: "I can name (used to be able to at least) every single One Direction song within the first 5 seconds"
+Fun Fact: "My birthday, 831, is an acronym for I love you"

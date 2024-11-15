@@ -2,7 +2,6 @@
 name: John Li
 category: board2023
 imgsrc: assets/Board2023/JOHN.png
-year: 23-24
 position: Social Chair
 majors:
     - General Biology and Computer Science

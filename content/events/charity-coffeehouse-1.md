@@ -3,7 +3,7 @@ title: Charity Coffeehouse
 date: 2021-02-27T00:00:00.000Z
 imgsrc: assets/coffeehouse2021.jpg
 category: event
-pinned: true
+pinned: false
 tags: 
   - social
 link: https://www.facebook.com/events/279649050163562/

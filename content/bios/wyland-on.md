@@ -1,9 +1,8 @@
 ---
 name: Wyland On
 category: bio
-imgsrc: assets/Board2023/WYLAND.png
-year: 23-24
-position: Co-President
+imgsrc: assets/Board2024/wyland.png
+position: Senior Advisor
 majors:
   - Computer Science
 ---

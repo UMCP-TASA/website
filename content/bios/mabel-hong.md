@@ -1,10 +1,10 @@
 ---
 name: Mabel Hong
 category: bio
-imgsrc: assets/Board2023/MABEL.png
-position: Night Market Director
+imgsrc: assets/Board2024/mabel.png
+position: Senior Advisor
 majors:
-    - Computer Science and Mathematics
+  - Computer Science
+  - Applied Mathematics 
 ---
-
-Fun Fact: "I crochet little clothes for my sonny angels :3"
+Fun Fact: "I ate an average of 1+  tanghulus a day in Taiwan + Beijing over 3.5 weeks ૮꒰⸝⸝> <⸝⸝꒱ "

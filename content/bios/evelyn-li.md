@@ -1,10 +1,10 @@
 ---
 name: Evelyn Li
 category: bio
-imgsrc: assets/Board2023/EVELYN.png
-position: Senior Advisor
+imgsrc: assets/Board2024/evelyn.png
+position: Alumni Advisor
 majors:
-    - Neuroscience & Anthropology
+  - Neuroscience
+  - Anthropology
 ---
-
-Fun Fact: "I’ve been on a winning team of 4 IM Volleyball seasons 🏐🥇"
+Fun Fact: "My phone contacts have cropped headshot photos so my locations app looks like big bobble heads moving around the map"

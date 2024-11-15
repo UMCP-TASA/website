@@ -1,10 +1,9 @@
 ---
 name: Michael Tran
 category: bio
-imgsrc: assets/Board2023/MICHAEL.png
-position: Treasurer
+imgsrc: assets/Board2024/michael.png
+position: President
 majors:
-    - Computer Science
+  - Computer Science
 ---
-
-Fun Fact: "I learned to surf last summer"
+Fun Fact: "I make a mean garlic bread"

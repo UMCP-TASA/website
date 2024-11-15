@@ -1,10 +1,9 @@
 ---
 name: Christina Chen
 category: bio
-imgsrc: assets/Board2023/XTINA.png
-position: External VP
+imgsrc: assets/Board2024/xt.jpg
+position: Senior Advisor
 majors:
-    - Mechanical Engineering
+  - Mechanical Engineering
 ---
-
-Fun Fact: "Ur dawgs r not safe around me🤱"
+Fun Fact: "I just wanna be part of your symphony"
