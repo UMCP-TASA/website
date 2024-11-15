@@ -34,8 +34,8 @@ function BoardPage(props: Props) {
     if (!boardBackground) throw new Error("Board background does not exist.")
 
     const bios = useBios()
-    const presidents = bios.slice(0, 2)
-    const rest = bios.slice(2)
+    const presidents = bios.slice(0, 1) // if two prezzies - "bios.slice(0,2)"
+    const rest = bios.slice(1) // if two prezzies - "bios.slice(2)"
 
     return (
         <>
@@ -72,7 +72,7 @@ function BoardPage(props: Props) {
 
 export const query = graphql`
     query BoardPage {
-        boardBackground: file(relativePath: { eq: "board2023.JPG" }) {
+        boardBackground: file(relativePath: { eq: "board2024.jpeg" }) {
             ...BackgroundImage
         }
     }
