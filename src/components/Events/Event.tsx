@@ -46,7 +46,7 @@ type Props = WithStyles<typeof styles> & {
 function Event(props: Props) {
     const { classes, event, showDescription = true, preview = false } = props
     // const dateFormat = useDateFormat()
-    const dateFormat = "M/D"
+    const dateFormat = "M/D/Y"
 
     if (!event.node.frontmatter) {
         throw new Error("Frontmatter does not exist")
