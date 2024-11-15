@@ -53,7 +53,7 @@ function Event(props: Props) {
             <Text variant="subtitle1" color="textPrimary">
                 {date}
             </Text>
-            <Button className={classes.button} href={link} variant="contained">
+            <Button className={classes.button} href={link} target="_blank" variant="contained">
                 Learn More
             </Button>
         </div>

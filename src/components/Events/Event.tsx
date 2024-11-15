@@ -125,7 +125,7 @@ function Event(props: Props) {
                         sm={false}
                         itemMargins={false}
                     >
-                        <Button size="small" href={link} variant="contained">
+                        <Button size="small" href={link} target="_blank" variant="contained">
                             See Post
                         </Button>
 
