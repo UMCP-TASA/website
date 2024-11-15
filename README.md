@@ -12,10 +12,11 @@ The official University of Maryland, College Park Taiwanese American Student Ass
 5. [Netlify CMS](#netlify-cms)
 6. [Adding New Pages](#adding-new-pages)
 7. [Adding New Events](#adding-new-events)
-8. [Editing Bios](#editing-bios)
-9. [Link Shortening](#link-shortening)
-10. [GraphQL Type Generation](#graphql-type-generation)
-11. [Miscellaneous](#miscellaneous)
+8. [Adding New Archived Board Page](#adding-new-archived-board-page)
+9. [Editing Bios](#editing-bios)
+10. [Link Shortening](#link-shortening)
+11. [GraphQL Type Generation](#graphql-type-generation)
+12. [Miscellaneous](#miscellaneous)
 
 # Installation
 
@@ -126,6 +127,97 @@ For everywhere else, we have to use static queries which can't take parameters. 
 We can use the result from useEvents to display the data in various ways such as in a grid. If we wanted to get upcoming or previous events, we can add a filter to the useEvents hook which can return us events that occur before or after a certain date.
 
 The [`Event.tsx`](/src/components/Events/Event.tsx) component displays a card with information about the event. If you click on the card, it brings us to the dedicated page for that event.
+
+# Adding New Archived Board Page
+
+### Step 1: Editing the config.yml file
+
+Edit [static/admin/config.yml](static/admin/config.yml) file to include the desired archived board20## collection. See below for example:
+
+```yaml
+    - name: board2023
+      identifier_field: name
+      label: "Board2023"
+      folder: "content/board2023"
+      create: true
+      sortableFields: ["name", "position"]
+      fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - {
+                label: "Category",
+                name: "category",
+                widget: "hidden",
+                default: "board2023",
+            }
+          - {
+                label: "Profile Picture",
+                name: "imgsrc",
+                widget: "image",
+                hint: "Square images are preferred!",
+            }
+```
+Make sure to change the text for the following fields (name, label, folder, fields[default])
+
+### Step 2: Editing the gatsby-config.js file
+
+Edit [gatsby-config.js](gatsby-config.js) and add a new plugin sharing the same name as the collection in step 1. Follow the same structure in this example:
+
+```javascript
+...},
+    {
+        resolve: "gatsby-source-filesystem",
+        options: {
+            name: "board2023",
+            path: `${__dirname}/content/board2023/`,
+        },
+    },
+{...
+```
+Make sure to change the text for the following fields (name, path).
+
+### Step 3: Adding in the photos
+
+Add a board image (for the page's background) in [src/images/](src/images/) called 'board20##'. To improve load times, please change the image size to less than 1MB (change resolution; I found 1280x1280 will work well).
+
+Add the board photos in [static/assets/Board20##](static/assets/Board20##). To improve load times, please change the photos' size to less than 1MB (change resolution; I found 640x640 will work well).
+
+### Step 4: Creating the .md files
+
+Create a folder under [content/](content/) with the same name as the collection. This is where you will fill with .md files (bios). Refer to other .md files (bios) for reference. 
+
+Alternatively, you can push the changes thus far to the remote repo. You can now use Netlify to create the bios.
+
+### Step 5: Creating new hook
+
+Create a new hook called 'useBios##.tsx' in [src/hooks/archivedBoardHooks/](src/hooks/archivedBoardHooks/). Copy the same structure as in [src/hooks/useBios.tsx](src/hooks/useBios.tsx). 
+
+You must change the following:
+- name of the query ('query Bio' -> 'query Bio##')
+- category search parameter ('eq: "bio" -> 'eq: "board20##"') 
+
+### Step 6: Creating new page
+
+Create a new page called board##.tsx in [src/pages/](src/pages/). Copy the same structure as in [src/pages/board23.tsx](src/pages/board23.tsx). 
+
+You must change the following:
+- 'import useBios23 from "hooks/archivedBoardHooks/useBios23"' -> 'import useBios## from "hooks/archivedBoardHooks/useBios##"'
+- text in the returned JSX.Element
+- 'query BoardPage23' -> 'query BoardPage##'
+- 'eq: "board2023.JPG"' -> 'eq: "{filename in step 3}"'
+
+### Step 7: Linking to the newly created page
+
+Lastly, edit the [src/pages/archive.tsx](src/pages/archive.tsx) file to include a section for the new page. See example below:
+
+```typescript
+.../>
+    <ArchiveSection
+        title="2023-2024"
+        boardLink="/board23"
+        eventsLink="/events"
+    />
+</...
+```
 
 # Editing Bios
 
