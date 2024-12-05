@@ -1,7 +1,7 @@
 ---
 title: TASA Casino Night '24
 date: 2024-12-06T23:00:56.756Z
-imgsrc: static/assets/casinonight24.jpg
+imgsrc: assets/casinonight24.jpg
 category: event
 pinned: true
 tags:
