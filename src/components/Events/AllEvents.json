@@ -1,6 +1,12 @@
 {
     "events" : [
         {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/casinoNight24.png",
+            "title" : "Casino Night 2024",
+            "date" : "December 6, 2024",
+            "link": "https://www.instagram.com/p/DCsh_-7RcUo/"
+        },
+        {
             "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/tot2024.png",
             "title" : "Tour of Taiwan 2024",
             "date" : "November 15, 2024",
