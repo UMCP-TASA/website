@@ -14,4 +14,20 @@ Win BIG🏆 AND enjoy delicious refreshments🍹\
 \
 🗓️December 6th from 6-8pm\
 📍Stamp Grand Ballroom Lounge\
-Dress Code: Casual
+Dress Code: Casual\
+\
+You also get 10 FREE tickets🎟️ AND a free drink🍸\
+\
+What are tickets for?
+- Enter our raffles🙌!
+- Bet in our games such as poker♠️, blackjack🃏, roulette🎰, mahjong🀄️, and many more
+- Get more drinks🍸 (5 tickets = 1 ADDITIONAL drink)
+
+Additional tickets for sale\
+$2 for 5 OR $3 for 10\
+\
+Raffle Info\
+🎟️Premium Prize: JBL speaker 📣\
+(1 Premium ticket = 10 normal tickets)\
+🎟️2nd Tier: 2 CASES of Celsius⚡️ & TASA membership card🪪\
+🎟️3rd Tier: Winter Gift Basket🎁\
