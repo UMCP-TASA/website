@@ -28,12 +28,12 @@ function RaisedImage(props: Props) {
     console.log(imageNode)
     
     if (!imageNode) throw new Error(`${alt} image not found`)
-    const image = getImage(imageNode)
+    const image = getImage(imageNode as any)
 
     return (
         <GatsbyImage
             className={clsx(classes.root, className)}
-            image={image}
+            image={image!}
             alt={alt}
             {...rest}
         />
