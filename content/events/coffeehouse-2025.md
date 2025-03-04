@@ -1,7 +1,7 @@
 ---
 title: Coffeehouse 2025
 date: 2025-03-08T00:00:00.000Z
-imgsrc: static/assets/coffeehouse2025.png
+imgsrc: assets/coffeehouse2025.png
 category: event
 pinned: true
 tags:

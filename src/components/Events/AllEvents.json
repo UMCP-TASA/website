@@ -1,6 +1,12 @@
 {
     "events" : [
         {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/coffeehouse2025.png",
+            "title" : "Coffeehouse 2025",
+            "date" : "March 7, 2025",
+            "link": "https://www.instagram.com/p/DGWmyK_xLo2/"
+        },
+        {
             "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/casinoNight24.png",
             "title" : "Casino Night 2024",
             "date" : "December 6, 2024",
