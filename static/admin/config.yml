@@ -4,7 +4,7 @@ backend:
     repo: UMCP-TASA/website # Repo for pushing new commits. Make sure to replace with your repo!
 
 media_folder: static/assets
-public_folder: /assets
+public_folder: assets
 
 collections:
     - name: events

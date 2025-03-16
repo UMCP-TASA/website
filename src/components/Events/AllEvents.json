@@ -1,6 +1,12 @@
 {
     "events" : [
         {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/mrwiffleball2025.png",
+            "title" : "Mr. Wiffleball 2025: Heros and Villains",
+            "date" : "March 28, 2025",
+            "link": "https://www.instagram.com/p/DHKNkcDxzUh/"
+        },
+        {
             "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/coffeehouse2025.png",
             "title" : "Coffeehouse 2025",
             "date" : "March 7, 2025",
