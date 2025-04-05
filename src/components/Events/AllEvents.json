@@ -1,6 +1,12 @@
 {
     "events" : [
         {
+            "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/nightmarket2025.png",
+            "title" : "Night Market 2025: Written in the Stars",
+            "date" : "April 19, 2025",
+            "link": "https://www.instagram.com/p/DH9pRT6Mr7c/"
+        },
+        {
             "image" : "https://raw.githubusercontent.com/UMCP-TASA/website/master/static/assets/mrwiffleball2025.png",
             "title" : "Mr. Wiffleball 2025: Heros and Villains",
             "date" : "March 28, 2025",
